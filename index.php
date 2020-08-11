@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <div class="titulo">
         <h2>ProtesTool</h2>
     </div>
@@ -26,7 +25,9 @@
 
         </div>
         <div class="entrada">
-            <h2>Escolha uma das opções acima para poder realizar as manutenções.</h2>
+            <div class="fadeIn">
+                <h2>Escolha uma das opções acima para poder realizar as manutenções.</h2>
+            </div>
         </div>
 </body>
 

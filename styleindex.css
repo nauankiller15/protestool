@@ -24,7 +24,7 @@ a:hover {
   margin: 22px auto 0px;
   text-align: center;
   text-shadow: 1px 2px 4px rgb(155, 155, 155);
-  animation-duration: 0.8s;
+  animation-duration: 1.7s;
   animation-name: slidein;
 }
 
@@ -87,6 +87,31 @@ body {
   text-align: right;
   max-width: 450px;
 }
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+
+  .fadeIn {
+    -webkit-animation: fadeIn 1.7s ease-in-out;
+    -moz-animation: fadeIn 1.7s ease-in-out;
+    -o-animation: fadeIn 1.8s ease-in-out;
+    animation: fadeIn 1.3s ease-in-out;
+    }
 
 form {
   width: 40%;
@@ -170,7 +195,7 @@ form p {
 
 .centralizar2 {
   width: 80%;
-  margin: 24px auto;
+  margin: 13px auto;
   float: center;
   height: 32px;
 }
