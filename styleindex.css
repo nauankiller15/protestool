@@ -24,7 +24,7 @@ a:hover {
   margin: 22px auto 0px;
   text-align: center;
   text-shadow: 1px 2px 4px rgb(155, 155, 155);
-  animation-duration: 1.7s;
+  animation-duration: 0.9s;
   animation-name: slidein;
 }
 
@@ -307,7 +307,7 @@ form p {
   margin: 20px auto;
   text-align: center;
   border: 1px solid #f8f8f8;
-  animation-duration: 0.8s;
+  animation-duration: 0.9s;
   animation-name: slidein;
 }
 
