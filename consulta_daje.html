@@ -26,11 +26,15 @@
             <div class="header">
             </div>
             <div class="entrada">
-                <div class="error">
-                    Parametro repassado errado!
+                <div id="error">
+                    <div class="error">
+                        Parametro repassado errado! <button class="close" onclick="document.getElementById('error').style.display='none'">X</button>
+                    </div>
                 </div>
-                <div class="sucesso">
-                    Alteração realizada com sucesso!
+                <div id="sucesso">
+                    <div class="sucesso">
+                        Alteração realizada com sucesso!<button class="close" onclick="document.getElementById('sucesso').style.display='none'">X</button>
+                    </div>
                 </div>
                 <form method="post" action="consulta_daje.html">
 
@@ -71,6 +75,19 @@
                     </table>
                 </div>
             </div>
+
 </body>
+<div class="footer">
+    © COPYRIGHT 2020. I9Software.
+</div>
+<script>
+    window.onload = function() {
+        document.getElementById('close').onclick = function() {
+            this.parentNode.parentNode.parentNode
+                .removeChild(this.parentNode.parentNode);
+            return false;
+        };
+    };
+</script>
 
 </html>

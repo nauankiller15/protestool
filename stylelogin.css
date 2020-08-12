@@ -28,6 +28,19 @@ a:hover {
     animation-name: slidein;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    margin: 22px auto 0px;
+    padding: 16px;
+    text-align: center;
+    color: #6d6d6d;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
 @keyframes slidein {
     from {
         margin-left: 10%;

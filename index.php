@@ -29,6 +29,10 @@
                 <h2>Escolha uma das opções acima para poder realizar as manutenções.</h2>
             </div>
         </div>
+       
 </body>
 
+<div class="footer">
+    © COPYRIGHT 2020. I9Software.
+            </div>
 </html>

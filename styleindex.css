@@ -3,8 +3,20 @@
                     padding: 0px;
                 }
                 
+                .close {
+                    padding: 1px 2px;
+                    float: right;
+                    margin-top: -1px;
+                    font-size: 11px;
+                }
+                
+                .close:hover {
+                    padding: 1px 2px;
+                    color: rgb(255, 255, 255);
+                }
+                
                 a {
-                    color: #7c7c7c;
+                    color: #6b6b6b;
                     text-decoration: none;
                     font-weight: bold;
                     font-family: sans-serif;
@@ -26,6 +38,19 @@
                     text-shadow: 1px 2px 4px rgb(155, 155, 155);
                     animation-duration: 0.9s;
                     animation-name: slidein;
+                }
+                
+                .footer {
+                    position: absolute;
+                    bottom: 0;
+                    width: 98%;
+                    margin: 22px auto 0px;
+                    padding: 16px;
+                    text-align: center;
+                    color: #6d6d6d;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-family: sans-serif;
                 }
                 
                 @keyframes slidein {
