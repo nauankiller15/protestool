@@ -31,14 +31,20 @@ a:hover {
 .footer {
     position: absolute;
     bottom: 0;
-    width: 98%;
-    margin: 22px auto 0px;
+    padding: 10px;
+    background-color: #eeeeee;
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 1px auto;
     padding: 16px;
     text-align: center;
     color: #6d6d6d;
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;
+    width: 98%;
 }
 
 @keyframes slidein {
@@ -203,6 +209,7 @@ form p {
 .btn:onclick {
     border: 1px solid rgb(255, 255, 255);
     background: rgb(24, 40, 70);
+    border: 2px solid #2664b6;
 }
 
 .error {

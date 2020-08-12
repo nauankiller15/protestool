@@ -3,6 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Tablesorter - Tutsup</title>
+    <!-- jQuery e Tablesorter -->
+    <script src="jquery-latest.js"></script>
+    <script src="jquery.tablesorter.min.js"></script>
+
+    <!-- Meu script -->
+    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styleindex.css">
@@ -27,50 +35,40 @@
             <div class="header">
             </div>
             <div class="entrada">
-                <div id="error">
-                    <div class="error">
-                        Parametro repassado errado! <button class="close" onclick="document.getElementById('error').style.display='none'">X</button>
+                <div id="informacao">
+                    <div class="informacao">
+                        <button class="close" onclick="document.getElementById('informacao').style.display='none'">X</button>Lista dos códigos de retorno, para simplificar o reenvio.
                     </div>
                 </div>
-                <div id="sucesso">
-                    <div class="sucesso">
-                        Alteração realizada com sucesso!<button class="close" onclick="document.getElementById('sucesso').style.display='none'">X</button>
-                    </div>
-                </div>
-                <form method="post" action="consulta_daje.html">
-
-                    <div class="input-group">
-                        <label>Número do protocolo:</label>
-                        <input type="text" placeholder="Digite aqui o número do protocolo" name="daje" required>
-                    </div>
-
-                    <div class="centralizar2">
-                        <button type="Submit" name="login" class="btn2">Consultar</button>
-                    </div>
-
-                </form>
-
                 <div class="lista-group">
-                    <label>Dajes Encontrados:</label>
-                    <table class="bordered striped centered">
+                    <label>Lista de códigos de retorno:</label>
+                    <table class="bordered striped centered tablesorter">
                         <thead>
                             <tr>
-                                <th>Número Daje</th>
-                                <th><span data-tooltip="ID de Requisição do banco de dados para consulta.">ID Requisição (?)</span>
-                                </th>
-                                <th>Protocolo</th>
+                                <th><span data-tooltip="Clique para ordernar por número">Cod. Retorno</span></th>
+                                <th>Tipo Retorno</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2020 002 13545</td>
-                                <td>510521</td>
-                                <td>15500</td>
+                                <td>500</td>
+                                <td>Comunicação realizada com sucesso!</td>
                             </tr>
                             <tr>
-                                <td>2020 002 13546</td>
-                                <td>510522</td>
-                                <td>15501</td>
+                                <td>400</td>
+                                <td>Tipo de ato inválido.</td>
+                            </tr>
+                            <tr>
+                                <td>300</td>
+                                <td>Desconhecido.</td>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td>Desconhecido.</td>
+                            </tr>
+                            <tr>
+                                <td>100</td>
+                                <td>Desconhecido.</td>
                             </tr>
                         </tbody>
                     </table>
