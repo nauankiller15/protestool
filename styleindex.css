@@ -430,3 +430,28 @@
                     float: center;
                     margin: 5px auto;
                 }
+                
+                [data-tooltip] {
+                    position: relative;
+                    font-weight: bold;
+                    transition: 0.5s;
+                }
+                
+                [data-tooltip]:after {
+                    display: none;
+                    position: absolute;
+                    top: -5px;
+                    padding: 6px;
+                    border-radius: 3px;
+                    left: calc(100% + 2px);
+                    content: attr(data-tooltip);
+                    white-space: nowrap;
+                    background-color: #2664b6;
+                    color: White;
+                    transition: 0.5s;
+                }
+                
+                [data-tooltip]:hover:after {
+                    display: block;
+                    transition: 0.5s;
+                }
