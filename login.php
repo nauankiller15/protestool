@@ -15,17 +15,19 @@
         <h2>ProtesTool</h2>
     </div>
     <div class="fadeIn">
-    <div class="header">
-    </div>
+        <div class="header">
+        </div>
 
         <form method="post" action="login.php">
             <div class="input-group">
                 <label>Usuário:</label>
-                <input type="text" placeholder="Digite aqui o usuário de administrador" name="username" required>
+                <input type="text" placeholder="Digite aqui o usuário de administrador" class="password" name="username"
+                    required>
             </div>
             <div class="input-group">
                 <label>Senha:</label>
-                <input type="password" placeholder="Digite a senha de administrador" name="password" required>
+                <input type="password" placeholder="Digite a senha de administrador" class="password" name="password"
+                    required>
             </div>
 
             <div class="input-group">
@@ -34,9 +36,12 @@
             <p>Acesso somente autorizado!</p>
         </form>
     </div>
-    
+
 </body>
 <div class="footer">
-    © COPYRIGHT 2020. I9Software.
-            </div>
+    © COPYRIGHT 2020. Siscart.
+</div>
+
+
+
 </html>
