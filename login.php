@@ -34,6 +34,9 @@
             <p>Acesso somente autorizado!</p>
         </form>
     </div>
+    
 </body>
-
+<div class="footer">
+    © COPYRIGHT 2020. I9Software.
+            </div>
 </html>

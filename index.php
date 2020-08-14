@@ -14,11 +14,12 @@
         <h2>ProtesTool</h2>
     </div>
     <nav>
-        <nav id="menu">
+        <nav class='fadeIn' id="menu">
             <ul>
                 <li><a href="http://localhost/ProtesTool/desvincular_daje.html">Desvincular Daje</a></li>
                 <li><a href="http://localhost/ProtesTool/consulta_daje.html">Consultar Daje</a></li>
                 <li><a href="http://localhost/ProtesTool/reenviar_daje.html">Reenviar Daje</a></li>
+                <li><a href="http://localhost/ProtesTool/cods_retorno.html">Códigos de Retorno</a></li>
             </ul>
         </nav>
         <div class="header">
@@ -29,6 +30,10 @@
                 <h2>Escolha uma das opções acima para poder realizar as manutenções.</h2>
             </div>
         </div>
+       
 </body>
 
+<div class="footer">
+    © COPYRIGHT 2020. I9Software.
+            </div>
 </html>
