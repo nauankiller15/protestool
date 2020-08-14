@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

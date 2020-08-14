@@ -5,20 +5,20 @@ body {
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 a {
-  color: #7c7c7c;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: sans-serif;
+    color: #7c7c7c;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 a:hover {
-  color: #272727;
-  text-decoration: none;
+    color: #272727;
+    text-decoration: none;
 }
 
 .titulo {
@@ -64,32 +64,32 @@ a:hover {
 }
 
 .header {
-  width: 22%;
-  margin: 100px auto 0px;
-  color: rgb(44, 44, 44);
-  background: #2664b6;
-  text-align: center;
-  border-bottom: none;
-  padding: 2px 22px 10px 20px;
+    width: 22%;
+    margin: 100px auto 0px;
+    color: rgb(44, 44, 44);
+    background: #2664b6;
+    text-align: center;
+    border-bottom: none;
+    padding: 2px 22px 10px 20px;
 }
 
 .header h2 {
-  font-family: Agency FB;
-  font-size: 132%;
-  text-transform: uppercase;
+    font-family: Agency FB;
+    font-size: 132%;
+    text-transform: uppercase;
 }
 
 form {
-  width: 22%;
-  margin: 0px auto;
-  padding: 20px;
-  border: 1px solid #87a6cf;
-  background: white;
-  border-radius: 0px 0px 10px 10px;
-  font-family: sans-serif;
-  -moz-box-shadow: 3px 2px 1px #000000;
-  -webkit-box-shadow: 3px 2px 1px #000000;
-  box-shadow: 5px 5px 25px #a1a1a1;
+    width: 22%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #87a6cf;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+    font-family: sans-serif;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 5px 5px 25px #a1a1a1;
 }
 
 @-webkit-keyframes fadeIn {
@@ -136,28 +136,28 @@ form {
 }
 
 form p {
-  margin: 6px;
-  text-align: center;
-  float: center;
-  display: block;
-  margin: 5px auto;
-  font-size: 13px;
-  color: #555555;
-  font-family: sans-serif;
+    margin: 6px;
+    text-align: center;
+    float: center;
+    display: block;
+    margin: 5px auto;
+    font-size: 13px;
+    color: #555555;
+    font-family: sans-serif;
 }
 
 .input-group {
-  margin: 2px 2px 10px 0px;
+    margin: 2px 2px 10px 0px;
 }
 
 .input-group label {
-  display: block;
-  text-align: left;
-  margin: 2px auto;
-  width: 72%;
-  font-size: 15px;
-  color: #555555;
-  font-family: sans-serif;
+    display: block;
+    text-align: left;
+    margin: 2px auto;
+    width: 72%;
+    font-size: 15px;
+    color: #555555;
+    font-family: sans-serif;
 }
 
 .input-group::after {
@@ -181,49 +181,49 @@ form p {
 }
 
 .input-group input {
-  height: 23px;
-  width: 69%;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1px solid #71849c;
-  display: block;
-  float: center;
-  margin: 5px auto;
+    height: 23px;
+    width: 69%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #71849c;
+    display: block;
+    float: center;
+    margin: 5px auto;
 }
 
 .input-group input:onclick {
-  transition: 0.5s;
+    transition: 0.5s;
 }
 
 .btn {
-  padding: 10px;
-  font-size: 14px;
-  color: white;
-  background: #2664b6;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  width: 40%;
-  display: block;
-  float: center;
-  margin: 25px auto;
-  transition: background 0.2s;
-  animation: go-back 0.9s infinite alternate;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background: #2664b6;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 40%;
+    display: block;
+    float: center;
+    margin: 25px auto;
+    transition: background 0.2s;
+    animation: go-back 0.9s infinite alternate;
 }
 
 @keyframes go-back {
-  from {
-    transform: translateX(10px);
-  }
-  to {
-    transform: translateX(0);
-  }
+    from {
+        transform: translateX(10px);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .btn:hover {
-  background: #123869;
-  transition: 0.4s;
+    background: #123869;
+    transition: 0.4s;
 }
 
 .btn:onclick {
@@ -233,16 +233,16 @@ form p {
 }
 
 .error {
-  padding: 6px;
-  margin-top: 1px;
-  margin-bottom: 12px;
-  border: 1px solid #a94442;
-  color: #a94422;
-  background-color: #f2dede;
-  border-radius: 5px;
-  text-align: center;
-  float: center;
-  display: block;
+    padding: 6px;
+    margin-top: 1px;
+    margin-bottom: 12px;
+    border: 1px solid #a94442;
+    color: #a94422;
+    background-color: #f2dede;
+    border-radius: 5px;
+    text-align: center;
+    float: center;
+    display: block;
 }
 
 .content {
