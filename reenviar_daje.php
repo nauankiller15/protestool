@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styleindex.css">
-    <title>Reenviar daje</title>
-</head>
+<?php include("includes/headindex.php");
+include("includes/footer.php"); ?>
 
 <body>
 
@@ -15,14 +10,7 @@
         <h2>ProtesTool</h2>
     </div>
     <nav>
-        <nav id="menu">
-            <ul>
-                <li><a href="http://localhost/ProtesTool/desvincular_daje.html">Desvincular Daje</a></li>
-                <li><a href="http://localhost/ProtesTool/consulta_daje.html">Consultar Daje</a></li>
-                <li><a href="http://localhost/ProtesTool/reenviar_daje.html">Reenviar Daje</a></li>
-                <li><a href="http://localhost/ProtesTool/cods_retorno.html">Códigos de Retorno</a></li>
-            </ul>
-        </nav>
+        <?php include("includes/menu.php") ?>
         <div class="header">
         </div>
         <div class="entrada">
@@ -42,12 +30,16 @@
                     <thead>
                         <tr>
                             <div>
-                                <th><span data-tooltip="Esse 'ID Requisição' é uma forma de comunicação que é passado para o TJBA e retorna com esse número de identificação. - Eles ficam no banco de dados">ID Requisição (?)</span>
+                                <th><span
+                                        data-tooltip="Esse 'ID Requisição' é uma forma de comunicação que é passado para o TJBA e retorna com esse número de identificação. - Eles ficam no banco de dados">ID
+                                        Requisição (?)</span>
                                 </th>
                             </div>
                             <th>Número Daje</th>
                             <th>Protocolo</th>
-                            <th><span data-tooltip="Clique aqui para consultar os códigos."><a href="http://localhost/ProtesTool/cods_retorno.html">Cod Retorno (?)</a></span></th>
+                            <th><span data-tooltip="Clique aqui para consultar os códigos."><a
+                                        href="http://localhost/ProtesTool/cods_retorno.php">Cod Retorno
+                                        (?)</a></span></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -81,9 +73,7 @@
 
         </div>
 
+        <?php include("includes/footer.php"); ?>
 </body>
-<div class="footer">
-    © COPYRIGHT 2020. Siscart.
-</div>
 
 </html>

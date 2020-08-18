@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styleindex.css">
-    <title>Consulta daje</title>
-</head>
+<?php include("includes/headindex.php");?>
 
 <body>
 
@@ -16,25 +10,20 @@
     </div>
     <nav>
         <nav>
-            <nav id="menu">
-                <ul>
-                    <li><a href="http://localhost/ProtesTool/desvincular_daje.html">Desvincular Daje</a></li>
-                    <li><a href="http://localhost/ProtesTool/consulta_daje.html">Consultar Daje</a></li>
-                    <li><a href="http://localhost/ProtesTool/reenviar_daje.html">Reenviar Daje</a></li>
-                    <li><a href="http://localhost/ProtesTool/cods_retorno.html">Códigos de Retorno</a></li>
-                </ul>
-            </nav>
+            <?php include("includes/menu.php") ?>
             <div class="header">
             </div>
             <div class="entrada">
-                <div id="error">
+                <div id="error" class="window-msg">
                     <div class="error">
-                        Parametro repassado errado! <button class="close" onclick="document.getElementById('error').style.display='none'">X</button>
+                        Parametro repassado errado! <button id="close" class="close"
+                            onclick="document.getElementById('error').style.display='none'">X</button>
                     </div>
                 </div>
-                <div id="sucesso">
+                <div id="sucesso" class="window-msg">
                     <div class="sucesso">
-                        Alteração realizada com sucesso!<button class="close" onclick="document.getElementById('sucesso').style.display='none'">X</button>
+                        Alteração realizada com sucesso!<button id="close" class="close"
+                            onclick="document.getElementById('sucesso').style.display='none'">X</button>
                     </div>
                 </div>
                 <form method="post" action="consulta_daje.html">
@@ -56,7 +45,8 @@
                         <thead>
                             <tr>
                                 <th>Número Daje</th>
-                                <th><span data-tooltip="ID de Requisição do banco de dados para consulta.">ID Requisição (?)</span>
+                                <th><span data-tooltip="ID de Requisição do banco de dados para consulta.">ID Requisição
+                                        (?)</span>
                                 </th>
                                 <th>Protocolo</th>
                             </tr>
@@ -77,18 +67,11 @@
                 </div>
             </div>
 
+            <?php include("includes/footer.php"); ?>
+            <script>
+                document.title = "Protestool - Consultar Daje";
+            </script>
+
 </body>
-<div class="footer">
-    © COPYRIGHT 2020. Siscart.
-</div>
-<script>
-    window.onload = function() {
-        document.getElementById('close').onclick = function() {
-            this.parentNode.parentNode.parentNode
-                .removeChild(this.parentNode.parentNode);
-            return false;
-        };
-    };
-</script>
 
 </html>

@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylelogin.css">
-    <title>Entrar</title>
-</head>
+
+<?php include("includes/headlogin.php");?>
 
 <body>
 
@@ -37,10 +32,7 @@
     </div>
 
 </body>
-<div class="footer">
-    © COPYRIGHT 2020. Siscart.
-</div>
 
-
+<?php include("includes/footer.php"); ?>
 
 </html>
