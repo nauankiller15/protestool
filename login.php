@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylelogin.css">
-    <title>Entrar</title>
-</head>
+<?php include("includes/headlogin.php");?>
 
 <body>
 
@@ -15,17 +9,19 @@
         <h2>ProtesTool</h2>
     </div>
     <div class="fadeIn">
-    <div class="header">
-    </div>
+        <div class="header">
+        </div>
 
         <form method="post" action="login.php">
             <div class="input-group">
                 <label>Usuário:</label>
-                <input type="text" placeholder="Digite aqui o usuário de administrador" name="username" required>
+                <input type="text" placeholder="Digite aqui o usuário de administrador" class="password" name="username"
+                    required>
             </div>
             <div class="input-group">
                 <label>Senha:</label>
-                <input type="password" placeholder="Digite a senha de administrador" name="password" required>
+                <input type="password" placeholder="Digite a senha de administrador" class="password" name="password"
+                    required>
             </div>
 
             <div class="input-group">
@@ -34,9 +30,9 @@
             <p>Acesso somente autorizado!</p>
         </form>
     </div>
-    
+
 </body>
-<div class="footer">
-    © COPYRIGHT 2020. I9Software.
-            </div>
+
+<?php include("includes/footer.php"); ?>
+
 </html>
