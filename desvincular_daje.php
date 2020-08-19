@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include("includes/headindex.php");?>
+<?php include("includes/headindex.php"); ?>
 
 <body>
 
@@ -20,12 +20,16 @@
                 </div>
             </div>
             <form class="api-request" data-endpoint="DesvincularApontamento">
-                <div class="input-group">
+                <div class="input-group2">
+                    <span>
                     <label>Login:</label>
                     <input type="text" placeholder="login cliente" name="login">
+                    </span>
+                    <span>
                     <label>Senha:</label>
                     <input type="text" placeholder="senha cliente" name="senha">
-                </div>
+                    </span>
+                    </div>
                 <div class="input-group">
                     <label>Número do daje:</label>
                     <input type="text" placeholder="Digite aqui o número do daje" name="numero_daje" required>
@@ -38,11 +42,11 @@
             </form>
         </div>
 
-        
+
 
         <?php include("includes/footer.php"); ?>
         <script>
-        document.title = "Protestool - Desvincular Daje";
+            document.title = "Protestool - Desvincular Daje";
         </script>
 </body>
 
