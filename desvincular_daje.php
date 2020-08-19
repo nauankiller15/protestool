@@ -23,16 +23,16 @@
                 <div class="input-group2">
                     <span>
                     <label>Login:</label>
-                    <input type="text" placeholder="login cliente" name="login">
+                    <input type="text" placeholder="Login cliente" name="login">
                     </span>
                     <span>
                     <label>Senha:</label>
-                    <input type="text" placeholder="senha cliente" name="senha">
+                    <input type="text" placeholder="Senha cliente" name="senha">
                     </span>
                     </div>
                 <div class="input-group">
                     <label>Número do daje:</label>
-                    <input type="text" placeholder="Digite aqui o número do daje" name="numero_daje" required>
+                    <input type="text" placeholder="Digite aqui o número do daje com emissor e série" name="numero_daje" required>
                 </div>
 
                 <div class="centralizar2">

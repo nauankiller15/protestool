@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include("includes/headindex.php");
-include("includes/footer.php"); ?>
+<?php include("includes/headindex.php");?>
 
 <body>
 
