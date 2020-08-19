@@ -3,14 +3,13 @@
 
 <?php include("includes/headindex.php"); ?>
 
-
 <body>
     <div class="titulo">
         <h2>ProtesTool</h2>
     </div>
     <nav>
-        <?php include("includes/menu.php") ?>
-
+        <div class="fadeIn"><?php include("includes/menu.php") ?>
+        </div>
         <div class="header">
         </div>
         <div class="entrada">

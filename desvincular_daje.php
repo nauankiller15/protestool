@@ -38,6 +38,8 @@
             </form>
         </div>
 
+        
+
         <?php include("includes/footer.php"); ?>
         <script>
         document.title = "Protestool - Desvincular Daje";
