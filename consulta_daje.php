@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include("includes/headindex.php");?>
+<?php include("includes/headindex.php"); ?>
 
 <body>
 
@@ -16,14 +16,12 @@
             <div class="entrada">
                 <div id="error" class="window-msg">
                     <div class="error">
-                        Parametro repassado errado! <button id="close" class="close"
-                            onclick="document.getElementById('error').style.display='none'">X</button>
+                        Parametro repassado errado! <button id="close" class="close" onclick="document.getElementById('error').style.display='none'">X</button>
                     </div>
                 </div>
                 <div id="sucesso" class="window-msg">
                     <div class="sucesso">
-                        Alteração realizada com sucesso!<button id="close" class="close"
-                            onclick="document.getElementById('sucesso').style.display='none'">X</button>
+                        Alteração realizada com sucesso!<button id="close" class="close" onclick="document.getElementById('sucesso').style.display='none'">X</button>
                     </div>
                 </div>
                 <form method="post" action="consulta_daje.html">
@@ -45,8 +43,10 @@
                         <thead>
                             <tr>
                                 <th>Número Daje</th>
-                                <th><span data-tooltip="ID de Requisição do banco de dados para consulta.">ID Requisição
-                                        (?)</span>
+                                <th>
+                                    <p><span data-tooltip="ID de Requisição do banco de dados para consulta.">ID Requisição
+                                            (?)</span>
+                                    </p>
                                 </th>
                                 <th>Protocolo</th>
                             </tr>

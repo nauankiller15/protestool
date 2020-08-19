@@ -30,15 +30,15 @@ include("includes/footer.php"); ?>
                     <thead>
                         <tr>
                             <div>
-                                <th><span
-                                        data-tooltip="Esse 'ID Requisição' é uma forma de comunicação que é passado para o TJBA e retorna com esse número de identificação. - Eles ficam no banco de dados">ID
-                                        Requisição (?)</span>
+                                <th>
+                                    <p><span data-tooltip="Esse 'ID Requisição' é uma forma de comunicação que é passado para o TJBA e retorna com esse número de identificação. - Eles ficam no banco de dados">ID
+                                            Requisição (?)</span>
+                                    </p>
                                 </th>
                             </div>
                             <th>Número Daje</th>
                             <th>Protocolo</th>
-                            <th><span data-tooltip="Clique aqui para consultar os códigos."><a
-                                        href="http://localhost/ProtesTool/cods_retorno.php">Cod Retorno
+                            <th><span data-tooltip="Clique aqui para consultar os códigos."><a href="http://localhost/ProtesTool/cods_retorno.php">Cod Retorno
                                         (?)</a></span></th>
                         </tr>
                     </thead>
@@ -74,6 +74,9 @@ include("includes/footer.php"); ?>
         </div>
 
         <?php include("includes/footer.php"); ?>
+        <script>
+        document.title = "Protestool - Reenviar Daje";
+        </script>
 </body>
 
 </html>
