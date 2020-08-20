@@ -20,7 +20,7 @@
                 </div>
             </div>
             <form class="api-request" data-endpoint="DesvincularApontamento">
-                <div class="input-group2">
+                <div class="input-group">
                     <span>
                     <label>Login:</label>
                     <input type="text" placeholder="Login cliente" name="login">
@@ -32,7 +32,8 @@
                     </div>
                 <div class="input-group">
                     <label>Número do daje:</label>
-                    <input type="text" placeholder="Digite aqui o número do daje com emissor e série" name="numero_daje" required>
+                    <input type="text" placeholder="Digite aqui o número do daje completo" name="numero_daje" required>
+                    <p>Emissor, série e número do daje necessários.</p>
                 </div>
 
                 <div class="centralizar2">
