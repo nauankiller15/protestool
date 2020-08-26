@@ -14,7 +14,7 @@
     }
 }
 
-.circle {
+.circleoff {
     border-radius: 50%;
     border: 2px solid rgb(151, 48, 48);
     width: 135px;
@@ -26,6 +26,21 @@
     margin-top: -50px;
     margin-left: -52px;
     z-index: -3;
+}
+
+.circleon {
+    border-radius: 50%;
+    border: 2px solid rgb(42, 145, 39);
+    width: 135px;
+    height: 130px;
+    position: fixed;
+    opacity: 0;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    float: right;
+    margin-top: -50px;
+    margin-left: -52px;
+    z-index: -3;
+    display: none;
 }
 
 .close {
@@ -209,7 +224,7 @@ form p {
 }
 
 .ip {
-    display: inline-block;
+    display: block;
 }
 
 .input-group2 {

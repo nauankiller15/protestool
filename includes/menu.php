@@ -5,9 +5,12 @@
         <li><a href="http://localhost/ProtesTool/reenviar_daje.php">Reenviar Daje</a></li>
             <div class="tools">
                 <span data-tooltip2="Sair do sistema"><a href= "#sair"><button type="sair" class="btnsair">✖️</button></a></span>
-                <div class="circle" style="animation-delay: 0s"></div>
-                <div class="circle" style="animation-delay: 0.8s"></div>
-                <div class="circle" style="animation-delay: 1.8s"></div>
+                <div class="circleoff" style="animation-delay: 0s"></div>
+                <div class="circleoff" style="animation-delay: 0.8s"></div>
+                <div class="circleoff" style="animation-delay: 1.8s"></div>
+                <div class="circleon" style="animation-delay: 0s"></div>
+                <div class="circleon" style="animation-delay: 0.8s"></div>
+                <div class="circleon" style="animation-delay: 1.8s"></div>
                 <span data-tooltip2="Parametrizar configurações"><a href="javascript: abrir();"><button class="gear">⚙️</button></a></span>
         </div>
     </ul>

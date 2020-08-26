@@ -55,18 +55,19 @@ $(document).ajaxStop(function() {
 
 // Função de notificar o usuário ao parametrizar configurações
 
-$('#ip,#empty1,#empty2').on('blur', '', function(ev) {
-    if (!$('#ip').val().length != 0) {
-        $(".circle").show();
+$('.ip1,#empty1,#empty2').on('blur', '', function() {
+    if (!$('.ip1, #empty1, #empty2').val().length != 0) {
+        $(".circleoff").show();
     }
-    if (!$('#empty1').val().length != 0) {
-        $(".circle").show();
+    if (!$('.ip1, #empty1, #empty2').val().length != 1) {
+        $(".circleon").show();
     }
-    if (!$('#empty2').val().length != 0) {
-        $(".circle").show();
+    if (!$('.ip1, #empty1, #empty2').val().length != 0) {
+        $(".circleon").hide();
+        $(".circleoff").show();
 
     } else {
-        $(".circle").hide();
+        $(".circleoff").hide();
     }
 });
 
@@ -74,7 +75,8 @@ $('#ip,#empty1,#empty2').on('blur', '', function(ev) {
 
 $(document).ready(function() {
     $('#reset').on('click', function() {
-        $(".circle").show();
+        $(".circleoff").show();
+        $(".circleon").hide();
     });
 });
 
