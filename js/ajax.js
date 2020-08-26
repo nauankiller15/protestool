@@ -48,3 +48,18 @@ $(document).ajaxStart(function() {
 $(document).ajaxStop(function() {
     $("#lds-spinner").hide();
 });
+
+
+$('#empty1,#empty2,#ip').on('blur', '', function(ev) {
+    if (!$('#ip').val().length != 0) {
+        $(".circle").show();
+    }
+    if (!$('#empty1').val().length != 0) {
+        $(".circle").show();
+    }
+    if (!$('#empty2').val().length != 0) {
+        $(".circle").show();
+    } else {
+        $(".circle").hide();
+    }
+});

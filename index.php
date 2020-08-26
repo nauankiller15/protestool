@@ -9,8 +9,7 @@
     </div>
     <nav>
         <div class="fadeIn">
-            <div class="circle" style="animation-delay: 0s"></div>
-            <div class="circle" style="animation-delay: 0.9s"></div><?php include("includes/menu.php") ?>
+            <?php include("includes/menu.php") ?>
         </div>
         <div class="header">
         </div>
