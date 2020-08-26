@@ -1,12 +1,18 @@
 <div id ="popup">
 <div class ="popup">
+<div class="popup_head">
+		<div class="title">
+			<span></span>
+		</div>
+	</div>
 <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit" class="btnsair">✖️</button></a></span>
 <form class="api-request" data-endpoint="DesvincularApontamento">
+    
                 <div class="input-group2">
                     <span>
                         <label>IP do Servidor:</label>
                         <input id="ip" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
-                        <p>Dica: Por padrão utiliza-se: <b>192.168.15.150</b>.</p>
+                        <p>Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
                     </span>
                     <span>
                         <label>Login:</label>

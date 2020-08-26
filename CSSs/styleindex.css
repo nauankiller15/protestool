@@ -194,7 +194,7 @@ form p {
     background: rgb(226, 226, 226);
     padding: 6px;
     border-radius: 10px;
-    width: 89%;
+    width: 97%;
     border: 1px solid rgb(138, 138, 138);
 }
 
@@ -211,7 +211,7 @@ form p {
 
 .input-group2 input {
     height: 23px;
-    width: 92%;
+    width: 98%;
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid #71849c;
@@ -257,7 +257,7 @@ form p {
     margin: 5px auto;
 }
 
-safas .centralizar {
+.centralizar {
     width: 80%;
     margin: 1px auto;
     float: center;
@@ -273,7 +273,7 @@ safas .centralizar {
 
 .centralizar3 {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 130px;
     float: center;
 }
 
@@ -337,6 +337,24 @@ safas .centralizar {
     margin-top: 3px;
 }
 
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgb(83, 116, 206), 0 0 20px #fff, 0 0 30px #2362b4, 0 0 40px #2362b4, 0 0 50px #2362b4, 0 0 60px #2362b4, 0 0 70px #2362b4;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #2362b4, 0 0 40px #2362b4, 0 0 50px #2362b4, 0 0 60px #2362b4, 0 0 70px #2362b4, 0 0 80px #2362b4;
+    }
+}
+
+@keyframes glow2 {
+    from {
+        text-shadow: 0 0 10px rgb(226, 85, 85), 0 0 20px #fff, 0 0 30px #ac4141, 0 0 40px #ac4141, 0 0 50px #ac4141, 0 0 60px #ac4141, 0 0 70px #ac4141;
+    }
+    to {
+        text-shadow: 0 0 20px rgb(214, 95, 95), 0 0 30px #ac4141, 0 0 40px #ac4141, 0 0 50px #ac4141, 0 0 60px #ac4141, 0 0 70px #ac4141, 0 0 80px #ac4141;
+    }
+}
+
 .gear {
     padding: 5px;
     border-radius: 5px;
@@ -345,6 +363,9 @@ safas .centralizar {
     font-size: 18px;
     float: right;
     margin-right: 5px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .gear:hover {
@@ -365,6 +386,9 @@ safas .centralizar {
     font-size: 18px;
     float: right;
     margin-right: 4px;
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
 }
 
 .btnsair:hover {
@@ -862,12 +886,23 @@ input[type="password"]:focus {
     font-family: sans-serif;
 }
 
+.popup .title {
+    width: 100%;
+    margin: -22px auto;
+    cursor: move;
+    padding-top: 12px;
+    float: left;
+    background: #2664b6;
+    text-align: center;
+    border-radius: 5px;
+}
+
 .popup {
     display: inline-block;
     position: absolute;
     color: rgb(59, 59, 59);
     font-size: 16px;
-    background: rgb(252, 252, 252);
+    background: rgb(241, 241, 241);
     padding: 15px;
     border-radius: 10px;
     border: 1px solid rgb(138, 138, 138);
