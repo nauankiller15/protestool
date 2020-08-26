@@ -83,6 +83,7 @@ $(document).ready(function() {
     $('#reset').on('click', function() {
         $(".circleoff").show();
         $(".circleon").hide();
+        $(".tooltip,.tooltiptext").show();
     });
 });
 
