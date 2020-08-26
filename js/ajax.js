@@ -59,6 +59,11 @@ $('.ip1,#empty1,#empty2').on('blur', '', function() {
     if (!$('.ip1, #empty1, #empty2').val().length != 0) {
         $(".circleoff").show();
     }
+
+    if (!$('.ip1, #empty1, #empty2').val().length != 0) {
+        $(".tooltip,.tooltiptext").show();
+    }
+
     if (!$('.ip1, #empty1, #empty2').val().length != 1) {
         $(".circleon").show();
     }
@@ -68,6 +73,7 @@ $('.ip1,#empty1,#empty2').on('blur', '', function() {
 
     } else {
         $(".circleoff").hide();
+        $(".tooltip,.tooltiptext").hide();
     }
 });
 

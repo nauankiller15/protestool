@@ -945,6 +945,31 @@ input[type="password"]:focus {
     transition: 0.5s;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: none;
+    width: 210px;
+    background-color: #2664b6;
+    color: White;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -52px;
+    right: -105px;
+    animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 #popup {
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
