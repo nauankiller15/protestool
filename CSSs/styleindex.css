@@ -148,7 +148,7 @@ body {
 
 .entrada h2 {
     font-family: Agency FB;
-    font-size: 250%;
+    font-size: 275%;
     font-weight: bold;
     text-transform: uppercase;
     color: #1a539c;
@@ -642,7 +642,7 @@ form p {
     z-index: -2;
 }
 
-#menu {
+.menu {
     margin-top: 14px;
     margin-bottom: 18px;
     background-color: #ededed;
@@ -650,7 +650,7 @@ form p {
     border: 1px solid #f8f8f8;
 }
 
-#menu ul {
+.menu ul {
     width: 63%;
     margin: 1px auto;
     padding: 1px;
@@ -662,12 +662,12 @@ form p {
     display: block;
 }
 
-#menu ul li {
+.menu ul li {
     display: inline;
     border: 1px solid #c5c5c5;
 }
 
-#menu ul li a {
+.menu ul li a {
     padding: 11px 10px;
     display: inline-block;
     border-radius: 2px;
@@ -678,7 +678,18 @@ form p {
     border-bottom: 3px solid #ededed;
 }
 
-#menu ul li a:hover {
+.menu ul li a:hover {
+    background-color: #d6d6d6;
+    color: #2664b6;
+    border-bottom: 2px solid #2664b6;
+    transition: 0.4s;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 6px;
+}
+
+.menu ul li.active a,
+.menu ul li a:hover {
     background-color: #d6d6d6;
     color: #2664b6;
     border-bottom: 2px solid #2664b6;
