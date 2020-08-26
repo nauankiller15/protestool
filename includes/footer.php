@@ -24,7 +24,7 @@
                     </span>
                 </div>
                 <div class="centralizar3">
-                    <button type="submit" class="btn3">Salvar</button><button type="submit" class="btn3">Desfazer</button>
+                    <button type="submit" class="btn3">Salvar</button><button type="reset" class="btn3">Limpar</button>
                 </div>
 </div>
 </div>
