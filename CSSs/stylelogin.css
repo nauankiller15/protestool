@@ -30,8 +30,17 @@ a:hover {
     margin: 100px auto 0px;
     text-align: center;
     text-shadow: 1px 2px 4px rgb(155, 155, 155);
-    animation-duration: 0.8s;
-    animation-name: slidein;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: slideIn 0.8s, glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #2362b4, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #2362b4, 0 0 50px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 50px #ffffff, 0 0 60px #2362b4, 0 0 70px #2362b4;
+    }
 }
 
 .footer {
@@ -49,7 +58,7 @@ a:hover {
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
-@keyframes slidein {
+@keyframes slideIn {
     from {
         margin-left: 10%;
         width: 65%;
@@ -281,4 +290,12 @@ div.well {
     width: 200px;
     height: 30px;
     background-image: url("http://placehold.it/200x30/000000/ffffff/&text=BRAND+LOGO");
+}
+
+#popup {
+    display: none;
+}
+
+.popup {
+    display: none;
 }

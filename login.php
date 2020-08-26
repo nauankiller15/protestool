@@ -15,12 +15,12 @@
         <form method="post" action="login.php">
             <div class="input-group">
                 <label>Usuário:</label>
-                <input type="text" placeholder="Digite aqui o usuário de administrador" class="password" name="username"
+                <input type="text" placeholder="Digite aqui seu usuário" class="password" name="username"
                     required>
             </div>
             <div class="input-group">
                 <label>Senha:</label>
-                <input type="password" placeholder="Digite a senha de administrador" class="password" name="password"
+                <input type="password" placeholder="Digite aqui sua senha" class="password" name="password"
                     required>
             </div>
 

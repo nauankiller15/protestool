@@ -3,6 +3,29 @@
     padding: 0px;
 }
 
+@keyframes scaleIn {
+    from {
+        transform: scale(.4, .4);
+        opacity: .5;
+    }
+    to {
+        transform: scale(1.5, 1.7);
+        opacity: 0;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid rgb(151, 48, 48);
+    width: 135px;
+    height: 130px;
+    position: absolute;
+    opacity: 0;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    top: 5%;
+    left: 74%;
+}
+
 .close {
     padding: 1px 1px;
     float: right;
@@ -273,8 +296,8 @@ form p {
 
 .centralizar3 {
     width: 100%;
-    margin-top: 130px;
     float: center;
+    margin-top: 150px;
 }
 
 .btn {
@@ -319,11 +342,10 @@ form p {
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
-    width: 42%;
+    width: 41%;
     display: block;
     float: left;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 23px;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -339,10 +361,10 @@ form p {
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px rgb(83, 116, 206), 0 0 20px #fff, 0 0 30px #2362b4, 0 0 40px #2362b4, 0 0 50px #2362b4, 0 0 60px #2362b4, 0 0 70px #2362b4;
+        text-shadow: 0 0 10px #2362b4, 0 0 20px #fff, 0 0 30px #2362b4, 0 0 40px #2362b4, 0 0 50px #2362b4, 0 0 60px #2362b4, 0 0 70px #2362b4;
     }
     to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #2362b4, 0 0 40px #2362b4, 0 0 50px #2362b4, 0 0 60px #2362b4, 0 0 70px #2362b4, 0 0 80px #2362b4;
+        text-shadow: 0 0 20px #2362b4, 0 0 30px #2362b4, 0 0 40px #2362b4, 0 0 50px #2362b4, 0 0 60px #2362b4, 0 0 70px #2362b4, 0 0 80px #2362b4;
     }
 }
 
@@ -895,6 +917,7 @@ input[type="password"]:focus {
     background: #2664b6;
     text-align: center;
     border-radius: 5px;
+    animation: fadeIn 1.0s;
 }
 
 .popup {
@@ -905,10 +928,11 @@ input[type="password"]:focus {
     background: rgb(241, 241, 241);
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid rgb(138, 138, 138);
+    border: 2px solid #2664b6;
     margin: auto;
     width: 40%;
     height: 50%;
     top: 10%;
     left: 28%;
+    animation: fadeIn 1.0s;
 }
