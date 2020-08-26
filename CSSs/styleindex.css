@@ -993,6 +993,9 @@ input[type="password"]:focus {
     top: -52px;
     right: -110px;
     animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px #a7a7a7;
 }
 
 .tooltip:hover .tooltiptext {
