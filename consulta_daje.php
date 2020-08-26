@@ -14,17 +14,19 @@
             <div class="header">
             </div>
             <div class="entrada">
-                <div id="error" class="window-msg">
-                    <div class="error">
-                        Parametro repassado errado! <button id="close" class="close" onclick="document.getElementById('error').style.display='none'">X</button>
-                    </div>
+            <div style="display: none;" id="sucesso" class="window-msg">
+                <div class="sucesso">
+                    <button id="close" class="close">X</button>
+                    <p class="sucesso-msg"></p>
                 </div>
-                <div id="sucesso" class="window-msg">
-                    <div class="sucesso">
-                        Alteração realizada com sucesso!<button id="close" class="close" onclick="document.getElementById('sucesso').style.display='none'">X</button>
-                    </div>
+            </div>
+            <div style="display: none;" id="error" class="window-msg">
+                <div class="error">
+                    <button id="close" class="close">X</button>
+                    <p class="error-msg"></p>
                 </div>
-                <form method="post" action="consulta_daje.html">
+            </div>
+                <form method="post" action="consulta_daje.php">
 
                     <div class="input-group">
                         <label>Número do protocolo:</label>
@@ -44,7 +46,7 @@
                             <tr>
                                 <th>Número Daje</th>
                                 <th>
-                                    <p><span data-tooltip="ID de Requisição do banco de dados para consulta.">ID Requisição
+                                    <p><span data-tooltip="ID de Requisição do banco de dados para consulta e reenvio do daje.">ID Requisição
                                             (?)</span>
                                     </p>
                                 </th>

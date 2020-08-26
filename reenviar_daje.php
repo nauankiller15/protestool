@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php include("includes/headindex.php");?>
+<?php include("includes/headindex.php"); ?>
 
 <body>
 
@@ -74,7 +74,7 @@
 
         <?php include("includes/footer.php"); ?>
         <script>
-        document.title = "Protestool - Reenviar Daje";
+            document.title = "Protestool - Reenviar Daje";
         </script>
 </body>
 

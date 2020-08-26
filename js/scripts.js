@@ -1,3 +1,11 @@
+function abrir() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+function fechar() {
+    document.getElementById('popup').style.display = 'none';
+}
+
 $(function() {
     // Parser para configurar a data para o formato do Brasil
     $.tablesorter.addParser({

@@ -206,7 +206,8 @@ form p {
     float: center;
     margin: 25px auto;
     transition: background 0.2s;
-    animation: go-back 0.9s infinite alternate;
+    animation: go-back 0.7s infinite alternate;
+    cursor: pointer;
 }
 
 @keyframes go-back {
