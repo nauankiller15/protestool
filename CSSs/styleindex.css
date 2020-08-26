@@ -25,6 +25,7 @@
     float: right;
     margin-top: -50px;
     margin-left: -52px;
+    z-index: -3;
 }
 
 .close {
@@ -623,6 +624,7 @@ form p {
     text-align: center;
     float: center;
     display: block;
+    z-index: -2;
 }
 
 #menu {
