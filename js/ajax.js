@@ -1,3 +1,4 @@
+// Desvincular Daje
 $(".api-request").submit(function() {
     var ip = $("#ip").val();
     var endPoint = $(this).attr("data-endpoint");
@@ -41,6 +42,8 @@ function getStatusErrorMsg(status) {
     return msg;
 }
 
+// Load do Ajax
+
 $(document).ajaxStart(function() {
     $("#lds-spinner").show();
 });
@@ -50,7 +53,9 @@ $(document).ajaxStop(function() {
 });
 
 
-$('#empty1,#empty2,#ip').on('blur', '', function(ev) {
+// Função de notificar o usuário ao parametrizar configurações
+
+$('#ip,#empty1,#empty2').on('blur', '', function(ev) {
     if (!$('#ip').val().length != 0) {
         $(".circle").show();
     }
@@ -59,7 +64,18 @@ $('#empty1,#empty2,#ip').on('blur', '', function(ev) {
     }
     if (!$('#empty2').val().length != 0) {
         $(".circle").show();
+
     } else {
         $(".circle").hide();
     }
 });
+
+// Ao clicar no botão de limpar, ele reseta as informações e mostra novamente a notificação
+
+$(document).ready(function() {
+    $('#reset').on('click', function() {
+        $(".circle").show();
+    });
+});
+
+// Fim do código

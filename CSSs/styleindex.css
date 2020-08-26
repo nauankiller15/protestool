@@ -6,7 +6,7 @@
 @keyframes scaleIn {
     from {
         transform: scale(.4, .4);
-        opacity: .5;
+        opacity: .9;
     }
     to {
         transform: scale(1.0, 1.0);
@@ -205,6 +205,10 @@ form p {
     font-size: 13px;
     color: #555555;
     font-family: sans-serif;
+}
+
+.ip {
+    display: inline-block;
 }
 
 .input-group2 {
@@ -951,6 +955,6 @@ input[type="password"]:focus {
     margin: auto;
     width: 40%;
     top: 10%;
-    left: 28%;
+    left: 30%;
     animation: fadeIn 1.0s;
 }

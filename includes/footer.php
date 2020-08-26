@@ -23,7 +23,7 @@
                 </span>
             </div>
             <div class="centralizar3">
-                <button type="save" id="save" class="btn3">Salvar</button><button type="reset" class="btn3">Limpar</button>
+                <button type="save" id="save" class="btn3">Salvar</button><button id="reset" type="reset" class="btn3">Limpar</button>
             </div>
     </div>
 </div>
