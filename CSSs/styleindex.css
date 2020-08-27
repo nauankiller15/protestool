@@ -923,7 +923,7 @@ input[type="password"]:focus {
     top: -34px;
     padding: 7px;
     border-radius: 5px;
-    right: calc(100% + -780px);
+    right: calc(100% + -710px);
     content: attr(data-tooltip3);
     background-color: #2664b6;
     color: White;
@@ -964,6 +964,37 @@ input[type="password"]:focus {
     display: block;
     transition: 0.5s;
 }
+
+[data-tooltip5] {
+    position: relative;
+    background: white;
+    font-family: sans-serif;
+}
+
+[data-tooltip5]:after {
+    display: none;
+    position: absolute;
+    top: -16px;
+    padding: 7px;
+    border-radius: 5px;
+    left: calc(102% + 78px);
+    content: attr(data-tooltip5);
+    background-color: #2664b6;
+    color: White;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px #a7a7a7;
+    width: 190px;
+    animation: fadeIn 0.5s, go-back 0.6s infinite alternate;
+}
+
+[data-tooltip5]:hover:after {
+    display: block;
+    transition: 0.5s;
+    font-family: sans-serif;
+}
+
+
 
 .tooltip {
     position: relative;
