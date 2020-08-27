@@ -13,7 +13,7 @@
         </div>
         <div class="header">
         </div>
-        <div class="entrada">
+        <div id="conteudo" class="entrada">
             <div class="fadeIn">
                 <h2>Escolha uma das opções acima para poder realizar as manutenções.</h2>
             </div>

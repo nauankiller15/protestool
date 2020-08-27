@@ -48,9 +48,11 @@
     </div>
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/activemenu.js"></script>
 <script src="js/notifcationbar.js"></script>
 <script src="js/jquery.tablesorter.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/caixatexto.js"></script>
 <script src="js/ajax.js"></script>
+<script src="js/main.js"></script>

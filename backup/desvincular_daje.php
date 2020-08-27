@@ -27,9 +27,23 @@
             </div>
             <form class="api-request" data-endpoint="DesvincularApontamento">
                 <div class="input-group">
-                    <label>Número do Daje:</label>
-                    <input type="text" placeholder="Digite aqui o número do DAJE sem espaços" name="numero_daje" required>
-                    <p><b>Emissor, série e número</b> do <b>DAJE</b> necessários.</p>
+                    <span>
+                        <label>IP do Servidor:</label>
+                        <input id="ip" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
+                    </span>
+                    <span>
+                        <label>Login:</label>
+                        <input type="text" placeholder="Login cliente" name="login" required>
+                    </span>
+                    <span>
+                        <label>Senha:</label>
+                        <input type="password" placeholder="Senha cliente" id="senha" name="senha" required><div class='versenha'><span data-tooltip="Visualizar a senha digitada."><img id="olho" src="./images/versenha.png" /></span></div>
+                    </span>
+                </div>
+                <div class="input-group">
+                    <label>Número do daje:</label>
+                    <input type="text" placeholder="Digite aqui o número do daje completo" name="numero_daje" required>
+                    <p><b>Emissor, série e número</b> do daje necessários.</p>
                 </div>
 
                 <div class="centralizar2">

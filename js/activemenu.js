@@ -1,14 +1,11 @@
-$(function() {
-    // this will get the full URL at the address bar
-    var url = window.location.href;
+function MenuAtivo() {
+  $("[data-load-page]").unbind("click");
+  $("[data-load-page]").click(function () {
+    console.log("hello world!");
+    var page = $(this).attr("data-load-page");
 
-    // passes on every "a" tag
-    $(".menu a").each(function() {
-        // checks if its the same on the address bar
-        if (url == (this.href)) {
-            $(this).closest("li").addClass("active");
-            //for making parent of submenu active
-            $(this).closest("li").parent().parent().addClass("active");
-        }
-    });
-});
+    $(".menu-link a").removeClass("menu-active");
+    $(this).find("a").addClass("menu-active");
+    $("#conteudo").load(page);
+  });
+}

@@ -13,7 +13,7 @@
         <div class="header">
         </div>
         <div class="entrada">
-            <div id="informacao" class="window-msg">
+            <div id="informacao" class="window-msg">    
                 <div class="informacao">
                     <button id="close" class="close"
                         onclick="document.getElementById('informacao').style.display='none'">X</button>Lista dos códigos

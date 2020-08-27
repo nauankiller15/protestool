@@ -676,27 +676,17 @@ form p {
     color: rgb(88, 88, 88);
     text-decoration: none;
     border-bottom: 3px solid #ededed;
+    cursor: pointer;
 }
 
-.menu ul li a:hover {
-    background-color: #d6d6d6;
-    color: #2664b6;
-    border-bottom: 2px solid #2664b6;
+.menu-active, .menu ul li a:hover {
+    background-color: #d6d6d6 !important;
+    color: #2664b6 !important;
+    border-bottom: 2px solid #2664b6 !important;
     transition: 0.4s;
     margin-left: 3px;
     margin-right: 3px;
-    border-radius: 6px;
-}
-
-.menu ul li.active a,
-.menu ul li a:hover {
-    background-color: #d6d6d6;
-    color: #2664b6;
-    border-bottom: 2px solid #2664b6;
-    transition: 0.4s;
-    margin-left: 3px;
-    margin-right: 3px;
-    border-radius: 6px;
+    border-radius: 6px !important;
 }
 
 table,
@@ -773,6 +763,7 @@ th {
 
 .lista-group {
     margin: 2px 2px 10px 0px;
+    list-style: none;
 }
 
 .lista-group a {
