@@ -1,3 +1,4 @@
+<div class="fadeIn2">
 <div style="display: none;" id="sucesso" class="window-msg">
     <div class="sucesso">
         <button id="close" class="close">X</button>
@@ -26,3 +27,4 @@
     bindApiRequestSubmit();
     bindCloseCaixaTexto();
 </script>
+</div>

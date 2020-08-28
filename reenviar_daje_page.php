@@ -1,3 +1,4 @@
+<div class="fadeIn2">
 <form method="post" action="reenviar_daje.html">
     <div class="input-group">
         <label>Número da requisição:</label>
@@ -60,3 +61,4 @@
 <script>
 MenuAtivo();
 </script>
+</div>

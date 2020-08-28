@@ -200,6 +200,13 @@ body {
     animation: fadeIn 1.3s ease-in-out;
 }
 
+.fadeIn2 {
+    -webkit-animation: fadeIn 0.8s ease-in-out;
+    -moz-animation: fadeIn 0.9s ease-in-out;
+    -o-animation: fadeIn 0.9s ease-in-out;
+    animation: fadeIn 0.9s ease-in-out;
+}
+
 form {
     width: 40%;
     margin: 0px auto;

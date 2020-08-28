@@ -1,3 +1,4 @@
+<div class="fadeIn2">
 <div id="informacao" class="window-msg">    
                 <div class="informacao">
                     <button id="close" class="close"
@@ -37,4 +38,5 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </div>
