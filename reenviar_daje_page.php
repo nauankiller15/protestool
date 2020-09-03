@@ -25,7 +25,7 @@
                 <th>Número Daje</th>
                 <th>Protocolo</th>
                 <th><span data-tooltip5="Clique aqui para consultar os códigos.">
-                        <li data-load-page="cods_retorno_page.php"><a>Cod Retorno (?)</a></li>
+                        <li data-load-page="cods_retorno_page.php"><a id="cod-retorno">Cod Retorno (?)</a></li>
                     </span></th>
             </tr>
         </thead>

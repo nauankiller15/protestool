@@ -53,6 +53,6 @@
 <script src="js/notifcationbar.js"></script>
 <script src="js/jquery.tablesorter.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="js/caixatexto.js"></script>
+<script src="js/toastr.js"></script>
 <script src="js/ajax.js"></script>
 <script src="js/main.js"></script>

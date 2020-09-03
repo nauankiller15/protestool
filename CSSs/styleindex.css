@@ -324,7 +324,7 @@ form p {
 
 .centralizar3 {
     width: 100%;
-    float: center;
+    align-content: center;
     margin-top: 150px;
 }
 
@@ -370,7 +370,7 @@ form p {
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
-    width: 41%;
+    width: 38%;
     display: block;
     float: left;
     margin-left: 23px;
@@ -684,6 +684,7 @@ form p {
     text-decoration: none;
     border-bottom: 3px solid #ededed;
     cursor: pointer;
+    transition: 0.7s;
 }
 
 .menu-active, .menu ul li a:hover {
@@ -694,6 +695,7 @@ form p {
     margin-left: 3px;
     margin-right: 3px;
     border-radius: 6px !important;
+    transition: 0.7s;
 }
 
 table,

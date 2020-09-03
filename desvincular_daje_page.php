@@ -5,12 +5,6 @@
         <p class="sucesso-msg"></p>
     </div>
 </div>
-<div style="display: none;" id="error" class="window-msg">
-    <div class="error">
-        <button id="close" class="close">X</button>
-        <p class="error-msg"></p>
-    </div>
-</div>
 <form class="api-request" data-endpoint="DesvincularApontamento">
     <div class="input-group">
         <label>Número do Daje:</label>
@@ -25,6 +19,5 @@
 
 <script>
     bindApiRequestSubmit();
-    bindCloseCaixaTexto();
 </script>
 </div>
