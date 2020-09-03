@@ -25,7 +25,6 @@ $(".ip1,#empty1,#empty2").on("blur", "", function () {
   if (!$(".ip1, #empty1, #empty2").val().length != 0) {
     $(".circleon").hide();
     $(".circleoff").show();
-
   } else {
     $(".circleoff").hide();
     $(".tooltip,.tooltiptext").hide();
@@ -42,19 +41,18 @@ $(document).ready(function () {
     toastr.warning("Realize os parâmetros de Configuração acima!");
     alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 2000);
   });
+
+  setTimeout(function () {
+    toastr.info("Bem-vindo ao Protestool!");
+  }, 700);
+
+  
 });
 
-
-$(document).ready(function () {
-    setTimeout(function(){ 
-      toastr.info('Bem-vindo ao Protestool!');
-  }, 1000);
-  });
-
-  $(document).ready(function () {
-    $("#cod-retorno").on("click", function () {
+function codretorno(){
+$("#codretorno").click(function() {
     toastr.info("Lista dos códigos de retorno, para simplificar o reenvio.");
 });
-});
+}
 
 // Fim do código

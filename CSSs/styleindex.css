@@ -775,7 +775,7 @@ th {
     list-style: none;
 }
 
-.lista-group a {
+.codretorno {
     padding: 12px;
     font-size: 16px;
     color: white;
@@ -783,12 +783,11 @@ th {
     border: none;
     border-radius: 5px;
     transition: background 0.2s;
-    animation: go-back 0.9s infinite alternate;
     border: 2px solid #2664b6;
     cursor: pointer;
 }
 
-.lista-group a:hover {
+.codretorno:hover {
     background: #123869;
 }
 
@@ -986,7 +985,7 @@ input[type="password"]:focus {
     top: -16px;
     padding: 7px;
     border-radius: 5px;
-    left: calc(102% + 78px);
+    left: calc(102% + 10px);
     content: attr(data-tooltip5);
     background-color: #2664b6;
     color: White;
