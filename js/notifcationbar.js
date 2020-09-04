@@ -20,6 +20,7 @@ $(".ip1,#empty1,#empty2").on("blur", "", function() {
     if (!$(".ip1, #empty1, #empty2").val().length != 0) {
         $(".tooltip,.tooltiptext").show();
         $(".userlogado1").show();
+        $(".userlogado2").hide();
     }
 
     if (!$(".ip1, #empty1, #empty2").val().length != 1) {

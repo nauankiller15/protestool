@@ -20,10 +20,11 @@
                 <span>
                     <label>Senha:</label>
                     <input type="password" id="empty2" placeholder="Senha cliente" name="senha" required>
+                     <p>Por favor, confira se todas as <b>informações</b> preenchidas estão corretas, para depois realizar as <b>manutenções...</b></p>
                 </span>
             </div>
             <div class="centralizar3">
-                <button type="save" id="save" class="btn3">Salvar</button><button id="reset" type="reset" class="btn3">Limpar</button>
+                <button id="reset" type="reset" class="btnlimpar">Limpar</button><button type="save" id="save" class="btn3">Salvar</button>
             </div>
     </div>
 </div>

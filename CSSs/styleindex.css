@@ -416,7 +416,7 @@ form p {
 .centralizar3 {
     width: 100%;
     align-content: center;
-    margin-top: 150px;
+    margin: 50px auto;
 }
 
 .btn {
@@ -464,13 +464,33 @@ form p {
     width: 38%;
     display: block;
     float: left;
-    margin-left: 23px;
+    margin-left: 50px;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .btn3:hover {
     background: #123869;
+}
+
+.btnlimpar {
+    padding: 15px;
+    font-size: 14px;
+    color: white;
+    background: #99261e;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 38%;
+    display: block;
+    float: left;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btnlimpar:hover {
+    background: #691212;
 }
 
 .tools {
