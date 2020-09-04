@@ -471,7 +471,7 @@ form p {
 
 .btn2:hover {
     background: #123869;
-    animation: go-back 0s;
+    animation-play-state: paused;
 }
 
 .btn2:onclick {
@@ -687,7 +687,8 @@ form p {
     transition: 0.7s;
 }
 
-.menu-active, .menu ul li a:hover {
+.menu-active,
+.menu ul li a:hover {
     background-color: #d6d6d6 !important;
     color: #2664b6 !important;
     border-bottom: 2px solid #2664b6 !important;
@@ -1001,8 +1002,6 @@ input[type="password"]:focus {
     transition: 0.5s;
     font-family: sans-serif;
 }
-
-
 
 .tooltip {
     position: relative;

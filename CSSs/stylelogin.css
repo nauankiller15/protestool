@@ -70,7 +70,7 @@ a:hover {
 }
 
 .header {
-    width: 22%;
+    width: 23%;
     margin: 100px auto 0px;
     color: rgb(44, 44, 44);
     background: #2664b6;
@@ -79,14 +79,8 @@ a:hover {
     padding: 2px 22px 10px 20px;
 }
 
-.header h2 {
-    font-family: Agency FB;
-    font-size: 132%;
-    text-transform: uppercase;
-}
-
 form {
-    width: 22%;
+    width: 23%;
     margin: 0px auto;
     padding: 20px;
     border: 1px solid #87a6cf;
@@ -231,7 +225,7 @@ form p {
 .btn:hover {
     background: #123869;
     transition: 0.4s;
-    animation: go-back 0.0s;
+    animation-play-state: paused;
 }
 
 .btn:onclick {

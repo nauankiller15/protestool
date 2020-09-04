@@ -5,7 +5,7 @@
             <table class="bordered striped centered tablesorter">
                 <thead>
                     <tr>
-                        <th><span data-tooltip="Clique para ordernar por número">Cod. Retorno</span></th>
+                        <th>Cod. Retorno</th>
                         <th>Tipo Retorno</th>
                     </tr>
                 </thead>
@@ -16,7 +16,7 @@
                     </tr>
                     <tr>
                         <td>400</td>
-                        <td>Tipo de ato inválido.</td>
+                        <td>Daje não localizado / Daje já desvinculado.</td>
                     </tr>
                     <tr>
                         <td>300</td>
