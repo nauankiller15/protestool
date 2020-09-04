@@ -80,7 +80,7 @@ a:hover {
     text-align: center;
     text-shadow: 1px 2px 4px rgb(155, 155, 155);
     animation-duration: 0.8s;
-    animation-name: slidein;
+    animation-name: slideIn;
 }
 
 .footer {
@@ -98,7 +98,7 @@ a:hover {
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
-@keyframes slidein {
+@keyframes slideIn {
     from {
         margin-left: 10%;
         width: 65%;
@@ -274,12 +274,12 @@ form p {
 .userlogado1 {
     z-index: -2;
     position: absolute;
-    right: 340px;
+    right: 320px;
     top: 22px;
     z-index: 2;
     width: 160px;
     max-width: 180px;
-    animation: fadeIn 0.9s;
+    animation: fadeIn 1.2s;
 }
 
 .userlogado1 p {
@@ -320,7 +320,7 @@ form p {
 .userlogado2 {
     z-index: -2;
     position: absolute;
-    right: 340px;
+    right: 320px;
     top: 50px;
     z-index: 2;
     width: 160px;
@@ -740,7 +740,7 @@ form p {
     z-index: -2;
 }
 
-.menu2 {
+.menu {
     margin-top: 14px;
     margin-bottom: 18px;
     background-color: #ededed;
@@ -748,24 +748,24 @@ form p {
     border: 1px solid #f8f8f8;
 }
 
-.menu2 ul {
+.menu ul {
     width: 63%;
     margin: 1px auto;
     padding: 1px;
     text-align: center;
 }
 
-.menu2 li ul li {
+.menu li ul li {
     border: 1px solid #303030;
     display: block;
 }
 
-.menu2 ul li {
+.menu ul li {
     display: inline;
     border: 1px solid #c5c5c5;
 }
 
-.menu2 ul li a {
+.menu ul li a {
     padding: 11px 10px;
     display: inline-block;
     border-radius: 2px;
@@ -778,8 +778,8 @@ form p {
     transition: 0.7s;
 }
 
-.menu2-active,
-.menu2 ul li a:hover {
+.menu-active,
+.menu ul li a:hover {
     background-color: #d6d6d6 !important;
     color: #2664b6 !important;
     border-bottom: 2px solid #2664b6 !important;
@@ -1004,6 +1004,7 @@ input[type="password"]:focus {
     box-shadow: 3px 3px 10px #a7a7a7;
     width: 200px;
     animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
+    z-index: 995;
 }
 
 [data-tooltip2]:hover:after {

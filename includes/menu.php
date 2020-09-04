@@ -4,11 +4,11 @@
 <div class="userlogado2">
     <p>Usuário Logado.</p>
 </div>
-<nav class="menu2">
+<nav class="menu">
     <ul>
-        <li class="menu2 menu-link" data-load-page="desvincular_daje_page.php"><a>Desvincular Daje</a></li>
-        <li class="menu2 menu-link" data-load-page="consulta_daje_page.php"><a>Consultar Daje</a></li>
-        <li class="menu2 menu-link" data-load-page="reenviar_daje_page.php"><a>Reenviar Daje</a></li>
+        <li class="menu menu-link" data-load-page="desvincular_daje_page.php"><a>Desvincular Daje</a></li>
+        <li class="menu menu-link" data-load-page="consulta_daje_page.php"><a>Consultar Daje</a></li>
+        <li class="menu menu-link" data-load-page="reenviar_daje_page.php"><a>Reenviar Daje</a></li>
         <div class="tools">
             <span data-tooltip4="Sair do sistema"><a href="#sair"><button type="sair" class="btnsair">✖️</button></a></span>
             <div class="circleoff" style="animation-delay: 0s"></div>
