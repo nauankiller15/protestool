@@ -10,7 +10,7 @@
             <div class="input-group2">
                 <span>
                     <label>IP do Servidor:</label>
-                    <input id="ip"  class ='ip1' type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
+                    <input id="ip intTextBox" pattern="[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{3}" class ="ip1" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
                     <p>Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
                 </span>
                 <span>
