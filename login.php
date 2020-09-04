@@ -13,13 +13,13 @@
         </div>
         <form method="post" action="login.php">
         <div class="wrap-input100 validate-input m-b-23" data-validate = "Usuário necessário">
-						<span class="label-input100">Usuário</span>
-						<input class="input100" type="text" name="username" placeholder="Digite aqui seu Usuário" required>
+						<span class="label-input100">Usuário:</span>
+						<input class="input100" type="username" name="username" placeholder="Digite aqui seu Usuário" required>
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Senha necessária">
-						<span class="label-input100">Senha</span>
+						<span class="label-input100">Senha:</span>
 						<input class="input100" type="password" name="pass" placeholder="Digite aqui sua Senha" required>
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>

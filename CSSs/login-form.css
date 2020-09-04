@@ -96,7 +96,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 input::-webkit-input-placeholder {
-    color: #adadad;
+    color: #7c7c7c;
 }
 
 input:-moz-placeholder {
@@ -237,15 +237,15 @@ iframe {
 
 .label-input100 {
     font-family: Poppins-Regular;
-    font-size: 14px;
+    font-size: 16px;
     color: #333333;
     line-height: 1.5;
     padding-left: 7px;
 }
 
 .input100 {
-    font-family: Poppins-Medium;
-    font-size: 16px;
+    font-family: sans-serif;
+    font-size: 17px;
     color: #333333;
     line-height: 1.2;
     display: block;

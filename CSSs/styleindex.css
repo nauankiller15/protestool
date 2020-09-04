@@ -297,6 +297,19 @@ form p {
     font-weight: bold;
 }
 
+.input-group::after {
+    font-size: 30px;
+    content: "\f007";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 35px;
+    top: 25px;
+    z-index: 2;
+    width: 20px;
+    color: #2664b6;
+    transition: 0.5s;
+}
+
 .input-group input {
     height: 23px;
     width: 69%;

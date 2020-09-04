@@ -70,7 +70,7 @@ a:hover {
 }
 
 .header {
-    width: 23%;
+    width: 22%;
     margin: 100px auto 0px;
     color: rgb(44, 44, 44);
     background: #2664b6;
@@ -80,7 +80,7 @@ a:hover {
 }
 
 form {
-    width: 23%;
+    width: 22%;
     margin: 0px auto;
     padding: 20px;
     border: 1px solid #87a6cf;
@@ -161,38 +161,16 @@ form p {
 }
 
 .input-group::after {
+    font-size: 40px;
     content: "\f007";
     font-family: FontAwesome;
     position: absolute;
-    right: 15px;
-    top: 17px;
+    right: 35px;
+    top: 25px;
     z-index: 2;
     width: 20px;
-    color: hsla(0, 0, 0, 0.2);
+    color: #2664b6;
     text-align: center;
-}
-
-.input-group.email::after {
-    content: "\f0e0";
-}
-
-.input-group.password::after {
-    content: "\f023";
-}
-
-.input-group input {
-    height: 23px;
-    width: 69%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #71849c;
-    display: block;
-    float: center;
-    margin: 5px auto;
-}
-
-.input-group input:onclick {
-    transition: 0.5s;
 }
 
 .btn {

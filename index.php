@@ -18,6 +18,8 @@
                 <h2>Escolha uma das opções acima para poder realizar as manutenções.</h2>
             </div>
         </div>
+        <div class="input-group">
+            </div>
 
         <?php include("includes/footer.php"); ?>
 </body>
