@@ -11,6 +11,7 @@ function alertaConfiguracao() {
     }
 }
 
+
 $(".ip1,#empty1,#empty2").on("blur", "", function() {
     if (!$(".ip1, #empty1, #empty2").val().length != 0) {
         $(".circleoff").show();
@@ -18,6 +19,7 @@ $(".ip1,#empty1,#empty2").on("blur", "", function() {
 
     if (!$(".ip1, #empty1, #empty2").val().length != 0) {
         $(".tooltip,.tooltiptext").show();
+        $(".userlogado1").show();
     }
 
     if (!$(".ip1, #empty1, #empty2").val().length != 1) {
@@ -29,6 +31,8 @@ $(".ip1,#empty1,#empty2").on("blur", "", function() {
     } else {
         $(".circleoff").hide();
         $(".tooltip,.tooltiptext").hide();
+        $(".userlogado1").hide();
+        $(".userlogado2").show();
     }
 });
 
@@ -39,6 +43,8 @@ $(document).ready(function() {
         $(".circleoff").show();
         $(".circleon").hide();
         $(".tooltip, .tooltiptext").show();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
 
         toastr.warning("Realize os parâmetros de Configuração acima!");
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 2000);

@@ -271,43 +271,96 @@ form p {
     margin: 5px auto;
 }
 
-.input-group {
-    margin: 2px 2px 10px 0px;
+.userlogado1 {
+    z-index: -2;
+    position: absolute;
+    right: 340px;
+    top: 22px;
+    z-index: 2;
+    width: 160px;
+    max-width: 180px;
+    animation: fadeIn 0.9s;
 }
 
-.input-group p {
+.userlogado1 p {
     color: rgb(59, 59, 59);
-    font-size: 13px;
-    margin: 12px auto;
-    background: rgb(226, 226, 226);
+    font-size: 16px;
+    background: rgb(206, 206, 206);
     padding: 6px;
     border-radius: 10px;
-    width: 66%;
-    border: 1px solid rgb(138, 138, 138);
-}
-
-.input-group label {
-    display: block;
-    text-align: left;
-    margin: 2px auto;
-    width: 72%;
+    width: 100%;
     font-size: 15px;
-    color: #555555;
+    color: #3f3f3f;
     font-family: sans-serif;
     font-weight: bold;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    -moz-box-shadow: 1px 2px 1px #000000;
+    -webkit-box-shadow: 1px 2px 1px #000000;
+    box-shadow: 1px 3px 5px #a7a7a7;
 }
 
-.input-group::after {
-    font-size: 30px;
+.userlogado1::after {
+    font-size: 27px;
     content: "\f007";
     font-family: FontAwesome;
     position: absolute;
-    right: 35px;
-    top: 25px;
-    z-index: 2;
-    width: 20px;
+    width: 100px;
     color: #2664b6;
     transition: 0.5s;
+    margin-top: 1;
+    right: 88px;
+    z-index: -2;
+}
+
+
+/* Userlogado segunda posição */
+
+.userlogado2 {
+    z-index: -2;
+    position: absolute;
+    right: 340px;
+    top: 50px;
+    z-index: 2;
+    width: 160px;
+    max-width: 180px;
+    display: none;
+    animation: fadeIn 0.9s;
+}
+
+.userlogado2 p {
+    color: rgb(59, 59, 59);
+    font-size: 16px;
+    background: rgb(206, 206, 206);
+    padding: 6px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    color: #3f3f3f;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    -moz-box-shadow: 1px 2px 1px #000000;
+    -webkit-box-shadow: 1px 2px 1px #000000;
+    box-shadow: 1px 3px 5px #a7a7a7;
+    animation: fadeIn 0.9s;
+}
+
+.userlogado2::after {
+    font-size: 27px;
+    content: "\f007";
+    font-family: FontAwesome;
+    position: absolute;
+    width: 100px;
+    color: #2664b6;
+    transition: 0.5s;
+    margin-top: 1;
+    right: 88px;
+    z-index: -2;
+    animation: fadeIn 0.9s;
 }
 
 .input-group input {
@@ -662,7 +715,7 @@ form p {
     z-index: -2;
 }
 
-.menu {
+.menu2 {
     margin-top: 14px;
     margin-bottom: 18px;
     background-color: #ededed;
@@ -670,24 +723,24 @@ form p {
     border: 1px solid #f8f8f8;
 }
 
-.menu ul {
+.menu2 ul {
     width: 63%;
     margin: 1px auto;
     padding: 1px;
     text-align: center;
 }
 
-.menu li ul li {
+.menu2 li ul li {
     border: 1px solid #303030;
     display: block;
 }
 
-.menu ul li {
+.menu2 ul li {
     display: inline;
     border: 1px solid #c5c5c5;
 }
 
-.menu ul li a {
+.menu2 ul li a {
     padding: 11px 10px;
     display: inline-block;
     border-radius: 2px;
@@ -700,8 +753,8 @@ form p {
     transition: 0.7s;
 }
 
-.menu-active,
-.menu ul li a:hover {
+.menu2-active,
+.menu2 ul li a:hover {
     background-color: #d6d6d6 !important;
     color: #2664b6 !important;
     border-bottom: 2px solid #2664b6 !important;
@@ -1020,6 +1073,7 @@ input[type="password"]:focus {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
+    z-index: 996;
 }
 
 .tooltip .tooltiptext {

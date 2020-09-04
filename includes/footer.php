@@ -49,6 +49,8 @@
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/activemenu.js"></script>
 <script src="js/notifcationbar.js"></script>
