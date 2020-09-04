@@ -807,6 +807,13 @@ table.tablesorter thead tr .header {
     width: 17%;
 }
 
+#table-scroll {
+    height: 100%;
+    max-height: 415px;
+    overflow: auto;
+    margin-top: 2px;
+}
+
 table {
     border: 1px solid #d0d0d0;
     width: 95%;
@@ -886,7 +893,7 @@ th {
 .lista-group label {
     display: block;
     text-align: center;
-    margin: 25px auto 10px;
+    margin: 12px auto 5px;
     max-width: 36%;
     font-size: 20px;
     color: #555555;
@@ -1078,7 +1085,7 @@ input[type="password"]:focus {
     top: -16px;
     padding: 7px;
     border-radius: 5px;
-    left: calc(102% + 10px);
+    right: calc(102% + 10px);
     content: attr(data-tooltip5);
     background-color: #2664b6;
     color: White;

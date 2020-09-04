@@ -11,7 +11,7 @@
     <div class="fadeIn">
         <div class="header">
         </div>
-        <form method="post" action="login.php">
+        <form method="post" action="index.php">
         <div class="wrap-input100 validate-input m-b-23" data-validate = "Usuário necessário">
 						<span class="label-input100">Usuário:</span>
 						<input class="input100" type="username" name="username" placeholder="Digite aqui seu Usuário" required>

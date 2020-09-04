@@ -26,6 +26,7 @@
 
 <div class="lista-group">
     <label>Dajes Encontrados:</label>
+    <div id="table-scroll">
     <table class="bordered striped centered">
         <thead>
             <tr>
@@ -50,7 +51,13 @@
                 <td>510522</td>
                 <td>15501</td>
             </tr>
+            <tr>
+                <td>2020 002 13547</td>
+                <td>510523</td>
+                <td>15502</td>
+            </tr>
         </tbody>
     </table>
+    </div>
 </div>
 </div>

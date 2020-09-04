@@ -11,6 +11,7 @@
     </form>
     <div class="lista-group">
         <label>Últimas requisições realizadas:</label>
+        <div id="table-scroll">
         <table class="bordered striped centered">
             <thead>
                 <tr>
@@ -55,8 +56,39 @@
                     <td>15503</td>
                     <td>400</td>
                 </tr>
+                <tr>
+                    <td>510525</td>
+                    <td>2020 002 13549</td>
+                    <td>15504</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>510526</td>
+                    <td>2020 002 13549</td>
+                    <td>15504</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>510527</td>
+                    <td>2020 002 13550</td>
+                    <td>15505</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>510524</td>
+                    <td>2020 002 13550</td>
+                    <td>15506</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>510524</td>
+                    <td>2020 002 13551</td>
+                    <td>15507</td>
+                    <td>400</td>
+                </tr>
             </tbody>
         </table>
+        </div>
     </div>
 
     <script>

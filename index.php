@@ -5,7 +5,7 @@
 
 <body>
 
-    
+
     <div class="titulo">
         <h2>ProtesTool</h2>
     </div>
@@ -22,6 +22,9 @@
         </div>
 
         <?php include("includes/footer.php"); ?>
+        <script>
+            fecharpopup();
+        </script>
 </body>
 
 </html>
