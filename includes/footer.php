@@ -24,7 +24,7 @@
                 </span>
             </div>
             <div class="centralizar3">
-                <button id="reset" type="reset" class="btnlimpar">Limpar</button><button type="save" id="save" class="btn3">Salvar</button>
+               <button type="save" id="save" class="btn3">Salvar</button> <button id="reset" type="reset" class="btnlimpar">Limpar</button>
             </div>
     </div>
 </div>
@@ -58,3 +58,4 @@
 <script src="js/toastr.js"></script>
 <script src="js/ajax.js"></script>
 <script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
