@@ -1,6 +1,6 @@
 // Função de notificar o usuário ao parametrizar configurações
 
-var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
+var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 4000);
 
 function alertaConfiguracao() {
     if (!$(".ip1, #empty1, #empty2").val().length != 0) {
@@ -11,22 +11,24 @@ function alertaConfiguracao() {
     }
 }
 
-
-$(".ip1,#empty1,#empty2").on("blur", "", function() {
-    if (!$(".ip1, #empty1, #empty2").val().length != 0) {
+$("#ip,#empty1,#empty2").on("blur", "", function() {
+    if (!$("#ip, #empty1, #empty2").val().length != 0) {
+        $(".circleoff").show();
+    }
+    if (!$("#ip:required:invalid").true) {
         $(".circleoff").show();
     }
 
-    if (!$(".ip1, #empty1, #empty2").val().length != 0) {
+    if (!$("#ip, #empty1, #empty2").val().length != 0) {
         $(".tooltip,.tooltiptext").show();
         $(".userlogado1").show();
         $(".userlogado2").hide();
     }
 
-    if (!$(".ip1, #empty1, #empty2").val().length != 1) {
+    if (!$("#ip, #empty1, #empty2").val().length != 1) {
         $(".circleon").show();
     }
-    if (!$(".ip1, #empty1, #empty2").val().length != 0) {
+    if (!$("#ip, #empty1, #empty2").val().length != 0) {
         $(".circleon").hide();
         $(".circleoff").show();
     } else {

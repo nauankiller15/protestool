@@ -17,7 +17,7 @@ function fecharpopup() {
     var elem = $('#popup')[0];
     $(document).on('keydown', function(e) {
         if (e.keyCode === 27) {
-            $(elem).hide();
+            $(elem).fadeOut('300');
         }
     });
 

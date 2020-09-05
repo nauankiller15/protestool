@@ -3,7 +3,7 @@ $(document).ajaxStart(function() {
 });
 
 $(document).ajaxStop(function() {
-    $("#lds-spinner").fadeOut('300');
+    $("#lds-spinner").hide();
 });
 
 MenuAtivo();
