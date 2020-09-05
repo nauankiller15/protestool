@@ -31,7 +31,14 @@ a:hover {
     text-align: center;
     text-shadow: 1px 2px 4px rgb(155, 155, 155);
     -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: slideIn 0.8s, glow 1s ease-in-out infinite alternate;
+    animation: slideIn 0.8s, glow 2s ease-in-out infinite alternate;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.titulo:hover {
+    color: #006aff;
+    transition: 1.2s;
 }
 
 @keyframes glow {
@@ -175,7 +182,7 @@ form p {
 
 .btn {
     padding: 10px;
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     background: #2664b6;
     border: none;

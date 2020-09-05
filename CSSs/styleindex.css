@@ -274,7 +274,7 @@ form p {
 .userlogado1 {
     z-index: -2;
     position: absolute;
-    right: 320px;
+    right: 329px;
     top: 22px;
     z-index: 2;
     width: 160px;
@@ -310,7 +310,7 @@ form p {
     color: #2664b6;
     transition: 0.5s;
     margin-top: 2px;
-    right: 88px;
+    left: 142px;
     z-index: -2;
 }
 
@@ -320,7 +320,7 @@ form p {
 .userlogado2 {
     z-index: -2;
     position: absolute;
-    right: 320px;
+    right: 329px;
     top: 50px;
     z-index: 2;
     width: 160px;
@@ -358,7 +358,7 @@ form p {
     color: #2664b6;
     transition: 0.5s;
     margin-top: 2px;
-    right: 88px;
+    left: 147px;
     z-index: -2;
     animation: fadeIn 0.9s;
 }
