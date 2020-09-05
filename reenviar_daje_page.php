@@ -13,7 +13,7 @@
     <div class="lista-group">
         <label>Últimas requisições realizadas:</label>
             <div class="opcoeslista">
-                <span data-tooltip4="Lista é arrastável!"><button class="arrastarlista"><i class="fas fa-expand-arrows-alt"></i></button></span>
+                <span data-tooltip6="Lista arrastável!"><button class="arrastarlista"><i class="fas fa-expand-arrows-alt"></i></button></span>
             </div>
             <div id="table-scroll">
             <table class="bordered striped centered" >

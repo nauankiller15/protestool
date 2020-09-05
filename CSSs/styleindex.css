@@ -1185,6 +1185,35 @@ input[type="password"]:focus {
     font-family: sans-serif;
 }
 
+[data-tooltip6] {
+    position: relative;
+    background: white;
+    font-family: sans-serif;
+}
+
+[data-tooltip6]:after {
+    display: none;
+    position: absolute;
+    top: -39px;
+    padding: 7px;
+    border-radius: 5px;
+    left: calc(100% + -10px);
+    content: attr(data-tooltip6);
+    background-color: #2664b6;
+    color: White;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px #a7a7a7;
+    width: 140px;
+    animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
+    z-index: 995;
+}
+
+[data-tooltip6]:hover:after {
+    display: block;
+    transition: 0.5s;
+}
+
 .tooltip {
     position: relative;
     display: inline-block;

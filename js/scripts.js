@@ -1,11 +1,11 @@
 function abrir() {
-    document.getElementById('popup').style.display = 'block';
+    $("#popup").show();
 }
 
 function fechar() {
-    document.getElementById('popup').style.display = 'none';
-}
+    $("#popup").fadeOut('300');
 
+}
 
 $(".popup").draggable();
 

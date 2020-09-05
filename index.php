@@ -24,6 +24,7 @@
         <?php include("includes/footer.php"); ?>
         <script>
             fecharpopup();
+           
         </script>
 </body>
 
