@@ -4,12 +4,24 @@ var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 4000);
 
 function alertaConfiguracao() {
     if (!$(".ip1, #empty1, #empty2").val().length != 0) {
-        toastr.warning("Realize os parâmetros de Configuração acima!");
-        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 2500);
+        toastr.warning("Realize os parâmetros de configuração acima!");
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
 }
+
+var alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 12000);
+
+function alertaConfiguracao2() {
+    if (!$(".ip1, #empty1, #empty2").val().length != 0) {
+        toastr.error("A conexão com o banco de dados foi perdida!");
+        alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
+    } else {
+        clearTimeout(alertaConfiguracao2Timeout);
+    }
+}
+
 
 $("#ip,#empty1,#empty2").on("blur", "", function() {
     if (!$("#ip, #empty1, #empty2").val().length != 0) {
@@ -51,6 +63,8 @@ $(document).ready(function() {
 
         toastr.warning("Realize os parâmetros de Configuração acima!");
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 2000);
+        toastr.error("A conexão com o banco de dados foi perdida!");
+        alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
     });
 
     setTimeout(function() {
@@ -62,7 +76,7 @@ $(document).ready(function() {
 
 function codretorno() {
     $("#codretorno").click(function() {
-        toastr.info("Esta página contém: Lista dos códigos de retorno, para simplificar o reenvio.");
+        toastr.info("Esta página contém: Lista detalhada para especificar os códigos, o que cada um representa!");
     });
 }
 
