@@ -5,6 +5,25 @@
                 <span></span>
             </div>
         </div>
+        <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit"
+                    class="btnsair">✖️</button></a></span>
+        <form class="api-request" data-endpoint="DesvincularApontamento">
+            <div class="input-group2">
+                Testar Conexão com o Servidor!
+                <div class="centralizar3">
+                    <button type="save" id="save" class="btn3">Testar</button>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- <div id="popup">
+    <div class="popup">
+        <div class="popup_head">
+            <div class="title">
+                <span></span>
+            </div>
+        </div>
         <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit" class="btnsair">✖️</button></a></span>
         <form class="api-request" data-endpoint="DesvincularApontamento">
             <div class="input-group2">
@@ -15,7 +34,7 @@
                 </span>
                 <span>
                     <label>Login:</label>
-                    <input type="text" id="empty1" placeholder="Login cliente" name="login" required>
+                    <input class="loginid" type="text" id="empty1" placeholder="Login cliente" name="login" required>
                 </span>
                 <span>
                     <label>Senha:</label>
@@ -27,7 +46,7 @@
                <button type="save" id="save" class="btn3">Salvar</button> <button id="reset" type="reset" class="btnlimpar">Limpar</button>
             </div>
     </div>
-</div>
+</div> -->
 
 <div class="footer">
     <p>© COPYRIGHT 2020. Siscart - Protestool.</p>

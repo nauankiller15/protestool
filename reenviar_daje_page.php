@@ -1,10 +1,12 @@
 <div class="fadeIn2">
     <form method="post" action="reenviar_daje.html">
-        <div class="input-group">
-            <label>Número da requisição:</label>
-            <input type="text" placeholder="Digite aqui o número de requisição" name="requisição" required>
+    <form method="post" action="consulta_daje.php">
+        <div class="wrap-input100 validate-input m-b-23">
+            <span class="label-input100">Número da requisição:</span>
+            <input class="input100" type="requisicao" name="requisicao" placeholder="Digite aqui o número da requisição"
+                required>
+            <span class="focus-input100" data-symbol="&#xf084;"></span>
         </div>
-
         <div class="centralizar2">
             <button type="Submit" name="login" class="btn2">Reenviar</button>
         </div>
@@ -36,49 +38,49 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>510521</td>
+                        <td><b>510521</b></td>
                         <td>2020 002 13545</td>
                         <td>15500</td>
                         <td>Null</td>
                     </tr>
                     <tr>
-                        <td>510522</td>
+                        <td><b>510522</b></td>
                         <td>2020 002 13546</td>
                         <td>15501</td>
                         <td>400</td>
                     </tr>
                     <tr>
-                        <td>510523</td>
+                        <td><b>510523</b></td>
                         <td>2020 002 13547</td>
                         <td>15502</td>
                         <td>400</td>
                     </tr>
                     <tr>
-                        <td>510524</td>
+                        <td><b>510524</b></td>
                         <td>2020 002 13548</td>
                         <td>15503</td>
                         <td>400</td>
                     </tr>
                     <tr>
-                        <td>510525</td>
+                        <td><b>510525</b></td>
                         <td>2020 002 13549</td>
                         <td>15504</td>
                         <td>500</td>
                     </tr>
                     <tr>
-                        <td>510526</td>
+                        <td><b>510526</b></td>
                         <td>2020 002 13549</td>
                         <td>15504</td>
                         <td>300</td>
                     </tr>
                     <tr>
-                        <td>510527</td>
+                        <td><b>510527</b></td>
                         <td>2020 002 13550</td>
                         <td>15505</td>
                         <td>300</td>
                     </tr>
                     <tr>
-                        <td>510524</td>
+                        <td><b>510524</b></td>
                         <td>2020 002 13550</td>
                         <td>15506</td>
                         <td>400</td>
