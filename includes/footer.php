@@ -5,48 +5,22 @@
                 <span></span>
             </div>
         </div>
-        <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit"
-                    class="btnsair">✖️</button></a></span>
-        <form class="api-request" data-endpoint="DesvincularApontamento">
-            <div class="input-group2">
-                Testar Conexão com o Servidor!
-                <div class="centralizar3">
-                    <button type="save" id="save" class="btn3">Testar</button>
-                </div>
-            </div>
-    </div>
-</div>
-
-<!-- <div id="popup">
-    <div class="popup">
-        <div class="popup_head">
-            <div class="title">
-                <span></span>
-            </div>
-        </div>
         <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit" class="btnsair">✖️</button></a></span>
-        <form class="api-request" data-endpoint="DesvincularApontamento">
+        <form class="api-request" data-endpoint="Config">
             <div class="input-group2">
                 <span>
                     <label>IP do Servidor:</label>
                     <input id="ip" pattern="[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{3}" class ="ip1" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
                     <p>Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
                 </span>
-                <span>
-                    <label>Login:</label>
-                    <input class="loginid" type="text" id="empty1" placeholder="Login cliente" name="login" required>
-                </span>
-                <span>
-                    <label>Senha:</label>
-                    <input type="password" id="empty2" placeholder="Senha cliente" name="senha" required>
-                     <p>Por favor, confira se todas as <b>informações</b> preenchidas estão corretas, para depois realizar as <b>manutenções...</b></p>
-                </span>
             </div>
             <div class="centralizar3">
                <button type="save" id="save" class="btn3">Salvar</button> <button id="reset" type="reset" class="btnlimpar">Limpar</button>
             </div>
+        </form>
     </div>
-</div> -->
+</div>
+
 
 <div class="footer">
     <p>© COPYRIGHT 2020. Siscart - Protestool.</p>
@@ -78,3 +52,6 @@
 <script src="js/ajax.js"></script>
 <script src="js/main.js"></script>
 <script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
+<script>
+    bindApiRequestSubmit();
+</script>
