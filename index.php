@@ -24,7 +24,8 @@
         <?php include("includes/footer.php"); ?>
         <script>
             fecharpopup();
-           
+            bindApiRequestSubmit();
+            maskinput();
         </script>
 </body>
 

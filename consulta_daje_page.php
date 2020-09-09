@@ -14,8 +14,7 @@
     <form method="post" action="consulta_daje.php">
         <div class="wrap-input100 validate-input m-b-23">
             <span class="label-input100">Número do protocolo:</span>
-            <input class="input100" type="protocolo" name="protocolo" placeholder="Digite aqui o número do protocolo"
-                required>
+            <input class="input100" type="protocolo" name="protocolo" placeholder="Digite aqui o número do protocolo" required>
             <span class="focus-input100" data-symbol="&#xf56f;"></span>
         </div>
 
@@ -61,3 +60,7 @@
         </div>
     </div>
 </div>
+<script>
+    bindApiRequestSubmit();
+    maskinput();
+</script>

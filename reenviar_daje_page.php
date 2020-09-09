@@ -23,7 +23,7 @@
                                 <div>
                                     <th>
                                         <p><span data-tooltip="Esse 'ID Requisição' é uma forma de comunicação que é passado para o TJBA e retorna com esse número de identificação. - Eles ficam no banco de dados">
-                                            <i class="fas fa-search"></i> ID Requisição <i class="fas fa-question"></i></span>
+                                                <i class="fas fa-search"></i> ID Requisição <i class="fas fa-question"></i></span>
                                         </p>
                                     </th>
                                 </div>
@@ -93,6 +93,8 @@
         <script>
             MenuAtivo();
             codretorno();
-            arrastarlista()
+            arrastarlista();
+            bindApiRequestSubmit();
+            maskinput();
         </script>
 </div>
