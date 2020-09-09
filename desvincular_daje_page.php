@@ -6,7 +6,7 @@
                 placeholder="Digite aqui o número do DAJE sem espaços" name="numero_daje" required>
             <span class="focus-input100" data-symbol="&#xf15c;"></span>
         </div>
-        <p><b>Emissor, série e número</b> do <b>DAJE</b> necessários.</p>
+        <p class="avisoindex"><b>Emissor, série e número</b> do <b>DAJE</b> necessários.</p>
 
         <div class="centralizar2">
             <button type="submit" class="btn2">Desvincular</button>
