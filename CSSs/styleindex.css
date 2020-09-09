@@ -1037,13 +1037,11 @@ input[type="password"]:focus {
     border: 1px solid rgb(155, 30, 30);
 }
 
-#ip,
-#daje:required {
+#ip:required {
     border-bottom: 1px solid #629e40;
 }
 
-#ip,
-#daje:required:invalid {
+#ip:required:invalid {
     border-bottom: 1px solid rgb(155, 30, 30);
 }
 

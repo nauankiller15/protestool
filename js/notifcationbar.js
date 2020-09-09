@@ -3,7 +3,7 @@
 var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 4000);
 
 function alertaConfiguracao() {
-    if (!$(".ip1, #empty1, #empty2").val().length != 0) {
+    if (!$("#ip").val().length != 0) {
         toastr.warning("Realize os parâmetros de configuração acima!");
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
     } else {
@@ -14,7 +14,7 @@ function alertaConfiguracao() {
 var alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 12000);
 
 function alertaConfiguracao2() {
-    if (!$(".ip1, #empty1, #empty2").val().length != 0) {
+    if (!$("#ip").val().length != 0) {
         toastr.error("A conexão com o banco de dados foi perdida!");
         alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
     } else {
@@ -23,24 +23,24 @@ function alertaConfiguracao2() {
 }
 
 
-$("#ip,#empty1,#empty2").on("blur", "", function() {
-    if (!$("#ip, #empty1, #empty2").val().length != 0) {
+$("#ip").on("blur", "", function() {
+    if (!$("#ip").val().length != 0) {
         $(".circleoff").show();
     }
     if (!$("#ip:required:invalid").true) {
         $(".circleoff").show();
     }
 
-    if (!$("#ip, #empty1, #empty2").val().length != 0) {
+    if (!$("#ip").val().length != 0) {
         $(".tooltip,.tooltiptext").show();
         $(".userlogado1").show();
         $(".userlogado2").hide();
     }
 
-    if (!$("#ip, #empty1, #empty2").val().length != 1) {
+    if (!$("#ip").val().length != 1) {
         $(".circleon").show();
     }
-    if (!$("#ip, #empty1, #empty2").val().length != 0) {
+    if (!$("#ip").val().length != 0) {
         $(".circleon").hide();
         $(".circleoff").show();
     } else {
@@ -60,11 +60,6 @@ $(document).ready(function() {
         $(".tooltip, .tooltiptext").show();
         $(".userlogado2").hide();
         $(".userlogado1").show();
-
-        toastr.warning("Realize os parâmetros de Configuração acima!");
-        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 2000);
-        toastr.error("A conexão com o banco de dados foi perdida!");
-        alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
     });
 
     setTimeout(function() {
