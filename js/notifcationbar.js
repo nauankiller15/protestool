@@ -48,6 +48,7 @@ $("#ip").on("blur", "", function() {
         $(".tooltip,.tooltiptext").hide();
         $(".userlogado1").hide();
         $(".userlogado2").show();
+
     }
 });
 
@@ -60,6 +61,10 @@ $(document).ready(function() {
         $(".tooltip, .tooltiptext").show();
         $(".userlogado2").hide();
         $(".userlogado1").show();
+        toastr.error("A conexão com o banco de dados foi perdida!");
+        alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
+        toastr.warning("Realize os parâmetros de configuração acima!");
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
     });
 
     setTimeout(function() {

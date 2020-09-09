@@ -22,3 +22,7 @@ function fecharpopup() {
     });
 
 }
+
+function maskinput() {
+    $(":input").inputmask();
+}

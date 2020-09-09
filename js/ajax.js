@@ -4,6 +4,11 @@ function bindApiRequestSubmit() {
         var ip = $("#ip").val();
         var endPoint = $(this).attr("data-endpoint");
         var urlBase = "http://" + ip + ":8080/IntegratedWS/";
+        // Local Cache
+        localStorage['ip'] = JSON.stringify(ip);
+        var ip = localStorage['ip'] || 'defaultValue';
+        localStorage['ip'] = $("#saveip"); // only strings
+
 
         $.ajax({
             type: "GET",
