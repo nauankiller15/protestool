@@ -230,10 +230,6 @@ form p {
     font-family: sans-serif;
 }
 
-.ip {
-    display: block;
-}
-
 .input-group2 {
     margin: 20px 2px 10px 0px;
 }
@@ -1009,6 +1005,17 @@ th {
     color: #fff;
 }
 
+.ip[type="text"] {
+    border: 1px solid #71849c;
+    transition: ease-in-out, background 0.35s ease-in-out;
+}
+
+.ip[type="text"]:focus {
+    background: #366db4;
+    color: #fff;
+    border: 1px solid rgb(138, 138, 138);
+}
+
 input[type="password"] {
     transition: ease-in-out, background 0.35s ease-in-out;
 }
@@ -1029,11 +1036,11 @@ input[type="password"]:focus {
 }
 
 #ip:required {
-    border: 1px solid #629e40;
+    border-bottom: 1px solid #629e40;
 }
 
 #ip:required:invalid {
-    border: 1px solid rgb(155, 30, 30);
+    border-bottom: 1px solid rgb(155, 30, 30);
 }
 
 ::placeholder {
