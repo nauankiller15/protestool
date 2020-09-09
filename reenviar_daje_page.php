@@ -4,7 +4,7 @@
             <div class="wrap-input100 validate-input m-b-23">
                 <span class="label-input100">Número da requisição:</span>
                 <input class="input100" type="requisicao" name="requisicao" placeholder="Digite aqui o número da requisição" required>
-                <span class="focus-input100" data-symbol="&#xf002;"></span>
+                <span class="focus-input100" data-symbol="&#xf574;"></span>
             </div>
             <div class="centralizar2">
                 <button type="Submit" name="login" class="btn2"><i class="far fa-share-square"></i> Reenviar</button>
@@ -23,12 +23,12 @@
                                 <div>
                                     <th>
                                         <p><span data-tooltip="Esse 'ID Requisição' é uma forma de comunicação que é passado para o TJBA e retorna com esse número de identificação. - Eles ficam no banco de dados">
-                                                <i class="fas fa-search"></i> ID Requisição <i class="fas fa-question"></i></span>
+                                        <i class="fas fa-file-upload"></i> ID Requisição <i class="fas fa-question"></i></span>
                                         </p>
                                     </th>
                                 </div>
                                 <th><i class="fas fa-file-alt"></i> Número Daje</th>
-                                <th><i class="fas fa-file-import"></i> Protocolo</th>
+                                <th><i class="fas fa-file-powerpoint"></i> Protocolo</th>
                                 <th><span data-tooltip5="Clique aqui para consultar os códigos.">
                                         <button class="codretorno" id="codretorno" data-load-page="cods_retorno_page.php">Cod
                                             Retorno <i class="fas fa-question"></i></button>

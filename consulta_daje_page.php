@@ -15,7 +15,7 @@
         <div class="wrap-input100 validate-input m-b-23">
             <span class="label-input100">Número do protocolo:</span>
             <input class="input100" type="protocolo" name="protocolo" placeholder="Digite aqui o número do protocolo" required>
-            <span class="focus-input100" data-symbol="&#xf56f;"></span>
+            <span class="focus-input100" data-symbol="&#xf1c4;"></span>
         </div>
 
         <div class="centralizar2">
@@ -32,11 +32,11 @@
                     <tr>
                         <th><i class="fas fa-file-alt"></i> Número Daje</th>
                         <th>
-                            <p><span data-tooltip="ID de Requisição do banco de dados para consulta e reenvio do daje."><i class="fas fa-search"></i> ID
+                            <p><span data-tooltip="ID de Requisição do banco de dados para consulta e reenvio do daje."><i class="fas fa-file-upload"></i> ID
                                     Requisição <i class="fas fa-question"></i></span>
                             </p>
                         </th>
-                        <th><i class="fas fa-file-import"></i> Protocolo</th>
+                        <th><i class="fas fa-file-powerpoint"></i> Protocolo</th>
                     </tr>
                 </thead>
                 <tbody>

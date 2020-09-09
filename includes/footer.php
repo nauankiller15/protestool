@@ -12,7 +12,7 @@
                 <input class="input100"  data-inputmask="'mask': '999.999.99.999'"  id="ip" pattern="[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{2,}" title="Deve conter o padrão de IP do servidor" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
                 <span class="focus-input100" data-symbol="&#xf233;"></span>
             </div>
-              <p class="input-group2">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
+              <p class="avisoindex">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
             <div class="centralizar3">
                 <button type="save" id="save" class="btn3"><i class="fas fa-save"></i> Salvar</button> <button id="reset" type="reset" class="btnlimpar"><i class="far fa-times-circle"></i> Limpar</button>
             </div>
