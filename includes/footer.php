@@ -17,6 +17,9 @@
                 <button type="save" id="save" class="btn3"><i class="fas fa-save"></i> Salvar</button> <button id="reset" type="reset" class="btnlimpar"><i class="far fa-times-circle"></i> Limpar</button>
             </div>
         </form>
+        <div class="shortcutkey">
+            Tecla de atalho: Alt + G
+        </div>
     </div>
 </div>
 

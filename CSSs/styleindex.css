@@ -1650,4 +1650,5 @@ iframe {
     font-weight: bold;
     color: #555555;
     margin-top: -20px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
