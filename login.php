@@ -24,7 +24,7 @@
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
             <div class="input-group">
-                <button type="Submit" name="login" class="btn">Entrar</button>
+                <button type="Submit" name="login" class="btn"><i class="fas fa-sign-in-alt"></i> Entrar</button>
             </div>
             <p>Acesso somente autorizado!</p>
         </form>

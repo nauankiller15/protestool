@@ -37,7 +37,7 @@
             <div class="centralizar3">
                 Tem certeza que deseja sair?</div>
             <div class="centralizar3">
-                <a href="javascript: fechar2();"><button type="noexit" id="noexit" class="btn3"><i class="fas fa-door-closed"></i> Não Sair</button></a> <button id="exit" type="exit" class="btnlimpar"><i class="fas fa-door-open"></i> Sair</button>
+                <a href="javascript: fechar2();"><button type="noexit" id="noexit" class="btn3"><i class="fas fa-undo-alt"></i> Voltar</button></a> <button id="exit" type="exit" class="btnlimpar"><i class="fas fa-power-off"></i> Sair</button>
             </div>
             </form>
         </div>
@@ -65,8 +65,6 @@
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/activemenu.js"></script>
 <script src="js/notifcationbar.js"></script>
@@ -74,7 +72,6 @@
 <script src="js/ajax.js"></script>
 <script src="js/main.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
-<script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
 <script>
     bindApiRequestSubmit();
     maskinput();
