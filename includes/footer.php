@@ -37,7 +37,7 @@
             <div class="centralizar3">
                 Tem certeza que deseja sair?</div>
             <div class="centralizar3">
-                <a href="javascript: fechar2();"><button type="save" id="save" class="btn3"><i class="fas fa-save"></i> Não Sair</button></a> <button id="reset" type="reset" class="btnlimpar"><i class="far fa-times-circle"></i> Sair</button>
+                <a href="javascript: fechar2();"><button type="noexit" id="noexit" class="btn3"><i class="fas fa-door-closed"></i> Não Sair</button></a> <button id="exit" type="exit" class="btnlimpar"><i class="fas fa-door-open"></i> Sair</button>
             </div>
             </form>
         </div>
@@ -78,4 +78,5 @@
 <script>
     bindApiRequestSubmit();
     maskinput();
+    fecharpopup();
 </script>
