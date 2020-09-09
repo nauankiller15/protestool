@@ -31,7 +31,7 @@
                                 <th><i class="fas fa-file-import"></i> Protocolo</th>
                                 <th><span data-tooltip5="Clique aqui para consultar os códigos.">
                                         <button class="codretorno" id="codretorno" data-load-page="cods_retorno_page.php">Cod
-                                            Retorno (?)</button>
+                                            Retorno <i class="fas fa-question"></i></button>
                                     </span></th>
                             </tr>
                         </thead>
