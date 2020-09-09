@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td>200</td>
-                        <td>Desconhecido.</td>
+                        <td>Conexão estabelecida com sucesso.</td>
                     </tr>
                     <tr>
                         <td>100</td>
