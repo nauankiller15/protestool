@@ -1078,7 +1078,6 @@ input[type="password"]:focus {
     display: block;
     transition: 0.5s;
     font-family: sans-serif;
-    transition: 0.5;
 }
 
 [data-tooltip2] {
@@ -1220,6 +1219,45 @@ input[type="password"]:focus {
 [data-tooltip6]:hover:after {
     display: block;
     transition: 0.5s;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0.01;
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0.01;
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.display-none.on {
+    display: block;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
 }
 
 .tooltip {
@@ -1603,4 +1641,13 @@ iframe {
 .avisoindex {
     padding: 15px;
     font-size: 15px;
+    color: #555555;
+}
+
+.shortcutkey {
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    margin-top: -20px;
 }

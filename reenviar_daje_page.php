@@ -1,9 +1,12 @@
 <div class="fadeIn2">
     <form method="post" action="reenviar_daje.html">
+    <div class="shortcutkey">
+           Teclas de atalho: Alt + A
+        </div>
         <form method="post" action="consulta_daje.php">
             <div class="wrap-input100 validate-input m-b-23">
                 <span class="label-input100">Número da requisição:</span>
-                <input class="input100" type="requisicao" name="requisicao" placeholder="Digite aqui o número da requisição" required>
+                <input accesskey="a" class="input100" type="requisicao" name="requisicao" placeholder="Digite aqui o número da requisição" required>
                 <span class="focus-input100" data-symbol="&#xf574;"></span>
             </div>
             <div class="centralizar2">
@@ -95,6 +98,5 @@
             codretorno();
             arrastarlista();
             bindApiRequestSubmit();
-            maskinput();
         </script>
 </div>

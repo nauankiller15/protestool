@@ -25,7 +25,6 @@
         <script>
             fecharpopup();
             bindApiRequestSubmit();
-            maskinput();
         </script>
 </body>
 

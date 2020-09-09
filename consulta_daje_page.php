@@ -1,20 +1,11 @@
 <div class="fadeIn2">
-    <div style="display: none;" id="sucesso" class="window-msg">
-        <div class="sucesso">
-            <button id="close" class="close">X</button>
-            <p class="sucesso-msg"></p>
-        </div>
-    </div>
-    <div style="display: none;" id="error" class="window-msg">
-        <div class="error">
-            <button id="close" class="close">X</button>
-            <p class="error-msg"></p>
-        </div>
-    </div>
     <form method="post" action="consulta_daje.php">
+        <div class="shortcutkey">
+            Teclas de atalho: Alt + A
+        </div>
         <div class="wrap-input100 validate-input m-b-23">
             <span class="label-input100">Número do protocolo:</span>
-            <input class="input100" type="protocolo" name="protocolo" placeholder="Digite aqui o número do protocolo" required>
+            <input accesskey="a" class="input100" type="protocolo" name="protocolo" placeholder="Digite aqui o número do protocolo" required>
             <span class="focus-input100" data-symbol="&#xf1c4;"></span>
         </div>
 
@@ -60,7 +51,7 @@
         </div>
     </div>
 </div>
+</div>
 <script>
     bindApiRequestSubmit();
-    maskinput();
 </script>
