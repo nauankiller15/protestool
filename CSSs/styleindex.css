@@ -1653,6 +1653,9 @@ iframe {
     color: #555555;
     margin-top: -20px;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    border: 1px solid #8f8f8f;
+    border-radius: 7px;
+    padding: 4px;
 }
 
 .shortcutkey2 {
@@ -1660,6 +1663,9 @@ iframe {
     font-size: 14px;
     font-weight: bold;
     color: #555555;
-    margin-top: 15px;
+    margin-top: 5px;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    border: 1px solid #8f8f8f;
+    border-radius: 7px;
+    padding: 4px;
 }
