@@ -9,7 +9,7 @@
         <form class="api-request" data-endpoint="Config">
             <div class="wrap-input100 validate-input m-b-23">
                 <span class="label-input100">IP do servidor:</span>
-                <input class="input100" id="ip" pattern="[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{2-3}" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
+                <input class="input100" id="ip" pattern="[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{2,}" title="Deve conter o padrão de IP do servidor" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
                 <span class="focus-input100" data-symbol="&#xf233;"></span>
             </div>
               <p class="input-group2">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
