@@ -1,8 +1,8 @@
 <div class="userlogado1">
-    <p>Usuário Logado.</p>
+    <p>Siscart</p>
 </div>
 <div class="userlogado2">
-    <p>Usuário Logado.</p>
+    <p>Siscart</p>
 </div>
 <nav class="menu">
     <ul>

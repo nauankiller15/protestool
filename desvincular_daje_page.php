@@ -9,7 +9,7 @@
         <p class="avisoindex"><b>Emissor, série e número</b> do <b>DAJE</b> necessários.</p>
 
         <div class="centralizar2">
-            <button type="submit" class="btn2">Desvincular</button>
+            <button type="submit" class="btn2"><i class="fas fa-undo"></i> Desvincular</button>
         </div>
     </form>
 

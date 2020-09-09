@@ -20,7 +20,7 @@
         </div>
 
         <div class="centralizar2">
-            <button type="Submit" name="consultar" class="btn2">Consultar</button>
+            <button type="Submit" name="consultar" class="btn2"><i class="fas fa-search"></i> Consultar</button>
         </div>
 
     </form>

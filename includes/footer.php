@@ -14,7 +14,7 @@
             </div>
               <p class="input-group2">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
             <div class="centralizar3">
-                <button type="save" id="save" class="btn3">Salvar</button> <button id="reset" type="reset" class="btnlimpar">Limpar</button>
+                <button type="save" id="save" class="btn3"><i class="fas fa-save"></i> Salvar</button> <button id="reset" type="reset" class="btnlimpar"><i class="far fa-times-circle"></i> Limpar</button>
             </div>
         </form>
     </div>

@@ -7,7 +7,7 @@
                 <span class="focus-input100" data-symbol="&#xf002;"></span>
             </div>
             <div class="centralizar2">
-                <button type="Submit" name="login" class="btn2">Reenviar</button>
+                <button type="Submit" name="login" class="btn2"><i class="far fa-share-square"></i> Reenviar</button>
             </div>
         </form>
         <div class="finaldapagina">

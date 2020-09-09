@@ -169,8 +169,8 @@ form p {
 
 .input-group::after {
     font-size: 40px;
-    content: "\f007";
-    font-family: FontAwesome;
+    content: "\f206";
+    font-family: Material-Design-Iconic-Font;
     position: absolute;
     right: 35px;
     top: 25px;
