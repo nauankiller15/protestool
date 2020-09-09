@@ -3,11 +3,12 @@ function MenuAtivo() {
     $("[data-load-page]").click(function() {
         var page = $(this).attr("data-load-page");
 
-        if (!$(this).find("a").hasClass("menu-active")) {
+        if (!$(this).find("a").hasClass("menu-active, codretorno")) {
             $("#conteudo").load(page);
         }
 
         $(".menu-link a").removeClass("menu-active");
         $(this).find("a").addClass("menu-active");
+
     });
 }

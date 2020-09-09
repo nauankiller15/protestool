@@ -34,3 +34,9 @@
             </table>
         </div>
     </div>
+    <script>
+            MenuAtivo();
+            codretorno();
+            arrastarlista();
+            bindApiRequestSubmit();
+        </script>

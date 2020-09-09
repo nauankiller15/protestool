@@ -1,5 +1,5 @@
 <div class="fadeIn2">
-    <form method="post" action="consulta_daje.php">
+    <form method="post" action="">
         <div class="shortcutkey">
             Teclas de atalho: Alt + A
         </div>
