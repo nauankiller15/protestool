@@ -29,7 +29,7 @@ function bindApiRequestSubmit() {
 function getStatusErrorMsg(status) {
     switch (status) {
         case 500:
-            msg = "500: Falha de parametrização de valores!";
+            msg = "500: Falha na parametrização de valores!";
             break;
         case 400:
             msg = "400: Daje já desvinculado!";

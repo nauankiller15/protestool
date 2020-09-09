@@ -5,14 +5,14 @@
             <table class="bordered striped centered tablesorter">
                 <thead>
                     <tr>
-                        <th>Cod. Retorno</th>
-                        <th>Tipo Retorno</th>
+                        <th><i class="fas fa-project-diagram"></i> Cod. Retorno</th>
+                        <th><i class="fas fa-list-ul"></i> Tipo Retorno</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>500</td>
-                        <td>Comunicação realizada com sucesso!</td>
+                        <td>Falha na parametrização de valores!</td>
                     </tr>
                     <tr>
                         <td>400</td>
