@@ -7,3 +7,4 @@
 <script src="js/main.js"></script>
 <script src="js/loginform.js"></script>
 <script src="js/toastr.js"></script>
+<script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
