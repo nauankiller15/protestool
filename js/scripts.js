@@ -7,6 +7,15 @@ function fechar() {
 
 }
 
+function abrir2() {
+    $("#popup2").show();
+}
+
+function fechar2() {
+    $("#popup2").fadeOut('300');
+
+}
+
 $(".popup").draggable();
 
 function arrastarlista() {
@@ -14,13 +23,12 @@ function arrastarlista() {
 }
 
 function fecharpopup() {
-    var elem = $('#popup')[0];
     $(document).on('keydown', function(e) {
         if (e.keyCode === 27) {
-            $(elem).fadeOut('300');
+            $('#popup').fadeOut('300');
+            $('#popup2').fadeOut('300');
         }
     });
-
 }
 
 function maskinput() {

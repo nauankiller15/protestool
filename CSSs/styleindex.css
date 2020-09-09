@@ -415,6 +415,7 @@ form p {
     width: 100%;
     align-content: center;
     margin: 50px auto;
+    text-align: center;
 }
 
 .btn {
@@ -1289,7 +1290,8 @@ input[type="password"]:focus {
     visibility: visible;
 }
 
-#popup {
+#popup,
+#popup2 {
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
     width: 100%;
@@ -1650,5 +1652,14 @@ iframe {
     font-weight: bold;
     color: #555555;
     margin-top: -20px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+.shortcutkey2 {
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    margin-top: 15px;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }

@@ -10,7 +10,7 @@
         <li accesskey="C" class="menu menu-link" data-load-page="consulta_daje_page.php"><a><i class="fas fa-file-import"></i> <u>C</u>onsultar Daje</a></li>
         <li accesskey="R" class="menu menu-link" data-load-page="reenviar_daje_page.php"><a><i class="fas fa-file-upload"></i> <u>R</u>eenviar Daje</a></li>
         <div class="tools">
-            <span data-tooltip4="Sair do sistema"><a href="#sair"><button type="sair" class="btnsair">✖️</button></a></span>
+            <span data-tooltip4="Sair do sistema"><a accesskey="G" href="javascript: abrir2();"><button type="sair" class="btnsair">✖️</button></a></span>
             <div class="circleoff" style="animation-delay: 0s"></div>
             <div class="circleoff" style="animation-delay: 0.8s"></div>
             <div class="circleoff" style="animation-delay: 1.8s"></div>
