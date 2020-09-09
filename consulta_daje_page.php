@@ -34,8 +34,7 @@
                         <th><i class="fas fa-file-alt"></i> Número Daje</th>
                         <th>
                             <p><span data-tooltip="ID de Requisição do banco de dados para consulta e reenvio do daje."><i class="fas fa-search"></i> ID
-                                    Requisição
-                                    (?)</span>
+                                    Requisição <i class="fas fa-question"></i></span>
                             </p>
                         </th>
                         <th><i class="fas fa-file-import"></i> Protocolo</th>
