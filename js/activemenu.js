@@ -3,7 +3,7 @@ function MenuAtivo() {
     $("[data-load-page]").click(function() {
         var page = $(this).attr("data-load-page");
 
-        if (!$(this).find("a").hasClass("menu-active, codretorno")) {
+        if (!$(this).find("a").hasClass("menu-active")) {
             $("#conteudo").load(page);
         }
 
