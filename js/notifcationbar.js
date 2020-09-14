@@ -89,4 +89,10 @@ function codretorno() {
     });
 }
 
+function codretorno2() {
+    $("#codretorno2").click(function() {
+        toastr.info("Esta página contém: Lista detalhada para especificar os códigos, o que cada um representa!");
+    });
+}
+
 // Fim do código

@@ -11,7 +11,7 @@
 
   function storeValues(form) {
       setCookie("ip", form.ip.value);
-      alert("Configurações Salvas!" + name);
+      toastr.success("Configuração salva!");
       return true;
   }
 
@@ -24,7 +24,7 @@
 
   function clearCookies() {
       deleteCookie("ip");
-      alert("Configurações deletadas!" + name);
+      toastr.warning("Configuração deletada!");
   }
 
   //  Mostrar Cookies

@@ -33,7 +33,7 @@
                                 <th><i class="fas fa-file-alt"></i> Número Daje</th>
                                 <th><i class="fas fa-file-powerpoint"></i> Protocolo</th>
                                 <th><span data-tooltip5="Clique aqui para consultar os códigos.">
-                                        <button class="codretorno" id="codretorno" data-load-page="cods_retorno_page.php"><i class="fas fa-project-diagram"></i> Cod
+                                        <button class="codretorno" id="codretorno2" data-load-page="cods_retorno_page.php"><i class="fas fa-project-diagram"></i> Cod
                                             Retorno <i class="fas fa-question"></i></button>
                                     </span></th>
                             </tr>
@@ -96,6 +96,7 @@
         <script>
             MenuAtivo();
             codretorno();
+            codretorno2();
             arrastarlista();
             bindApiRequestSubmit();
             shortcutkey();

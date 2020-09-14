@@ -84,4 +84,5 @@
     deleteCookie(name);
     showCookies();
     getCookie(name);
+    codretorno();
 </script>

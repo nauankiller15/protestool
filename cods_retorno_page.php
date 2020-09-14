@@ -37,6 +37,7 @@
     <script>
             MenuAtivo();
             codretorno();
+            codretorno2();
             arrastarlista();
             bindApiRequestSubmit();
         </script>
