@@ -6,7 +6,7 @@
             </div>
         </div>
         <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit" class="btnsair">✖️</button></a></span>
-        <form class="api-request" data-endpoint="Config">
+        <form class="api-request" data-endpoint="Config" action="/javascript/getcookie/" onsubmit="return storeValues(this);">
             <div class="wrap-input100 validate-input m-b-23">
                 <span class="label-input100">IP do servidor:</span>
                 <input class="input100" data-inputmask="'mask': '999.999.99.999'" id="ip" pattern="[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{2,}" title="Deve conter o padrão de IP do servidor" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
@@ -14,7 +14,7 @@
             </div>
             <p class="avisoindex">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
             <div class="centralizar3">
-                <button type="save" id="save" class="btn3"><i class="fas fa-save"></i> Salvar</button> <button id="reset" type="reset" class="btnlimpar"><i class="far fa-times-circle"></i> Limpar</button>
+                <button type="save" id="save" class="btn3"><i class="fas fa-save"></i> Salvar</button> <button id="reset" onclick="clearCookies();" type="reset" class="btnlimpar"><i class="far fa-times-circle"></i> Limpar</button>
             </div>
         </form>
         <div class="shortcutkey">
@@ -32,10 +32,11 @@
                 </div>
             </div>
             <div class="shortcutkey2">
-            <p>Teclas de atalho:</p> Alt + Q
-        </div>
+                <p>Teclas de atalho:</p> Alt + Q
+            </div>
             <div class="centralizar3">
-                <h2>Tem certeza que deseja sair?</h2></div>
+                <h2>Tem certeza que deseja sair?</h2>
+            </div>
             <div class="centralizar3">
                 <a href="javascript: fechar2();"><button type="noexit" id="noexit" class="btn3"><i class="fas fa-undo-alt"></i> Voltar</button></a> <button id="exit" type="exit" class="btnlimpar"><i class="fas fa-power-off"></i> Sair</button>
             </div>
@@ -68,6 +69,7 @@
 <script src="js/scripts.js"></script>
 <script src="js/activemenu.js"></script>
 <script src="js/notifcationbar.js"></script>
+<script src="js/cookies.js"></script>
 <script src="js/toastr.js"></script>
 <script src="js/ajax.js"></script>
 <script src="js/main.js"></script>
@@ -78,4 +80,8 @@
     maskinput();
     fecharpopup();
     shortcutkey();
+    storeValues(form);
+    deleteCookie(name);
+    clearCookies();
+    showCookies();
 </script>
