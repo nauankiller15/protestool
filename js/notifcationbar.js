@@ -1,6 +1,6 @@
 // Função de notificar o usuário ao parametrizar configurações
 
-var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 4000);
+var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3600);
 
 function alertaConfiguracao() {
     if (!$("#ip").val().length != 0) {
