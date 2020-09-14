@@ -22,7 +22,6 @@
       document.cookie = name + "=null; path=/; expires=" + expired.toGMTString();
   }
 
-
   function clearCookies() {
       deleteCookie("ip");
       alert("Configurações deletadas!" + name);

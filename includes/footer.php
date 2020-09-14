@@ -82,7 +82,6 @@
     shortcutkey();
     storeValues(form);
     deleteCookie(name);
-    clearCookies();
     showCookies();
     getCookie(name);
 </script>
