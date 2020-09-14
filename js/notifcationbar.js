@@ -6,9 +6,20 @@ function alertaConfiguracao() {
     if (!$("#ip").val().length != 0) {
         toastr.warning("Realize os parâmetros de configuração acima!");
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
+        $(".circleon").hide();
+        $(".circleoff").show();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
+}
+
+
+if (!$("#ip:required").val().length != 0) {
+    $(".circleoff").hide();
+    $(".circleon").show();
+    $(".tooltip,.tooltiptext").hide();
+    $(".userlogado1").hide();
+    $(".userlogado2").show();
 }
 
 var alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 12000);
@@ -17,11 +28,12 @@ function alertaConfiguracao2() {
     if (!$("#ip").val().length != 0) {
         toastr.error("A conexão com o banco de dados foi perdida!");
         alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
+        $(".circleon").hide();
+        $(".circleoff").show();
     } else {
         clearTimeout(alertaConfiguracao2Timeout);
     }
 }
-
 
 $("#ip").on("blur", "", function() {
     if (!$("#ip").val().length != 0) {
