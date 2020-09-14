@@ -1656,6 +1656,16 @@ iframe {
     border: 1px solid #8f8f8f;
     border-radius: 7px;
     padding: 4px;
+    cursor: pointer;
+}
+
+.shortcutkey p,
+.shortcutkey2 p {
+    float: left;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: -1px;
+    margin-right: 4px;
 }
 
 .shortcutkey2 {

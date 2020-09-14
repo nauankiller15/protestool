@@ -1,7 +1,7 @@
 <div class="fadeIn2">
     <form method="post" action="">
-    <div class="shortcutkey">
-           Teclas de atalho: Alt + A
+        <div class="shortcutkey">
+            <p>Teclas de atalho:</p> Alt + A
         </div>
         <form method="post" action="consulta_daje.php">
             <div class="wrap-input100 validate-input m-b-23">
@@ -26,7 +26,7 @@
                                 <div>
                                     <th>
                                         <p><span data-tooltip="Esse 'ID Requisição' é uma forma de comunicação que é passado para o TJBA e retorna com esse número de identificação. - Eles ficam no banco de dados">
-                                        <i class="fas fa-file-upload"></i> ID Requisição <i class="fas fa-question"></i></span>
+                                                <i class="fas fa-file-upload"></i> ID Requisição <i class="fas fa-question"></i></span>
                                         </p>
                                     </th>
                                 </div>
@@ -98,5 +98,6 @@
             codretorno();
             arrastarlista();
             bindApiRequestSubmit();
+            shortcutkey();
         </script>
 </div>

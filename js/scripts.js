@@ -34,3 +34,9 @@ function fecharpopup() {
 function maskinput() {
     $(":input").inputmask();
 }
+
+
+function shortcutkey() {
+    $(".shortcutkey").find("p").fadeIn(800).delay(3000).fadeOut(800);
+    $(".shortcutkey2").find("p").fadeIn(600).delay(2700).fadeOut(600);
+}

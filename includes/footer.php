@@ -18,7 +18,7 @@
             </div>
         </form>
         <div class="shortcutkey">
-            Tecla de atalho: Alt + G
+            <p>Teclas de atalho:</p> Alt + G
         </div>
     </div>
 </div>
@@ -32,8 +32,8 @@
                 </div>
             </div>
             <div class="shortcutkey2">
-                Tecla de atalho: Alt + Q
-            </div>
+            <p>Teclas de atalho:</p> Alt + Q
+        </div>
             <div class="centralizar3">
                 <h2>Tem certeza que deseja sair?</h2></div>
             <div class="centralizar3">
@@ -77,4 +77,5 @@
     bindApiRequestSubmit();
     maskinput();
     fecharpopup();
+    shortcutkey();
 </script>

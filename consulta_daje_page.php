@@ -1,7 +1,7 @@
 <div class="fadeIn2">
     <form method="post" action="">
         <div class="shortcutkey">
-            Teclas de atalho: Alt + A
+            <p>Teclas de atalho:</p> Alt + A
         </div>
         <div class="wrap-input100 validate-input m-b-23">
             <span class="label-input100">Número do protocolo:</span>
@@ -54,4 +54,5 @@
 </div>
 <script>
     bindApiRequestSubmit();
+    shortcutkey();
 </script>
