@@ -11,21 +11,27 @@
 
   function storeValues(form) {
       setCookie("ip", form.ip.value);
+      alert("Configurações Salvas!" + name);
       return true;
+  }
+
+  // Deletar Cookies
+  var expired = new Date(today.getTime() - 24 * 3600 * 1000); // less 24 hours
+
+  function deleteCookie(name) {
+      document.cookie = name + "=null; path=/; expires=" + expired.toGMTString();
   }
 
 
   function clearCookies() {
       deleteCookie("ip");
-      alert('Configurações deletadas!');
+      alert("Configurações deletadas!" + name);
   }
 
+  //  Mostrar Cookies
   function showCookies() {
       document.write(getCookie("ip"));
   }
-
-  // Original JavaScript code by Chirp Internet: www.chirp.com.au
-  // Please acknowledge use of this code by including this header.
 
   function getCookie(name) {
       var re = new RegExp(name + "=([^;]+)");
@@ -33,4 +39,4 @@
       return (value != null) ? unescape(value[1]) : null;
   }
 
-  if (ip = getCookie("ip")) document.myForm.ip.value = ip;
+  if (ip = getCookie("ip")) document.getElementById("configip").ip.value = ip;

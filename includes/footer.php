@@ -6,10 +6,10 @@
             </div>
         </div>
         <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit" class="btnsair">✖️</button></a></span>
-        <form class="api-request" data-endpoint="Config" action="/javascript/getcookie/" onsubmit="return storeValues(this);">
+        <form id ="configip" class="api-request" data-endpoint="Config" action="/javascript/getcookie/" onsubmit="return storeValues(this);">
             <div class="wrap-input100 validate-input m-b-23">
                 <span class="label-input100">IP do servidor:</span>
-                <input class="input100" data-inputmask="'mask': '999.999.99.999'" id="ip" pattern="[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{2,}" title="Deve conter o padrão de IP do servidor" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
+                <input onblur="getCookie(name);" class="input100" data-inputmask="'mask': '999.999.99.999'" id="ip" pattern="[0-9]{3}.[0-9]{3}.[0-9]{2}.[0-9]{2,}" title="Deve conter o padrão de IP do servidor" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" required>
                 <span class="focus-input100" data-symbol="&#xf233;"></span>
             </div>
             <p class="avisoindex">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
@@ -84,4 +84,5 @@
     deleteCookie(name);
     clearCookies();
     showCookies();
+    getCookie(name);
 </script>

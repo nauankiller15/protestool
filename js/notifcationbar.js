@@ -32,7 +32,8 @@ $("#ip").on("blur", "", function() {
     }
 
     if (!$("#ip").val().length != 0) {
-        $(".tooltip,.tooltiptext").show();
+        $(".tooltip").show();
+        $(".tooltiptext").show();
         $(".userlogado1").show();
         $(".userlogado2").hide();
     }
@@ -45,7 +46,8 @@ $("#ip").on("blur", "", function() {
         $(".circleoff").show();
     } else {
         $(".circleoff").hide();
-        $(".tooltip,.tooltiptext").hide();
+        $(".tooltip").show();
+        $(".tooltiptext").show();
         $(".userlogado1").hide();
         $(".userlogado2").show();
 
