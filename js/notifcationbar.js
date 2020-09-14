@@ -4,22 +4,15 @@ var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 4000);
 
 function alertaConfiguracao() {
     if (!$("#ip").val().length != 0) {
-        $(".circleon").fadeOut(300);
-        $(".circleoff").fadeIn(300);
         toastr.warning("Realize os parâmetros de configuração acima!");
-        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3000);
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
+        $(".circleon").hide();
+        $(".circleoff").show();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
 }
 
-function noConfig() {
-    if (!$("#ip").val().length != 0) {
-        $(".circleon").fadeOut(300);
-        $(".circleoff").fadeIn(300);
-    }
-
-}
 
 if (!$("#ip:required").val().length != 0) {
     $(".circleoff").hide();
@@ -33,10 +26,10 @@ var alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 12000);
 
 function alertaConfiguracao2() {
     if (!$("#ip").val().length != 0) {
-        $(".circleon").fadeOut(300);
-        $(".circleoff").fadeIn(300);
         toastr.error("A conexão com o banco de dados foi perdida!");
         alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
+        $(".circleon").hide();
+        $(".circleoff").show();
     } else {
         clearTimeout(alertaConfiguracao2Timeout);
     }
@@ -54,7 +47,7 @@ $("#ip").on("blur", "", function() {
     }
 
     if (!$("#ip").val().length != 1) {
-        $(".circleoff").fadeIn(300);
+        $(".circleon").show();
     }
     if (!$("#ip").val().length != 0) {
         $(".circleon").hide();
