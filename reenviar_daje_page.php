@@ -10,7 +10,7 @@
                 <span class="label-input100">Número da requisição:</span>
                 <input accesskey="a" class="input100" type="requisicao" name="requisicao" placeholder="Digite aqui o número da requisição" required>
                 <span class="focus-input100" data-symbol="&#xf574;"></span>
-                <button id="reset" type="reset" class="focus2-input100" data-symbol="&#xf55a;"></button>
+                <span id="apagarletras" class="focus2-input100" data-symbol="&#xf55a;"></span>
             </div>
             <div class="centralizar2">
                 <button type="Submit" name="login" class="btn2"><i class="far fa-share-square"></i> Reenviar</button>
@@ -104,5 +104,6 @@
             bindApiRequestSubmit();
             shortcutkey();
             inputvalue();
+            apagarletras();
         </script>
 </div>

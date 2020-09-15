@@ -1,5 +1,5 @@
 <div class="fadeIn2">
-    <form method="post" action="">
+    <form method="post">
         <div class="shortcutkey">
             <a href="javascript: abrir3();">
                 <p>Teclas de atalho:</p> Alt + A
@@ -9,11 +9,11 @@
             <span class="label-input100">Número do protocolo:</span>
             <input accesskey="a" class="input100" type="protocolo" name="protocolo" placeholder="Digite aqui o número do protocolo" required>
             <span class="focus-input100" data-symbol="&#xf1c4;"></span>
-            <button id="reset" type="reset" class="focus2-input100" data-symbol="&#xf55a;"></button>
+            <span id="apagarletras" class="focus2-input100" data-symbol="&#xf55a;"></span>
         </div>
 
         <div class="centralizar2">
-            <button type="Submit" name="consultar" class="btn2"><i class="fas fa-search"></i> Consultar</button>
+            <button id="enviar" name="consultar" class="btn2"><i class="fas fa-search"></i> Consultar</button>
         </div>
 
     </form>
@@ -59,4 +59,5 @@
     bindApiRequestSubmit();
     shortcutkey();
     inputvalue();
+    apagarletras();
 </script>

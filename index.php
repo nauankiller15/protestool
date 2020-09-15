@@ -23,6 +23,7 @@
         <script>
             fecharpopup();
             bindApiRequestSubmit();
+            apagarletras();
         </script>
 </body>
 

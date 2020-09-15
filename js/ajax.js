@@ -5,7 +5,6 @@ function bindApiRequestSubmit() {
         var endPoint = $(this).attr("data-endpoint");
         var urlBase = "http://" + ip + ":8080/IntegratedWS/";
 
-
         $.ajax({
             type: "GET",
             accept: "text/html",
@@ -40,3 +39,7 @@ function getStatusErrorMsg(status) {
 
     return msg;
 }
+
+$("#testar-conexao-btn").click(function() {
+    $("#configip").submit();
+});

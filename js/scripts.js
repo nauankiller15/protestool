@@ -68,3 +68,9 @@ $("#save").on("click", function() {
         toastr.warning("Tentando se comunicar com o banco de dados!");
     }, 2300);
 })
+
+function apagarletras() {
+$('#apagarletras').on('click', function (){
+    var input = $(".input100");
+    input.val(input.val().slice(0, -1));
+  });}
