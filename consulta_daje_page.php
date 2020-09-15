@@ -7,6 +7,7 @@
             <span class="label-input100">Número do protocolo:</span>
             <input accesskey="a" class="input100" type="protocolo" name="protocolo" placeholder="Digite aqui o número do protocolo" required>
             <span class="focus-input100" data-symbol="&#xf1c4;"></span>
+           <button id="reset" type="reset" class="focus2-input100" data-symbol="&#xf55a;"></button>
         </div>
 
         <div class="centralizar2">

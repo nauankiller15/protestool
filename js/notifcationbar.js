@@ -65,7 +65,7 @@ $("#ip").on("blur", "", function() {
 // Ao clicar no botão de limpar, ele reseta as informações e mostra novamente a notificação
 
 $(document).ready(function() {
-    $("#reset").on("click", function() {
+    $(".reset").on("click", function() {
         $(".circleoff").show();
         $(".circleon").hide();
         $(".tooltip, .tooltiptext").show();

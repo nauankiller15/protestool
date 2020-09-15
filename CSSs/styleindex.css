@@ -1642,6 +1642,54 @@
         font-size: 15px;
         color: #555555;
     }
+    /*---------------------------------------------*/
+    
+    .focus2-input100 {
+        position: absolute;
+        display: block;
+        top: 52px;
+        right: -5px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .focus2-input100::after {
+        content: attr(data-symbol);
+        font-family: FontAwesome;
+        color: #adadad;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        height: calc(100% - 20px);
+        bottom: 0;
+        right: 0;
+        padding-left: 13px;
+        padding-top: 3px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .focus2-input100::after:hover {
+        color: #2664b6;
+        transition: 0.5s;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .avisoindex {
+        padding: 15px;
+        font-size: 15px;
+        color: #555555;
+    }
     
     .shortcutkey {
         float: right;
