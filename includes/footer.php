@@ -25,6 +25,25 @@
     </div>
 </div>
 
+<div id="popup3">
+    <div class="popup">
+        <div class="popup_head">
+            <div class="title">
+                <span></span>
+            </div>
+        </div>
+        <span data-tooltip3="Fechar tela"><a href="javascript: fechar3();"><button type="submit" class="btnsair">✖️</button></a></span>
+            <div class="centralizar4">
+                <h2>Atalhos do Sistema</h2>
+                <li>Desvincular Daje - Alt + S</li>
+                <li>Consultar Daje - Alt + C</li>
+                <li>Reenviar Daje - Alt + R</li>
+                <li>Abrir Configurações - Alt + G</li>
+                <li>Sair do Sistema- Alt + Q</li>
+            </div>
+    </div>
+</div>
+
 <div class="caixasair">
     <div id="popup2">
         <div class="popup">

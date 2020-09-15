@@ -416,6 +416,29 @@
         text-align: center;
     }
     
+    .centralizar4 li {
+        width: 100%;
+        align-content: center;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 20px;
+        list-style: none;
+        width: 65%;
+        border-bottom: 1px solid #2664b6;
+        border-radius: 15px;
+    }
+    
+    .centralizar4 h2 {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    
+    .centralizar4 {
+        width: 100%;
+        align-content: center;
+        margin: 30px auto;
+    }
+    
     .btn {
         padding: 15px;
         font-size: 14px;
@@ -1299,7 +1322,8 @@
     }
     
     #popup,
-    #popup2 {
+    #popup2,
+    #popup3 {
         background: rgba(0, 0, 0, 0.8);
         position: fixed;
         width: 100%;

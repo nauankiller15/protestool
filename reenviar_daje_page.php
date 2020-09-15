@@ -1,7 +1,9 @@
 <div class="fadeIn2">
     <form method="post" action="">
         <div class="shortcutkey">
-            <p>Teclas de atalho:</p> Alt + A
+        <a href="javascript: abrir3();">
+                <p>Teclas de atalho:</p> Alt + A
+            </a>
         </div>
         <form method="post" action="consulta_daje.php">
             <div class="wrap-input100 validate-input m-b-23">

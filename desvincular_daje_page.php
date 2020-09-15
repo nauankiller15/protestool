@@ -1,7 +1,9 @@
 <div class="fadeIn2">
     <form class="api-request" data-endpoint="DesvincularApontamento">
         <div class="shortcutkey">
-            <p>Teclas de atalho:</p> Alt + A
+        <a href="javascript: abrir3();">
+                <p>Teclas de atalho:</p> Alt + A
+            </a>
         </div>
         <div class="wrap-input100 validate-input m-b-23">
             <span class="label-input100">Número do daje:</span>
