@@ -101,5 +101,6 @@
             arrastarlista();
             bindApiRequestSubmit();
             shortcutkey();
+            inputvalue();
         </script>
 </div>

@@ -48,7 +48,7 @@ $("#ip").on("blur", "", function() {
 
     if (!$("#ip").val().length != 1) {
         $(".circleon").show();
-        $(".textvalue").show();
+
     }
     if (!$("#ip").val().length != 0) {
         $(".circleon").hide();
@@ -58,7 +58,6 @@ $("#ip").on("blur", "", function() {
         $(".tooltip,.tooltiptext").hide();
         $(".userlogado1").hide();
         $(".userlogado2").show();
-
     }
 });
 
@@ -80,8 +79,6 @@ $(document).ready(function() {
     setTimeout(function() {
         toastr.info("Seja bem-vindo ao Protestool!");
     }, 700);
-
-
 });
 
 function codretorno() {

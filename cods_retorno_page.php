@@ -40,4 +40,5 @@
             codretorno2();
             arrastarlista();
             bindApiRequestSubmit();
+            inputvalue();
         </script>

@@ -19,7 +19,7 @@
                 <button type="save" id="save" class="btn3"><i class="fas fa-save"></i> Salvar</button> <button id="reset" onclick="clearCookies();" type="reset" class="btnlimpar reset"><i class="far fa-times-circle"></i> Limpar</button>
             </div>
         </form>
-        <div class="shortcutkey">
+        <div class="shortcutkey2">
             <p>Teclas de atalho:</p> Alt + G
         </div>
     </div>
@@ -69,6 +69,7 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/loginform.js"></script>
 <script src="js/activemenu.js"></script>
 <script src="js/notifcationbar.js"></script>
 <script src="js/cookies.js"></script>
@@ -80,6 +81,7 @@
 <script>
     bindApiRequestSubmit();
     maskinput();
+    inputvalue();
     fecharpopup();
     shortcutkey();
     storeValues(form);

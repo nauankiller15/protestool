@@ -40,3 +40,15 @@ function shortcutkey() {
     $(".shortcutkey").find("p").fadeIn(800).delay(3000).fadeOut(800);
     $(".shortcutkey2").find("p").fadeIn(600).delay(2700).fadeOut(600);
 }
+
+function inputvalue() {
+    $('.input100').each(function() {
+        $(this).on('blur', function() {
+            if ($(this).val().trim() != "") {
+                $(this).addClass('has-val');
+            } else {
+                $(this).removeClass('has-val');
+            }
+        })
+    })
+}

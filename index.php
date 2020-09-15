@@ -4,8 +4,6 @@
 <?php include("includes/headindex.php"); ?>
 
 <body>
-
-
     <div class="titulo">
         <h2>ProtesTool</h2>
     </div>

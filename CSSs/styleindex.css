@@ -1630,11 +1630,11 @@
     }
     
     .input100:focus+.focus-input100::after {
-        color: #2664b6;
+        color: #2664b6 !important;
     }
     
     .has-val.input100+.focus-input100::after {
-        color: #2664b6;
+        color: #2664b6 !important;
     }
     
     .avisoindex {
@@ -1648,7 +1648,7 @@
         position: absolute;
         display: block;
         top: 52px;
-        right: -5px;
+        right: -22px;
         cursor: pointer;
         transition: 0.5s;
     }
@@ -1714,7 +1714,7 @@
     }
     
     .shortcutkey2 {
-        float: right;
+        right: 10px;
         font-size: 14px;
         font-weight: bold;
         color: #555555;
@@ -1723,4 +1723,5 @@
         border: 1px solid #8f8f8f;
         border-radius: 7px;
         padding: 4px;
+        position: absolute;
     }
