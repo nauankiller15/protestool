@@ -1702,6 +1702,7 @@
         border-radius: 7px;
         padding: 4px;
         cursor: pointer;
+        transition: border 0.7s;
     }
     
     .shortcutkey p,
@@ -1711,6 +1712,17 @@
         font-family: sans-serif;
         margin-top: -1px;
         margin-right: 4px;
+        animation: go-back2 0.6s infinite alternate;
+        padding-right: 6px;
+    }
+    
+    @keyframes go-back2 {
+        from {
+            transform: translateX(5px);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
     
     .shortcutkey2 {
@@ -1724,4 +1736,5 @@
         border-radius: 7px;
         padding: 4px;
         position: absolute;
+        transition: border 0.7s;
     }
