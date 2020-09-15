@@ -52,3 +52,9 @@ function inputvalue() {
         })
     })
 }
+
+$("#save").on("click", function() {
+    setTimeout(function() {
+        toastr.warning("Tentando se comunicar com o banco de dados!");
+    }, 2300);
+})

@@ -76,10 +76,13 @@ $(document).ready(function() {
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
     });
 
+
     setTimeout(function() {
         toastr.info("Seja bem-vindo ao Protestool!");
     }, 700);
 });
+
+
 
 function codretorno() {
     $("#codretorno").click(function() {
