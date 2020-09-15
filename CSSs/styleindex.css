@@ -419,12 +419,12 @@
     .centralizar4 li {
         width: 100%;
         align-content: center;
-        margin: 20px auto;
+        margin: 32px auto;
         padding: 10px;
         font-size: 20px;
         list-style: none;
-        width: 65%;
-        border-bottom: 1px solid #2664b6;
+        width: 43%;
+        border-bottom: 2px solid #2664b6;
         border-radius: 15px;
     }
     
@@ -1761,4 +1761,18 @@
         padding: 4px;
         position: absolute;
         transition: border 0.7s;
+    }
+    
+    .shortcutkey3 {
+        float: right;
+        font-size: 18px;
+        font-weight: bold;
+        color: #555555;
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+        border: 1px solid #8f8f8f;
+        border-radius: 7px;
+        padding: 4px;
+        cursor: pointer;
+        transition: border 0.7s;
+        margin-top: -10px;
     }

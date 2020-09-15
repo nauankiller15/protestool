@@ -35,11 +35,12 @@
         <span data-tooltip3="Fechar tela"><a href="javascript: fechar3();"><button type="submit" class="btnsair">✖️</button></a></span>
             <div class="centralizar4">
                 <h2>Atalhos do Sistema</h2>
-                <li>Desvincular Daje - Alt + S</li>
-                <li>Consultar Daje - Alt + C</li>
-                <li>Reenviar Daje - Alt + R</li>
-                <li>Abrir Configurações - Alt + G</li>
-                <li>Sair do Sistema- Alt + Q</li>
+                <li>Caixa de Consulta - <div class="shortcutkey3">Alt + A</div></li>
+                <li>Desvincular Daje - <div class="shortcutkey3">Alt + S</div></li>
+                <li>Consultar Daje - <div class="shortcutkey3">Alt + C</div></li>
+                <li>Reenviar Daje - <div class="shortcutkey3">Alt + R</div></li>
+                <li>Abrir Configurações - <div class="shortcutkey3">Alt + G</div></li>
+                <li>Sair do Sistema - <div class="shortcutkey3">Alt + Q</div></li>
             </div>
     </div>
 </div>
