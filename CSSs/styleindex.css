@@ -491,30 +491,29 @@
     .btn3:hover {
         background: #123869;
     }
-
+    
     .btn4 {
-        padding: 15px;
-        font-size: 22px;
+        padding: 10px;
+        font-size: 34px;
         color: #2362b4;
         border: none;
         border-radius: 5px;
         text-transform: uppercase;
         width: 42%;
-        display: block;
-        right: -248px;
-        top: -58px;
+        float: right;
         cursor: pointer;
         transition: 0.5s;
         position: absolute;
+        display: flex;
         -webkit-animation: glow3 1s ease-in-out infinite alternate;
         -moz-animation: glow3 1s ease-in-out infinite alternate;
         animation: glow3 1s ease-in-out infinite alternate;
     }
     
     .btn4:hover {
-    color: #123869;
+        color: #123869;
     }
-
+    
     @keyframes glow3 {
         from {
             text-shadow: 0 0 3px #88b4ee, 0 0 5px #fff, 0 0 3px #88b4ee, 0 0 5px #88b4ee, 0 0 5px #88b4ee, 0 0 5px #88b4ee, 0 0 9px #88b4ee;
@@ -523,7 +522,6 @@
             text-shadow: 0 0 2px #88b4ee, 0 0 5px #88b4ee, 0 0 5px #88b4ee, 0 0 10px #88b4ee, 0 0 10px #88b4ee, 0 0 8px #88b4ee, 0 0 8px #88b4ee;
         }
     }
-    
     
     .btnlimpar {
         padding: 15px;
