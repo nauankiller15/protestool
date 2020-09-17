@@ -96,13 +96,13 @@
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/darkmode.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/loginform.js"></script>
 <script src="js/activemenu.js"></script>
 <script src="js/notifcationbar.js"></script>
 <script src="js/toastr.js"></script>
 <script src="js/cookies.js"></script>
-
 <script src="js/ajax.js"></script>
 <script src="js/main.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>

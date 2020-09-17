@@ -109,9 +109,66 @@
         }
     }
     
+    html {
+        --background: #dcdcdd;
+        --text: #555555;
+        --background_alt: rgba(141, 141, 141, 0.692);
+    }
+    
     body {
         font-size: 100%;
         background: #dcdcdd;
+    }
+    
+    .hidden {
+        display: none !important;
+    }
+    
+    .theme-toggle-container {
+        cursor: pointer;
+        background-color: rgba(184, 184, 184, 0.479);
+    }
+    
+    .theme-toggle {
+        width: 50px;
+        height: 30px;
+        background-color: rgba(184, 184, 184, 0.479);
+        border-radius: 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        float: right;
+        margin-top: 5px;
+    }
+    
+    .theme-toggle:after {
+        width: 22px;
+        height: 22px;
+        display: block;
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        background-color: #fcc100;
+        border-radius: 50%;
+        border: 0px solid #fcc100;
+    }
+    
+    input[name=theme].animating+.theme-toggle:after {
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+    
+    input[name=theme]:checked+.theme-toggle:after {
+        left: calc(100% - 33px);
+        background-color: transparent;
+        border-right-width: 6px;
+        border-right-color: #FFF;
+    }
+    
+    input[name=theme]:checked+.theme-toggle:before {
+        opacity: 1;
     }
     
     .header {
