@@ -68,7 +68,7 @@
                 <h2>Tem certeza que deseja sair?</h2>
             </div>
             <div class="centralizar3">
-                <a href="javascript: fechar2();"><button type="noexit" id="noexit" class="btn3"><i class="fas fa-undo-alt"></i> Voltar</button></a> <button id="exit" type="exit" class="btnlimpar"><i class="fas fa-power-off"></i> Sair</button>
+                <a href="javascript: fechar2();"><button type="noexit" id="noexit" class="btn3"><i class="fas fa-undo-alt"></i> Voltar</button></a> <a href="index.php?logout='1'"><button id="exit" type="exit" class="btnlimpar"><i class="fas fa-power-off"></i> Sair</button></a>
             </div>
             </form>
         </div>

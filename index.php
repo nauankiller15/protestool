@@ -1,3 +1,12 @@
+<?php include('conexao.php'); 
+
+ //Se o usuário não estiver logado, não poderá sair desta página
+
+ if (empty($_SESSION['username'])){
+    header('location: login.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

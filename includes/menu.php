@@ -1,8 +1,12 @@
 <div class="userlogado1">
-    <p>Siscart</p>
+    <p>  <?php if (isset($_SESSION["username"])) : ?>
+            <p><strong><?php echo $_SESSION['username']; ?></strong> /
+            <?php endif ?></p>
 </div>
 <div class="userlogado2">
-    <p>Siscart</p>
+    <p>  <?php if (isset($_SESSION["username"])) : ?>
+            <p><strong><?php echo $_SESSION['username']; ?></strong> /
+            <?php endif ?></p>
 </div>
 <nav class="menu">
     <ul>

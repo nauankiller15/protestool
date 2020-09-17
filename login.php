@@ -1,3 +1,4 @@
+<?php include('conexao.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -36,9 +37,7 @@
                 <div class="circleon" style="animation-delay: 0.8s"></div>
                 <div class="circleon" style="animation-delay: 1.8s"></div>
                 <span data-tooltip2="Parâmetros do servidor">
-                    <div class="tooltip">
-                        <span class="tooltiptext">Parametrizar configurações: ⚙️
-                    </div><a accesskey="g" href="javascript: abrir();"><span class="gear">⚙️</button></a>
+                    <div class="tooltip"><span class="tooltiptext">Parametrizar configurações: ⚙️</div><a accesskey="g" href="javascript: abrir();"><span class="gear">⚙️</button></a>
                 </span>
                 </span>
             </div>

@@ -682,8 +682,9 @@ div.well {
   border-radius: 5px;
   position: absolute;
   z-index: 1;
-  top: -52px;
-  right: -110px;
+  top: -39px;
+  padding: 7px;
+  left: calc(100% + -115px);
   animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
   -moz-box-shadow: 3px 2px 1px #000000;
   -webkit-box-shadow: 3px 2px 1px #000000;
@@ -703,6 +704,36 @@ div.well {
       0 0 50px #2362b4, 0 0 60px #2362b4, 0 0 70px #2362b4, 0 0 80px #2362b4;
   }
 }
+
+[data-tooltip2] {
+  position: relative;
+  background: white;
+  font-family: sans-serif;
+}
+
+[data-tooltip2]:after {
+  display: none;
+  position: absolute;
+  top: -39px;
+  padding: 7px;
+  border-radius: 5px;
+  left: calc(100% + -115px);
+  content: attr(data-tooltip2);
+  background-color: #2664b6;
+  color: White;
+  -moz-box-shadow: 3px 2px 1px #000000;
+  -webkit-box-shadow: 3px 2px 1px #000000;
+  box-shadow: 3px 3px 10px #a7a7a7;
+  width: 200px;
+  animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
+  z-index: 995;
+}
+
+[data-tooltip2]:hover:after {
+  display: block;
+  transition: 0.5s;
+}
+
 [data-tooltip3] {
   position: relative;
   background: white;
