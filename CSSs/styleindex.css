@@ -752,40 +752,7 @@
         border: 1px solid rgb(255, 255, 255);
         background: rgb(24, 40, 70);
     }
-    
-    .sucesso {
-        padding: 8px;
-        border: 1px solid #116933;
-        color: #116933;
-        background-color: #dff2de;
-        border-radius: 5px;
-        text-align: center;
-        float: center;
-        display: block;
-        -moz-box-shadow: 3px 2px 1px #000000;
-        -webkit-box-shadow: 3px 2px 1px #000000;
-        box-shadow: 3px 3px 10px #a7a7a7;
-        max-width: 350px;
-        margin: 20px auto 20px;
-        animation: fadeIn 0.5s;
-    }
-    
-    .error {
-        padding: 8px;
-        border: 1px solid #a94442;
-        color: #a94422;
-        background-color: #f2dede;
-        border-radius: 5px;
-        text-align: center;
-        float: center;
-        display: block;
-        -moz-box-shadow: 3px 2px 1px #000000;
-        -webkit-box-shadow: 3px 2px 1px #000000;
-        box-shadow: 3px 3px 10px #a7a7a7;
-        max-width: 350px;
-        margin: 20px auto 20px;
-        animation: fadeIn 0.5s;
-    }
+
     
     #lds-spinner {
         display: none;
