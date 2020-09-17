@@ -1,4 +1,3 @@
-
 <div id="popup">
     <div class="popup">
         <div class="popup_head">
@@ -6,19 +5,24 @@
                 <span></span>
             </div>
         </div>
-        <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit" class="btnsair">✖️</button></a></span>
-        <span data-tooltip="Testar Conexão"><span id="testar-conexao-btn" class="btn4"><i class="fas fa-broadcast-tower"></i></span></span>
+        <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit"
+                    class="btnsair">✖️</button></a></span>
+        <span data-tooltip="Testar Conexão"><span id="testar-conexao-btn" class="btn4"><i
+                    class="fas fa-broadcast-tower"></i></span></span>
         <form id="configip" class="api-request" data-endpoint="Config">
             <div class="wrap-input100 validate-input m-b-23">
                 <div class="textvalue">
                     <span class="label-input100">IP do servidor:</span>
-                    <input class="input100" id="ip" title="Deve conter o padrão de IP do servidor" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" autocomplete="off" required>
-                    <span class="focus-input100" data-symbol="&#xf233;"></span>
+                    <input class="input100" id="ip" title="Deve conter o padrão de IP do servidor" type="text"
+                        placeholder="Ex.:192.168.XXX.XXX" name="ip" autocomplete="off" required>
+                    <span class="focus2-input100" data-symbol="&#xf233;"></span>
                 </div>
             </div>
             <p class="avisoindex">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
             <div class="centralizar3">
-                <button type="button" class="btn3" id="salvar-configuracao-btn"><i class="fas fa-save"></i> Salvar</button> <button id="limparConfigBTN" type="reset" class="btnlimpar reset"><i class="far fa-times-circle"></i>
+                <button type="button" class="btn3" id="salvar-configuracao-btn"><i class="fas fa-save"></i>
+                    Salvar</button> <button id="limparConfigBTN" type="reset" class="btnlimpar reset"><i
+                        class="far fa-times-circle"></i>
                     Limpar</button>
             </div>
         </form>
@@ -61,10 +65,10 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
 <script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
 <script>
-    bindApiRequestSubmit();
-    maskinput();
-    inputvalue();
-    fecharpopup();
-    shortcutkey();
-    codretorno();
+bindApiRequestSubmit();
+maskinput();
+inputvalue();
+fecharpopup();
+shortcutkey();
+codretorno();
 </script>

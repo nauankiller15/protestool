@@ -13,7 +13,7 @@
     <div class="fadeIn">
         <div class="header">
         </div>
-        <form id="login" data-endpoint="login" class="formlogin api-request">
+        <form id="login" data-endpoint="Login" class="formlogin api-request">
             <div class="wrap-input100 validate-input m-b-23" data-validate="Usuário necessário">
                 <span class="label-input100">Usuário:</span>
                 <input class="input100" type="username" name="usuario" placeholder="Digite aqui seu Usuário" required>
