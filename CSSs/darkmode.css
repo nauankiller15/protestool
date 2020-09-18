@@ -1,0 +1,135 @@
+html {
+    font-family: 'Montserrat';
+    --bg: #dcdcdd;
+    --bgform: #ffffff;
+    --color-headings: #0077FF;
+    --shadow: #a1a1a1;
+    --footerbg: #eeeeee;
+    --textcolor :#6d6d6d;
+
+}
+
+html[data-theme='dark'] {
+    --bg: #1d1d1d;
+    --bgform:#313131;
+    --color-headings: #3694FF;
+    --color-text: #B5B5B5;
+    --shadow:#000000;
+    --footerbg: #313131;
+    --textcolor:  #fdfdfd;
+}
+
+/* FormLogin */
+.formlogin {
+    width: 22%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #87a6cf;
+    background-color: var(--bgform);
+    border-radius: 0px 0px 10px 10px;
+    font-family: sans-serif;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 5px 5px 25px var(--shadow);
+}
+
+/* Footer login/index */
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 14px;
+    background-color: var(--footerbg);
+    text-align: center;
+    border: 1px solid #fff;
+    color: var(--textcolor);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 100%;
+    text-shadow: 1px 1px 2px var(--shadow);
+}
+
+/* InputLogin */
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.label-input100 {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: var(--textcolor);
+    line-height: 1.5;
+    padding-left: 7px;
+}
+
+.input100 {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: var(--textcolor);
+    line-height: 1.2;
+    display: block;
+    width: 87%;
+    height: 55px;
+    background: transparent;
+    padding: 0 7px 0 43px;
+}
+
+/*  */
+
+body {
+    background-color: var(--bg);
+}
+
+
+.theme-color-div{margin: 15px auto;width: 5%;}
+
+.inputheme[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.labeltheme {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	border-radius: 100px;
+	position: absolute;
+}
+
+.labeltheme:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.inputheme:checked + .labeltheme {
+	background: var(--color-headings);
+}
+
+.inputheme:checked + .labeltheme:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.labeltheme:active:after {
+	width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}

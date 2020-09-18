@@ -68,6 +68,7 @@ $("#entrar").click(function() {
                     window.location.href = "index.php";
                 } else {
                     toastr.error("Falha ao realizar login!");
+                    toastr.error("Falha ao realizar login!");
                 }
             } else {
                 toastr.warning("Informe usuário e senha para entrar!");

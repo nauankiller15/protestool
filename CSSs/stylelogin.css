@@ -1,7 +1,6 @@
 body {
     font-size: 100%;
     background: #dcdcdd;
-    color: white;
 }
 
 * {
@@ -114,21 +113,6 @@ a:hover {
     }
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    padding: 14px;
-    background-color: #eeeeee;
-    text-align: center;
-    border: 1px solid #fff;
-    color: #6d6d6d;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
-    width: 100%;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
-}
-
 @keyframes slideIn {
     from {
         margin-left: 10%;
@@ -150,18 +134,7 @@ a:hover {
     padding: 2px 22px 10px 20px;
 }
 
-.formlogin {
-    width: 22%;
-    margin: 0px auto;
-    padding: 20px;
-    border: 1px solid #87a6cf;
-    background: white;
-    border-radius: 0px 0px 10px 10px;
-    font-family: sans-serif;
-    -moz-box-shadow: 3px 2px 1px #000000;
-    -webkit-box-shadow: 3px 2px 1px #000000;
-    box-shadow: 5px 5px 25px #a1a1a1;
-}
+
 
 @-webkit-keyframes fadeIn {
     0% {
@@ -232,7 +205,7 @@ form p {
 
 /* icone usuário */
 
-f .input-group {
+.input-group {
     margin: 2px 2px 10px 0px;
 }
 
