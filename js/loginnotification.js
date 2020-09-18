@@ -1,11 +1,11 @@
 // Função de notificar o usuário ao parametrizar configurações
 
-var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3600);
+var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 1600);
 
 function alertaConfiguracao() {
     if (!$("#ip").val().length != 0) {
-        toastr.warning("Realize os parâmetros de configuração acima!");
-        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
+        toastr.warning("Realize os parâmetros de configuração para acessar o sistema!");
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 1500);
         $(".circleon").hide();
         $(".circleoff").show();
     } else {
@@ -22,12 +22,12 @@ if (!$("#ip:required").val().length != 0) {
     $(".userlogado2").show();
 }
 
-var alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 12000);
+var alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 7000);
 
 function alertaConfiguracao2() {
     if (!$("#ip").val().length != 0) {
         toastr.error("A conexão com o banco de dados foi perdida!");
-        alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
+        alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 6500);
         $(".circleon").hide();
         $(".circleoff").show();
     } else {
