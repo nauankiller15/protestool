@@ -1,11 +1,11 @@
 <div class="userlogado1">
-    <p>  <?php if (isset($_SESSION["username"])) : ?>
-            <p><strong><?php echo $_SESSION['username']; ?></strong>
+    <p>  <?php if (isset($_SESSION["usuario"])) : ?>
+            <p><strong><?php echo $_SESSION['usuario']; ?></strong>
             <?php endif ?></p>
 </div>
 <div class="userlogado2">
-    <p>  <?php if (isset($_SESSION["username"])) : ?>
-            <p><strong><?php echo $_SESSION['username']; ?></strong>
+    <p>  <?php if (isset($_SESSION["usuario"])) : ?>
+            <p><strong><?php echo $_SESSION['usuario']; ?></strong>
             <?php endif ?></p>
 </div>
 <nav class="menu">

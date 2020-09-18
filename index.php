@@ -1,8 +1,8 @@
-<?php include('conexao.php'); 
-
+<?php 
+session_start ();
  //Se o usuário não estiver logado, não poderá sair desta página
 
- if (empty($_SESSION['username'])){
+ if (!isset($_SESSION['usuario'])){ 
     header('location: login.php');
 }
 

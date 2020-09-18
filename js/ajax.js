@@ -43,3 +43,35 @@ function getStatusErrorMsg(status) {
 $("#testar-conexao-btn").click(function() {
     $("#configip").submit();
 });
+
+$(".login-enter").keypress(function (ev) {
+    var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+    if (keycode == '13') {
+        $("#entrar").click();
+    }
+});
+
+$("#entrar").click(function() {
+    let usuario = $('[name="usuario"]').val();
+    let senha = $('[name="senha"]').val();
+    let ip = $('[name="ip"]').val();
+
+    $.post('logar.php', 
+        {
+            "usuario": usuario,
+            "senha": senha,
+            "ip": ip
+        },
+        function (data) {
+            if (usuario && senha) {
+                if (data == "200") {
+                    window.location.href = "index.php";
+                } else {
+                    toastr.error("Falha ao realizar login!");
+                }
+            } else {
+                toastr.warning("Informe usuário e senha para entrar!");
+            }
+        }
+    );
+});
