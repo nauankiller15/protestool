@@ -191,18 +191,6 @@ form {
     padding: 20px;
 }
 
-form p {
-    margin: 6px;
-    text-align: center;
-    float: center;
-    display: block;
-    margin: 5px auto;
-    font-size: 13px;
-    color: #555555;
-    font-family: sans-serif;
-}
-
-
 /* icone usuário */
 
 .input-group {
@@ -438,11 +426,6 @@ div.well {
 
 /*  */
 
-.avisoindex {
-    padding: 15px;
-    font-size: 15px;
-    color: #555555;
-}
 
 .centralizar3 {
     width: 100%;
