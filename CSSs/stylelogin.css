@@ -75,34 +75,7 @@ a:hover {
     text-decoration: none;
 }
 
-.titulo {
-    font-family: Agency FB;
-    font-size: 360%;
-    cursor: default;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #2664b6;
-    margin: 100px auto 0px;
-    text-align: center;
-    text-shadow: 1px 2px 4px rgb(155, 155, 155);
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: slideIn 0.8s, glow 2s ease-in-out infinite alternate;
-    transition: 0.5s;
-}
 
-.titulo:hover {
-    color: #006aff;
-    transition: 1.2s;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #2362b4, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #2362b4, 0 0 50px #ffffff;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 50px #ffffff, 0 0 60px #2362b4, 0 0 70px #2362b4;
-    }
-}
 
 @keyframes glow2 {
     from {
@@ -527,20 +500,6 @@ div.well {
     to {
         transform: translateX(0);
     }
-}
-
-.shortcutkey2 {
-    right: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #555555;
-    margin-top: 5px;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
-    border: 1px solid #8f8f8f;
-    border-radius: 7px;
-    padding: 4px;
-    position: absolute;
-    transition: border 0.7s;
 }
 
 [data-tooltip] {
