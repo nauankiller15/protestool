@@ -79,6 +79,7 @@ a:hover {
 .titulo {
     font-family: Agency FB;
     font-size: 360%;
+    cursor: default;
     font-weight: bold;
     text-transform: uppercase;
     color: #2664b6;
@@ -87,7 +88,6 @@ a:hover {
     text-shadow: 1px 2px 4px rgb(155, 155, 155);
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: slideIn 0.8s, glow 2s ease-in-out infinite alternate;
-    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -232,7 +232,7 @@ form p {
 
 /* icone usuário */
 
-.input-group {
+f .input-group {
     margin: 2px 2px 10px 0px;
 }
 
