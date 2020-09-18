@@ -11,6 +11,10 @@
     </div>
     <div class="input-group2">
     </div>
+    <div class="input-group">
+    </div>
+    <div class="input-group3">
+    </div>
     <div class="fadeIn">
         <div class="header">
         </div>
@@ -26,9 +30,7 @@
                 <input class="input100" type="password" name="senha" placeholder="Digite aqui sua Senha" required>
                 <span class="focus-input100" data-symbol="&#xf190;"></span>
             </div>
-            <div class="input-group">
-                <button type="submit" name="entrar" class="btn"><i class="fas fa-sign-in-alt"></i> Entrar</button>
-            </div>
+            <button type="submit" name="entrar" class="btn"><i class="fas fa-sign-in-alt"></i> Entrar</button>
             <div class="tools">
                 <div class="circleoff" style="animation-delay: 0s"></div>
                 <div class="circleoff" style="animation-delay: 0.8s"></div>
@@ -37,7 +39,9 @@
                 <div class="circleon" style="animation-delay: 0.8s"></div>
                 <div class="circleon" style="animation-delay: 1.8s"></div>
                 <span data-tooltip2="Parâmetros do servidor">
-                    <div class="tooltip"><span class="tooltiptext">Parametrizar configurações: ⚙️</div><a accesskey="g" href="javascript: abrir();"><span class="gear">⚙️</button></a>
+                    <div class="tooltip"><span class="tooltiptext">Parametrizar configurações: ⚙️</div><a accesskey="g" href="javascript: abrir();">
+                        <span class="gear">⚙️</button>
+                    </a>
                 </span>
                 </span>
             </div>

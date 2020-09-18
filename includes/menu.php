@@ -1,11 +1,11 @@
 <div class="userlogado1">
     <p>  <?php if (isset($_SESSION["username"])) : ?>
-            <p><strong><?php echo $_SESSION['username']; ?></strong> /
+            <p><strong><?php echo $_SESSION['username']; ?></strong>
             <?php endif ?></p>
 </div>
 <div class="userlogado2">
     <p>  <?php if (isset($_SESSION["username"])) : ?>
-            <p><strong><?php echo $_SESSION['username']; ?></strong> /
+            <p><strong><?php echo $_SESSION['username']; ?></strong>
             <?php endif ?></p>
 </div>
 <nav class="menu">
@@ -37,34 +37,3 @@
         </div>
     </ul>
 </nav>
-
-<!-- 
-<script>
- return (
-    <div className={darkMode ? "dark-mode" : "light-mode"}>
-      <nav>
-        <div className="toggle-container">
-          <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
-          <span className="toggle">
-            <input
-              checked={darkMode}
-              onChange={() => setDarkMode(prevMode => !prevMode)}
-              id="checkbox"
-              className="checkbox"
-              type="checkbox"
-            />
-            <label htmlFor="checkbox" />
-          </span>
-          <span style={{ color: darkMode ? "slateblue" : "grey" }}>☾</span>
-          {/* <button onClick={() => setDarkMode(prevMode => !prevMode)}>
-          Toggle
-        </button> */}
-        </div>
-      </nav>
-      <main>
-        <h1>{darkMode ? "Dark Mode" : "Light Mode"}</h1>
-        <h2>Toggle the switch to see some magic happen!</h2>
-      </main>
-    </div>
-  );
-    </script> -->
