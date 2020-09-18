@@ -44,7 +44,7 @@ $("#testar-conexao-btn").click(function() {
     $("#configip").submit();
 });
 
-$(".login-enter").keypress(function (ev) {
+$(".login-enter").keypress(function(ev) {
     var keycode = (ev.keyCode ? ev.keyCode : ev.which);
     if (keycode == '13') {
         $("#entrar").click();
@@ -56,18 +56,16 @@ $("#entrar").click(function() {
     let senha = $('[name="senha"]').val();
     let ip = $('[name="ip"]').val();
 
-    $.post('logar.php', 
-        {
+    $.post('logar.php', {
             "usuario": usuario,
             "senha": senha,
             "ip": ip
         },
-        function (data) {
+        function(data) {
             if (usuario && senha) {
                 if (data == "200") {
                     window.location.href = "index.php";
                 } else {
-                    toastr.error("Falha ao realizar login!");
                     toastr.error("Falha ao realizar login!");
                 }
             } else {

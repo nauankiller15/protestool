@@ -109,7 +109,6 @@
         }
     }
     
-   
     .hidden {
         display: none !important;
     }
@@ -584,12 +583,13 @@
         transition: 0.5s;
         margin-left: 10px;
     }
-
-    .btnlimpar:hover, .btnfechar:hover {
+    
+    .btnlimpar:hover,
+    .btnfechar:hover {
         background: #691212;
         color: #fff;
     }
-
+    
     .btnfechar {
         padding: 15px;
         font-size: 14px;
@@ -1084,7 +1084,6 @@
         transition: ease-in-out, background 0.35s ease-in-out;
     }
     
-
     .loginid[type="text"]:focus {
         background: #366db4;
         color: #fff;
@@ -1149,177 +1148,6 @@
         transition: ease-in-out, color 0.35s ease-in-out;
     }
     
-    [data-tooltip] {
-        position: relative;
-        background: white;
-        font-family: sans-serif;
-    }
-    
-    [data-tooltip]:after {
-        display: none;
-        position: absolute;
-        top: -16px;
-        padding: 7px;
-        border-radius: 5px;
-        left: calc(102% + 2px);
-        content: attr(data-tooltip);
-        background-color: #2664b6;
-        color: White;
-        -moz-box-shadow: 3px 2px 1px #000000;
-        -webkit-box-shadow: 3px 2px 1px #000000;
-        box-shadow: 3px 3px 10px #a7a7a7;
-        width: 190px;
-        animation: fadeIn 0.5s, go-back 0.6s infinite alternate;
-        transition: 0.5;
-    }
-    
-    [data-tooltip]:hover:after {
-        display: block;
-        transition: 0.5s;
-        font-family: sans-serif;
-    }
-    
-    [data-tooltip2] {
-        position: relative;
-        background: white;
-        font-family: sans-serif;
-    }
-    
-    [data-tooltip2]:after {
-        display: none;
-        position: absolute;
-        top: -39px;
-        padding: 7px;
-        border-radius: 5px;
-        left: calc(100% + -115px);
-        content: attr(data-tooltip2);
-        background-color: #2664b6;
-        color: White;
-        -moz-box-shadow: 3px 2px 1px #000000;
-        -webkit-box-shadow: 3px 2px 1px #000000;
-        box-shadow: 3px 3px 10px #a7a7a7;
-        width: 200px;
-        animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
-        z-index: 995;
-    }
-    
-    [data-tooltip2]:hover:after {
-        display: block;
-        transition: 0.5s;
-    }
-    
-    [data-tooltip3] {
-        position: relative;
-        background: white;
-        font-family: sans-serif;
-    }
-    
-    [data-tooltip3]:after {
-        display: none;
-        position: absolute;
-        top: -34px;
-        padding: 7px;
-        border-radius: 5px;
-        right: calc(100% + -710px);
-        content: attr(data-tooltip3);
-        background-color: #2664b6;
-        color: White;
-        width: 95px;
-        animation: fadeIn 0.5s, go-back 0.6s infinite alternate;
-    }
-    
-    [data-tooltip3]:hover:after {
-        display: block;
-        transition: 0.5s;
-    }
-    
-    [data-tooltip4] {
-        position: relative;
-        background: white;
-        font-family: sans-serif;
-    }
-    
-    [data-tooltip4]:after {
-        display: none;
-        position: absolute;
-        top: -39px;
-        padding: 7px;
-        border-radius: 5px;
-        left: calc(100% + -130px);
-        content: attr(data-tooltip4);
-        background-color: #2664b6;
-        color: White;
-        -moz-box-shadow: 3px 2px 1px #000000;
-        -webkit-box-shadow: 3px 2px 1px #000000;
-        box-shadow: 3px 3px 10px #a7a7a7;
-        width: 220px;
-        animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
-        z-index: 998;
-    }
-    
-    [data-tooltip4]:hover:after {
-        display: block;
-        transition: 0.5s;
-    }
-    
-    [data-tooltip5] {
-        position: relative;
-        background: white;
-        font-family: sans-serif;
-    }
-    
-    [data-tooltip5]:after {
-        display: none;
-        position: absolute;
-        top: -16px;
-        padding: 7px;
-        border-radius: 5px;
-        right: calc(102% + 10px);
-        content: attr(data-tooltip5);
-        background-color: #2664b6;
-        color: White;
-        -moz-box-shadow: 3px 2px 1px #000000;
-        -webkit-box-shadow: 3px 2px 1px #000000;
-        box-shadow: 3px 3px 10px #a7a7a7;
-        width: 190px;
-        animation: fadeIn 0.5s, go-back 0.6s infinite alternate;
-    }
-    
-    [data-tooltip5]:hover:after {
-        display: block;
-        transition: 0.5s;
-        font-family: sans-serif;
-    }
-    
-    [data-tooltip6] {
-        position: relative;
-        background: white;
-        font-family: sans-serif;
-    }
-    
-    [data-tooltip6]:after {
-        display: none;
-        position: absolute;
-        top: -39px;
-        padding: 7px;
-        border-radius: 5px;
-        left: calc(100% + -10px);
-        content: attr(data-tooltip6);
-        background-color: #2664b6;
-        color: White;
-        -moz-box-shadow: 3px 2px 1px #000000;
-        -webkit-box-shadow: 3px 2px 1px #000000;
-        box-shadow: 3px 3px 10px #a7a7a7;
-        width: 140px;
-        animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
-        z-index: 995;
-    }
-    
-    [data-tooltip6]:hover:after {
-        display: block;
-        transition: 0.5s;
-    }
-    
     @-webkit-keyframes fadeOut {
         0% {}
         99% {
@@ -1380,40 +1208,6 @@
     
     .tooltip:hover .tooltiptext {
         visibility: visible;
-    }
-    
-    
-    /*/////////
-/////////////////////////////////////////////////////////
-[ login ]*/
-    
-    .limiter {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .container-login100 {
-        width: 100%;
-        min-height: 100vh;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .wrap-login100 {
-        width: 500px;
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
     }
     /*---------------------------------------------*/
     
@@ -1510,36 +1304,6 @@
     iframe {
         border: none !important;
     }
-    /*///////////
-///////////////////////////////////////////////////////
-[ Utility ]*/
-    
-    .txt1 {
-        font-family: Poppins-Regular;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #666666;
-    }
-    
-    .txt2 {
-        font-family: Poppins-Regular;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #333333;
-        text-transform: uppercase;
-    }
-    
-    .bg1 {
-        background-color: #3b5998;
-    }
-    
-    .bg2 {
-        background-color: #1da1f2;
-    }
-    
-    .bg3 {
-        background-color: #ea4335;
-    }
     /*/////////
 /////////////////////////////////////////////////////////
 [ login ]*/
@@ -1588,36 +1352,6 @@
         line-height: 1.2;
         text-align: center;
     }
-    /*---------
----------------------------------------------------------
-[ Input ]*/
-    
-    .wrap-input100 {
-        width: 100%;
-        position: relative;
-        border-bottom: 2px solid #d9d9d9;
-    }
-    
-    .label-input100 {
-        font-family: sans-serif;
-        font-size: 16px;
-        color: #333333;
-        line-height: 1.5;
-        padding-left: 7px;
-    }
-    
-    .input100 {
-        font-family: sans-serif;
-        font-size: 17px;
-        color: #333333;
-        line-height: 1.2;
-        display: block;
-        width: 87%;
-        height: 55px;
-        background: transparent;
-        padding: 0 7px 0 43px;
-    }
-    /*---------------------------------------------*/
     
     .focus-input100 {
         position: absolute;

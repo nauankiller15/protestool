@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php 
+<?php
 session_start();
-include("includes/headlogin.php"); 
-if (isset($_SESSION['usuario'])){ 
+include("includes/headlogin.php");
+if (isset($_SESSION['usuario'])) {
     header('location: index.php');
 }
 ?>
 
 <body>
-
+    <div class="theme-color-div">
+        <p><i class="fas fa-palette"></i> Ajuste a Cor do Tema</p>
+        <input class="inputheme" type="checkbox" id="switch" name="theme" /><label class="labeltheme" for="switch">Toggle</label>
+    </div>
+    <div class="lamp"></div>
     <div class="titulo">
         <h2>ProtesTool</h2>
     </div>
@@ -20,25 +24,19 @@ if (isset($_SESSION['usuario'])){
     </div>
     <div class="input-group3">
     </div>
-    <div class="theme-color-div">
-        <input class="inputheme" type="checkbox" id="switch" name="theme" /><label class="labeltheme"
-            for="switch">Toggle</label>
-    </div>
     <div class="fadeIn">
         <div class="header">
         </div>
         <form id="login" data-endpoint="Login" class="formlogin api-request">
             <div class="wrap-input100 validate-input m-b-23" data-validate="Usuário necessário">
                 <span class="label-input100">Usuário:</span>
-                <input class="input100 login-enter" type="text" name="usuario" placeholder="Digite aqui seu Usuário"
-                    required>
+                <input class="input100 login-enter" type="text" name="usuario" placeholder="Digite aqui seu Usuário" required>
                 <span class="focus-input100" data-symbol="&#xf206;"></span>
             </div>
 
             <div class="wrap-input100 validate-input" data-validate="Senha necessária">
                 <span class="label-input100">Senha:</span>
-                <input class="input100 login-enter" type="password" name="senha" placeholder="Digite aqui sua Senha"
-                    required>
+                <input class="input100 login-enter" type="password" name="senha" placeholder="Digite aqui sua Senha" required>
                 <span class="focus-input100" data-symbol="&#xf190;"></span>
             </div>
             <button type="button" id="entrar" class="btn"><i class="fas fa-sign-in-alt"></i> Entrar</button>
@@ -50,8 +48,7 @@ if (isset($_SESSION['usuario'])){
                 <div class="circleon" style="animation-delay: 0.8s"></div>
                 <div class="circleon" style="animation-delay: 1.8s"></div>
                 <span data-tooltip2="Parâmetros do servidor">
-                    <div class="tooltip"><span class="tooltiptext">Parametrizar configurações: ⚙️</div><a accesskey="g"
-                        href="javascript: abrir();">
+                    <div class="tooltip"><span class="tooltiptext">Parametrizar configurações: ⚙️</div><a accesskey="g" href="javascript: abrir();">
                         <span class="gear">⚙️</button>
                     </a>
                 </span>
