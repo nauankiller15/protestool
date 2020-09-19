@@ -22,6 +22,7 @@ html {
     --border-link: #ededed;
     --hovermenu: #d6d6d6;
     --secondtext: #6d6d6d;
+    --hoversecondtext: #000000;
     --sorter-color-table: #f2f2f2;
     --textcolor-table: #000000;
 }
@@ -38,7 +39,7 @@ html[data-theme="dark"] {
     --textcolormenu: #c2c2c2;
     --borderfooter: #2c2c2c;
     --tituloglowblue: #2362b4;
-    --tituloglowhite: rgb(58, 58, 58);
+    --tituloglowhite: #3a3a3a;
     --lampglow1: #242424;
     --lampglow2: #000000;
     --lamplight: #222222;
@@ -50,6 +51,7 @@ html[data-theme="dark"] {
     --border-link: #313131;
     --hovermenu: #222222;
     --secondtext: #fff;
+    --hoversecondtext: #2362b4;
     --sorter-color-table: #222222;
     --textcolor-table: #ffffff;
 }
@@ -377,7 +379,7 @@ a {
 }
 
 a:hover {
-    color: #272727;
+    color: var(--hoversecondtext);
     text-decoration: none;
 }
 
@@ -386,19 +388,19 @@ a:hover {
 
 .shortcutkey2 {
     color: var(--textcolor);
-    text-shadow: 1px 1px 2px var(--shadow);
+    text-shadow: 1px 1px 2px var(--text-shadow);
     border: 1px solid #8f8f8f;
 }
 
 .shortcutkey {
     color: var(--textcolor);
-    text-shadow: 1px 1px 2px var(--shadow);
+    text-shadow: 1px 1px 2px var(--text-shadow);
     border: 1px solid #8f8f8f;
 }
 
 .shortcutkey3 {
     color: var(--textcolor);
-    text-shadow: 1px 1px 2px var(--shadow);
+    text-shadow: 1px 1px 2px var(--text-shadow);
     border: 1px solid #8f8f8f;
 }
 
