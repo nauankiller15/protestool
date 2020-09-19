@@ -614,7 +614,7 @@ form p {
     border: 1px solid rgb(150, 150, 150);
     background: rgb(201, 201, 201);
     font-size: 18px;
-    float: left;
+    float: right;
     margin-right: 5px;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;

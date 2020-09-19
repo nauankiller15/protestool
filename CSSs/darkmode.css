@@ -21,7 +21,7 @@ html {
     --border-link: #ededed;
     --hovermenu: #d6d6d6;
     --secondtext: #6d6d6d;
-    --sorter-rcolor-table: #f2f2f2;
+    --sorter-color-table: #f2f2f2;
     --textcolor-table: #000000;
 }
 
@@ -48,7 +48,7 @@ html[data-theme="dark"] {
     --border-link: #313131;
     --hovermenu: #222222;
     --secondtext: #fff;
-    --sorter-rcolor-table: #222222;
+    --sorter-color-table: #222222;
     --textcolor-table: #ffffff;
 }
 
@@ -181,7 +181,7 @@ table.tablesorter thead tr .header {
 }
 
 table {
-    border: 1px solid #d0d0d0;
+    border: 1px solid var(--border-menu);
     width: 95%;
     display: table;
     margin: 10px auto 0px;
@@ -191,11 +191,12 @@ table {
 
 table.bordered>thead>tr,
 table.bordered>tbody>tr {
-    border-bottom: 1px solid #d0d0d0;
+    border-bottom: 1px solid var(--border-menu);
+    color: var(--textcolor);
 }
 
 table.striped>tbody>tr:nth-child(odd) {
-    background-color: var(--sorter-rcolor-table);
+    background-color: var(--sorter-color-table);
 }
 
 table.striped>tbody>tr>td {
@@ -207,7 +208,7 @@ table.highlight>tbody>tr {
 }
 
 table.highlight>tbody>tr:hover {
-    background-color: var(--sorter-rcolor-table);
+    background-color: var(--sorter-color-table);
 }
 
 table.centered thead tr th,
@@ -651,6 +652,12 @@ body {
     visibility: hidden;
 }
 
+.positiontheme-index {
+    float: left;
+    margin-right: 62px;
+    margin-top: 4px;
+}
+
 .labeltheme {
     cursor: pointer;
     text-indent: -9999px;
@@ -658,6 +665,10 @@ body {
     height: 27px;
     background: grey;
     border-radius: 100px;
+    position: absolute;
+}
+
+.positiontheme-login {
     position: absolute;
     top: 57px;
     left: 132px;

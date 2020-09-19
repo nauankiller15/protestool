@@ -2,7 +2,7 @@
     <div id="informacao" class="window-msg">
         <div class="lista-group">
             <label>Lista de códigos de retorno:</label>
-            <table class="bordered striped centered tablesorter">
+            <table class="bordered striped centered">
                 <thead>
                     <tr>
                         <th><i class="fas fa-project-diagram"></i> Cod. Retorno</th>
@@ -34,11 +34,13 @@
             </table>
         </div>
     </div>
-    <script>
-            MenuAtivo();
-            codretorno();
-            codretorno2();
-            arrastarlista();
-            bindApiRequestSubmit();
-            inputvalue();
-        </script>
+</div>
+<script>
+    MenuAtivo();
+    codretorno();
+    codretorno2();
+    arrastarlista();
+    bindApiRequestSubmit();
+    inputvalue();
+    darkmode();
+</script>

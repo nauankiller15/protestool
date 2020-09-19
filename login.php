@@ -11,8 +11,10 @@ if (isset($_SESSION['usuario'])) {
 
 <body>
     <div class="theme-color-div">
-        <p><i class="fas fa-palette"></i> Ajuste a Cor do Tema</p>
-        <input class="inputheme" type="checkbox" id="switch" name="theme" /><label class="labeltheme" for="switch">Toggle</label>
+        <p><i class="fas fa-palette"></i> Ajuste a Cor do Tema:</p>
+        <div class="positiontheme-login">
+            <input class="inputheme" type="checkbox" id="switch" name="theme" /><label class="labeltheme" for="switch">Toggle</label>
+        </div>
     </div>
     <div class="lamp"></div>
     <div class="titulo">
