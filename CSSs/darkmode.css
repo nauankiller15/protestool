@@ -4,6 +4,7 @@ html {
     --bgform: #ffffff;
     --color-headings: #3694ff;
     --shadow: #a1a1a1;
+    --text-shadow: #fff;
     --footerbg: #ffffff;
     --textcolor: #6d6d6d;
     --textcolormenu: #6d6d6d;
@@ -31,6 +32,7 @@ html[data-theme="dark"] {
     --color-headings: #535353;
     --color-text: #b5b5b5;
     --shadow: #000000;
+    --text-shadow: #000000;
     --footerbg: #333333;
     --textcolor: #ffffff;
     --textcolormenu: #c2c2c2;
@@ -278,7 +280,7 @@ form p {
     font-weight: bold;
     font-family: sans-serif;
     width: 100%;
-    text-shadow: 1px 1px 2px var(--shadow);
+    text-shadow: 1px 1px 2px var(--text-shadow);
 }
 
 
