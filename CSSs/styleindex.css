@@ -950,14 +950,10 @@ table.tablesorter thead tr .header {
 }
 
 table {
-    border: 1px solid #d0d0d0;
     width: 95%;
     display: table;
     margin: 10px auto 0px;
     border-radius: 5px;
-    -moz-box-shadow: 3px 2px 5px #c5c5c5;
-    -webkit-box-shadow: 3px 2px 5px #c5c5c5;
-    box-shadow: 2px 3px 13px #c5c5c5;
 }
 
 table.bordered>thead>tr,

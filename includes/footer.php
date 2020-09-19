@@ -48,10 +48,12 @@
             <li>Desvincular Daje - <div class="shortcutkey3">Alt + S</div>
             </li>
             <li>Consultar Daje - <div class="shortcutkey3">Alt + C</div>
-            </li>
+            </li>   
             <li>Reenviar Daje - <div class="shortcutkey3">Alt + R</div>
             </li>
             <li>Abrir Configurações - <div class="shortcutkey3">Alt + G</div>
+            </li>
+            <li>Mudar a cor do tema - <div class="shortcutkey3">Alt + L</div>
             </li>
             <li>Sair do Sistema - <div class="shortcutkey3">Alt + Q</div>
             </li>

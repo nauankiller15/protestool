@@ -2,7 +2,7 @@ html {
     font-family: "Montserrat";
     --bg: #dcdcdd;
     --bgform: #ffffff;
-    --color-headings: #0077ff;
+    --color-headings: #366db4;
     --shadow: #a1a1a1;
     --footerbg: #eeeeee;
     --textcolor: #6d6d6d;
@@ -100,7 +100,7 @@ html[data-theme="dark"] {
 /* menu */
 
 .menu {
-    background: var(--corindex);
+    background: var(--cor-entrada);
     border: 1px solid var(--border-menu);
 }
 
@@ -113,9 +113,9 @@ html[data-theme="dark"] {
 }
 
 .menu ul li a {
-    background: var(--corindex);
+    background: var(--cor-entrada);
     color: var(--textcolormenu);
-    border-bottom: 3px solid var(--corindex);
+    border-bottom: 3px solid var(--cor-entrada);
 }
 
 .menu-active,
@@ -192,7 +192,7 @@ table {
 table.bordered>thead>tr,
 table.bordered>tbody>tr {
     border-bottom: 1px solid var(--border-menu);
-    color: var(--textcolor);
+    color: var(--textcolor-table);
 }
 
 table.striped>tbody>tr:nth-child(odd) {
