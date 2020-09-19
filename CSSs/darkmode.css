@@ -6,6 +6,7 @@ html {
     --shadow: #a1a1a1;
     --footerbg: #eeeeee;
     --textcolor: #6d6d6d;
+    --textcolormenu: #6d6d6d;
     --borderfooter: #fff;
     --tituloglowblue: #2362b4;
     --tituloglowhite: #fff;
@@ -13,6 +14,15 @@ html {
     --lampglow2: #bebe38;
     --lamplight: #788014;
     --colorborderinput: #d9d9d9;
+    --borderentrada: #87a6cf;
+    --corindex: #eeeeee;
+    --cor-entrada: #ffffff;
+    --border-menu: #c5c5c5;
+    --border-link: #ededed;
+    --hovermenu: #d6d6d6;
+    --secondtext: #6d6d6d;
+    --sorter-rcolor-table: #f2f2f2;
+    --textcolor-table: #000000;
 }
 
 html[data-theme="dark"] {
@@ -21,8 +31,9 @@ html[data-theme="dark"] {
     --color-headings: #3694ff;
     --color-text: #b5b5b5;
     --shadow: #000000;
-    --footerbg: #313131;
+    --footerbg: #333333;
     --textcolor: #ffffff;
+    --textcolormenu: #c2c2c2;
     --borderfooter: #2c2c2c;
     --tituloglowblue: #2362b4;
     --tituloglowhite: rgb(58, 58, 58);
@@ -30,32 +41,25 @@ html[data-theme="dark"] {
     --lampglow2: #000000;
     --lamplight: #222222;
     --colorborderinput: #505050;
+    --borderentrada: #505050;
+    --corindex: #313131;
+    --cor-entrada: #313131;
+    --border-menu: #505050;
+    --border-link: #313131;
+    --hovermenu: #222222;
+    --secondtext: #fff;
+    --sorter-rcolor-table: #222222;
+    --textcolor-table: #ffffff;
 }
 
 
 /* Cabeçalho */
 
 .titulo {
-    font-family: Agency FB;
-    font-size: 360%;
-    cursor: default;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #2664b6;
-    margin: 100px auto 0px;
-    text-align: center;
     text-shadow: 1px 2px 4px var(--shadow);
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: slideIn 0.8s, glow 2s ease-in-out infinite alternate;
-    transition: 0.5s;
 }
 
-.titulo:hover {
-    color: #006aff;
-    transition: 1.2s;
-}
-
-@keyframes glow {
+@keyframes glowtitulo {
     from {
         text-shadow: 0 0 10px var(--tituloglowblue), 0 0 20px var(--tituloglowhite), 0 0 30px var(--tituloglowhite), 0 0 40px var(--tituloglowblue), 0 0 50px var(--tituloglowhite);
     }
@@ -68,7 +72,168 @@ html[data-theme="dark"] {
 /*  */
 
 
+/* User Logado */
+
+.userlogado1 p {
+    color: var(--textcolor);
+    background: var(--corindex);
+    -moz-box-shadow: 1px 2px 1px #000000;
+    -webkit-box-shadow: 1px 2px 1px #000000;
+    box-shadow: 1px 3px 5px var(--shadow);
+}
+
+
+/* Userlogado segunda posição */
+
+.userlogado2 p {
+    color: var(--textcolor);
+    background: var(--corindex);
+    -moz-box-shadow: 1px 2px 1px #000000;
+    -webkit-box-shadow: 1px 2px 1px #000000;
+    box-shadow: 1px 3px 5px var(--shadow);
+}
+
+
+/*  */
+
+
+/* menu */
+
+.menu {
+    background: var(--corindex);
+    border: 1px solid var(--border-menu);
+}
+
+.menu li ul li {
+    border: 1px solid #303030;
+}
+
+.menu ul li {
+    border: 1px solid var(--border-menu);
+}
+
+.menu ul li a {
+    background: var(--corindex);
+    color: var(--textcolormenu);
+    border-bottom: 3px solid var(--corindex);
+}
+
+.menu-active,
+.menu ul li a:hover {
+    background-color: var(--hovermenu) !important;
+    color: #2664b6 !important;
+    border-bottom: 2px solid #2664b6 !important;
+}
+
+
+/*  */
+
+
+/* Corpo do Texto */
+
+.entrada {
+    background: var(--cor-entrada);
+    border-radius: 0px 0px 10px 10px;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px var(--shadow);
+    border: 1px solid var(--borderentrada);
+}
+
+
 /*---------------------------------------------*/
+
+
+/* Tabelas Stripeds */
+
+.lista-group {
+    background-color: var(--cor-entrada);
+}
+
+.lista-group label {
+    color: var(--textcolor-table);
+    border-bottom: 2px solid var(--border-menu);
+}
+
+table.tablesorter thead tr .header {
+    background-image: url(../images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    width: 17%;
+    background: var(--cor-entrada);
+}
+
+#table-scroll {
+    height: 100%;
+    max-height: 480px;
+    overflow: auto;
+    margin-top: 2px;
+    border-radius: 10px;
+    background: var(--cor-entrada);
+    color: var(--textcolor-table);
+}
+
+.finaldapagina {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 50%;
+}
+
+table {
+    border: 1px solid #d0d0d0;
+    width: 95%;
+    display: table;
+    margin: 10px auto 0px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 13px var(--shadow);
+}
+
+table.bordered>thead>tr,
+table.bordered>tbody>tr {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: var(--sorter-rcolor-table);
+}
+
+table.striped>tbody>tr>td {
+    border-radius: 0;
+}
+
+table.highlight>tbody>tr {
+    transition: background-color 0.25s ease;
+}
+
+table.highlight>tbody>tr:hover {
+    background-color: var(--sorter-rcolor-table);
+}
+
+table.centered thead tr th,
+table.centered tbody tr td {
+    text-align: center;
+}
+
+thead {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+thead p {
+    cursor: pointer;
+}
+
+td,
+th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+
+/*  */
 
 
 /* FormLogin */
@@ -200,21 +365,38 @@ form p {
 
 /*  */
 
+a {
+    color: var(--secondtext);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #272727;
+    text-decoration: none;
+}
+
 
 /* Shortcut keys */
 
 .shortcutkey2 {
-    right: 10px;
-    font-size: 14px;
-    font-weight: bold;
     color: var(--textcolor);
-    margin-top: 5px;
     text-shadow: 1px 1px 2px var(--shadow);
     border: 1px solid #8f8f8f;
-    border-radius: 7px;
-    padding: 4px;
-    position: absolute;
-    transition: border 0.7s;
+}
+
+.shortcutkey {
+    color: var(--textcolor);
+    text-shadow: 1px 1px 2px var(--shadow);
+    border: 1px solid #8f8f8f;
+}
+
+.shortcutkey3 {
+    color: var(--textcolor);
+    text-shadow: 1px 1px 2px var(--shadow);
+    border: 1px solid #8f8f8f;
 }
 
 
@@ -225,7 +407,6 @@ form p {
 
 [data-tooltip] {
     position: relative;
-    background: white;
     font-family: sans-serif;
 }
 
@@ -255,7 +436,6 @@ form p {
 
 [data-tooltip2] {
     position: relative;
-    background: white;
     font-family: sans-serif;
 }
 
@@ -284,7 +464,6 @@ form p {
 
 [data-tooltip3] {
     position: relative;
-    background: white;
     font-family: sans-serif;
 }
 
@@ -309,7 +488,6 @@ form p {
 
 [data-tooltip4] {
     position: relative;
-    background: white;
     font-family: sans-serif;
 }
 
@@ -338,7 +516,6 @@ form p {
 
 [data-tooltip5] {
     position: relative;
-    background: white;
     font-family: sans-serif;
 }
 
@@ -367,7 +544,6 @@ form p {
 
 [data-tooltip6] {
     position: relative;
-    background: white;
     font-family: sans-serif;
 }
 
@@ -394,6 +570,25 @@ form p {
     transition: 0.5s;
 }
 
+.tooltip .tooltiptext {
+    visibility: none;
+    width: 229px;
+    background-color: #2664b6;
+    color: White;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -39px;
+    padding: 7px;
+    left: calc(100% + -115px);
+    animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px var(--shadow);
+}
+
 
 /*  */
 
@@ -403,7 +598,7 @@ body {
 
 .theme-color-div {
     left: 22px;
-    top: 32px;
+    top: 17px;
     position: absolute;
 }
 
@@ -479,6 +674,34 @@ body {
     border-radius: 90px;
     transition: 0.3s;
 }
+
+
+/* labeltheme2 */
+
+.labeltheme2 {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.labeltheme:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+
+/*  */
 
 .inputheme:checked+.labeltheme {
     background: var(--color-headings);

@@ -8,6 +8,19 @@ body {
     padding: 0px;
 }
 
+.titulo {
+    font-family: Agency FB;
+    font-size: 360%;
+    cursor: default;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2664b6;
+    margin: 100px auto 0px;
+    text-align: center;
+    animation: slideIn 0.8s, glowtitulo 2s ease-in-out infinite alternate;
+    transition: 0.5s;
+}
+
 .circleoff {
     border-radius: 50%;
     border: 2px solid rgb(151, 48, 48);
@@ -75,8 +88,6 @@ a:hover {
     text-decoration: none;
 }
 
-
-
 @keyframes glow2 {
     from {
         text-shadow: 0 0 10px rgb(226, 85, 85), 0 0 20px #fff, 0 0 30px #ac4141, 0 0 40px #ac4141, 0 0 50px #ac4141, 0 0 60px #ac4141, 0 0 70px #ac4141;
@@ -106,8 +117,6 @@ a:hover {
     border-bottom: none;
     padding: 2px 22px 10px 20px;
 }
-
-
 
 @-webkit-keyframes fadeIn {
     0% {
@@ -163,6 +172,7 @@ form {
     margin: 0px auto;
     padding: 20px;
 }
+
 
 /* icone usuário */
 
@@ -398,7 +408,6 @@ div.well {
 
 
 /*  */
-
 
 .centralizar3 {
     width: 100%;
@@ -866,7 +875,7 @@ div.well {
     transition: all 0.4s;
 }
 
- ::placeholder {
+::placeholder {
     color: black;
     transition: ease-in-out, color 0.35s ease-in-out;
 }

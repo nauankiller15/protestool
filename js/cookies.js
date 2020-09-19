@@ -37,6 +37,15 @@ $("#salvar-configuracao-btn").click(function() {
     return false;
 });
 
+function setStoredStyleSheet(styleSheetKey) {
+    var styleSheet = localStorage.getItem(styleSheetKey);
+    if (!(styleSheet == 'undefined' || styleSheet == undefined)) {
+        swapper(styleSheet);
+    } else {
+        swapper('css/stylesheetalternate.css');
+    }
+}
+
 // Mostrar Cookies
 
 $("#ip").val(getCookie("ip"));
