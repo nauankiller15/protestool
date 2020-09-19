@@ -14,10 +14,8 @@ body {
     cursor: default;
     font-weight: bold;
     text-transform: uppercase;
-    color: #2664b6;
     margin: 100px auto 0px;
     text-align: center;
-    animation: slideIn 0.8s, glowtitulo 2s ease-in-out infinite alternate;
     transition: 0.5s;
 }
 
