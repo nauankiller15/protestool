@@ -108,6 +108,17 @@ a:hover {
     }
 }
 
+@keyframes slideInn {
+    from {
+        margin-left: 25%;
+        width: 65%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 .header {
     width: 22%;
     margin: 100px auto 0px;

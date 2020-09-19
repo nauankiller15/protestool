@@ -12,6 +12,22 @@ function storeValues(form) {
     return true;
 }
 
+function setDataTheme() {
+    // Load cookie
+    if (getCookie("data-theme") == "1")
+        ("#switch").checked = true;
+    else
+        ("#switch").checked = false == "0";
+
+    // Save cookie
+    if ("#switch".checked)
+        setCookie('data-theme', 'light', "1")
+    else
+        setCookie('data-theme', 'dark', "0")
+    return true;
+}
+
+
 // Deletar Cookies
 var expired = new Date(today.getTime() - 24 * 3600 * 1000); // less 24 hours
 
@@ -37,18 +53,10 @@ $("#salvar-configuracao-btn").click(function() {
     return false;
 });
 
-function setStoredStyleSheet(styleSheetKey) {
-    var styleSheet = localStorage.getItem(styleSheetKey);
-    if (!(styleSheet == 'undefined' || styleSheet == undefined)) {
-        swapper(styleSheet);
-    } else {
-        swapper('css/stylesheetalternate.css');
-    }
-}
-
 // Mostrar Cookies
 
 $("#ip").val(getCookie("ip"));
+
 
 function getFormData($form) {
     var unindexed_array = $form.serializeArray();

@@ -4,7 +4,7 @@ html {
     --bgform: #ffffff;
     --color-headings: #366db4;
     --shadow: #a1a1a1;
-    --footerbg: #eeeeee;
+    --footerbg: #ffffff;
     --textcolor: #6d6d6d;
     --textcolormenu: #6d6d6d;
     --borderfooter: #fff;
@@ -27,7 +27,7 @@ html {
 
 html[data-theme="dark"] {
     --bg: #1d1d1d;
-    --bgform: #3d3d3d;
+    --bgform: #313131;
     --color-headings: #3694ff;
     --color-text: #b5b5b5;
     --shadow: #000000;
@@ -588,6 +588,7 @@ body {
     left: 22px;
     top: 17px;
     position: absolute;
+    animation: fadeIn 2.2s;
 }
 
 .theme-color-div p {
@@ -643,6 +644,7 @@ body {
     float: left;
     margin-right: 62px;
     margin-top: 5px;
+    animation: fadeIn 1.2s;
 }
 
 .positiontheme-index p {
@@ -666,6 +668,7 @@ body {
     position: absolute;
     top: 57px;
     left: 132px;
+    animation: fadeIn 1.2s;
 }
 
 .labeltheme:after {
