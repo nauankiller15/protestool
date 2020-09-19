@@ -11,7 +11,7 @@ checkbox.addEventListener('change', function() {
         trans();
         document.documentElement.setAttribute('data-theme', 'light');
         document.cookie = 'data-theme=' == 'light' ? 'dark' : 'light';
-        console.log('Cookies are now: ' + document.cookie);
+        // console.log('Cookies are now: ' + document.cookie);
     }
 })
 
