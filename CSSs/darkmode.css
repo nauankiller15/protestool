@@ -2,7 +2,7 @@ html {
     font-family: "Montserrat";
     --bg: #dcdcdd;
     --bgform: #ffffff;
-    --color-headings: #366db4;
+    --color-headings: #3694ff;
     --shadow: #a1a1a1;
     --footerbg: #ffffff;
     --textcolor: #6d6d6d;
@@ -28,7 +28,7 @@ html {
 html[data-theme="dark"] {
     --bg: #1d1d1d;
     --bgform: #313131;
-    --color-headings: #3694ff;
+    --color-headings: #535353;
     --color-text: #b5b5b5;
     --shadow: #000000;
     --footerbg: #333333;
@@ -659,7 +659,7 @@ body {
     text-indent: -9999px;
     width: 52px;
     height: 27px;
-    background: grey;
+    background: var(--color-headings);
     border-radius: 100px;
     position: absolute;
 }
