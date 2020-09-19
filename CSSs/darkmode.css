@@ -243,7 +243,7 @@ th {
     width: 22%;
     margin: 0px auto;
     padding: 20px;
-    border: 1px solid #87a6cf;
+    border: 1px solid var(--borderentrada);
     background-color: var(--bgform);
     border-radius: 0px 0px 10px 10px;
     font-family: sans-serif;
