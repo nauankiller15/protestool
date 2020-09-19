@@ -4,14 +4,15 @@ checkbox.addEventListener('change', function() {
     if (this.checked) {
         trans();
         document.documentElement.setAttribute('data-theme', 'dark');
+        storeTheme();
         document.cookie = 'data-theme=' == 'dark' ? 'light' : 'dark';
-        setDataTheme();
         console.log('Cookies are now: ' + document.cookie);
     } else {
         trans();
         document.documentElement.setAttribute('data-theme', 'light');
+        storeTheme();
         document.cookie = 'data-theme=' == 'light' ? 'dark' : 'light';
-        // console.log('Cookies are now: ' + document.cookie);
+        console.log('Cookies are now: ' + document.cookie);
     }
 })
 

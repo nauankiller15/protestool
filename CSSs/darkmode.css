@@ -587,9 +587,10 @@ body {
 }
 
 .theme-color-div {
-    left: 22px;
-    top: 17px;
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     animation: fadeIn 2.2s;
 }
 
@@ -597,6 +598,8 @@ body {
     color: var(--textcolor);
     font-size: 25px;
     padding: 15px;
+    bottom: 126px;
+    position: absolute;
 }
 
 
@@ -621,17 +624,17 @@ body {
     width: 32px;
     color: var(--lamplight);
     text-align: center;
-    animation: fadeIn 1.9s, lamp 1.2s ease-in-out infinite alternate;
+    animation: fadeIn 1.9s, lamp 1.0s ease-in-out infinite alternate;
     transform: rotate(180deg);
     /* Equal to rotateZ(45deg) */
 }
 
 @keyframes lamp {
     from {
-        text-shadow: 0 0 15px var(--lampglow2), 0 0 32px var(--lampglow1), 0 0 54px var(--lampglow1), 0 0 40px var(--lampglow2), 0 0 50px var(--lampglow1);
+        text-shadow: 0 0 55px var(--lampglow2), 0 0 52px var(--lampglow1), 0 0 54px var(--lampglow1), 0 0 70px var(--lampglow2), 0 0 50px var(--lampglow1);
     }
     to {
-        text-shadow: 0 0 25px var(--lampglow1), 0 0 50px var(--lampglow1), 0 0 60px var(--lampglow2), 0 0 70px var(--lampglow2), 0 0 50px var(--lampglow1);
+        text-shadow: 0 0 55px var(--lampglow1), 0 0 50px var(--lampglow1), 0 0 60px var(--lampglow2), 0 0 70px var(--lampglow2), 0 0 50px var(--lampglow1);
     }
 }
 
@@ -668,10 +671,15 @@ body {
     position: absolute;
 }
 
+.labelposition {
+    bottom: 101px;
+}
+
 .positiontheme-login {
-    position: absolute;
-    top: 57px;
-    left: 132px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     animation: fadeIn 1.2s;
 }
 

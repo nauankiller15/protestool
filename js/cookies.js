@@ -12,21 +12,11 @@ function storeValues(form) {
     return true;
 }
 
-function setDataTheme() {
-    // Load cookie
-    if (getCookie("data-theme") == "1")
-        ("#switch").checked = true;
-    else
-        ("#switch").checked = false == "0";
-
-    // Save cookie
-    if ("#switch".checked)
-        setCookie('data-theme', 'light', "1")
-    else
-        setCookie('data-theme', 'dark', "0")
+function storeTheme() {
+    setCookie("switch", document.getElementById('switch').checked ? 1 : 0, 100);
+    setCookie("data-theme");
     return true;
 }
-
 
 // Deletar Cookies
 var expired = new Date(today.getTime() - 24 * 3600 * 1000); // less 24 hours
@@ -37,8 +27,7 @@ function deleteCookie(name) {
 
 function clearCookies() {
     deleteCookie("ip");
-    toastr.warning("Configuração deletada!");
-
+    toastr.warning("Configuração deletada!")
     return true;
 }
 
