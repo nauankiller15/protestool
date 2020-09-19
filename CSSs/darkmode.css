@@ -615,13 +615,15 @@ body {
     font-family: FontAwesome;
     justify-content: center;
     align-items: center;
-    top: 22px;
+    top: 0;
     position: absolute;
     z-index: 2;
     width: 32px;
     color: var(--lamplight);
     text-align: center;
     animation: fadeIn 1.9s, lamp 1.2s ease-in-out infinite alternate;
+    transform: rotate(180deg);
+    /* Equal to rotateZ(45deg) */
 }
 
 @keyframes lamp {
