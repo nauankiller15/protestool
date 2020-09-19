@@ -572,21 +572,8 @@ a:hover {
 }
 
 .tooltip .tooltiptext {
-    visibility: none;
-    width: 229px;
     background-color: #2664b6;
     color: White;
-    text-align: center;
-    padding: 7px;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
-    top: -39px;
-    padding: 7px;
-    left: calc(100% + -115px);
-    animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
-    -moz-box-shadow: 3px 2px 1px #000000;
-    -webkit-box-shadow: 3px 2px 1px #000000;
     box-shadow: 3px 3px 10px var(--shadow);
 }
 

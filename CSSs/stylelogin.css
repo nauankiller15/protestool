@@ -491,6 +491,18 @@ div.well {
     font-weight: bold;
 }
 
+.shortcutkey2 {
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    border: 1px solid #8f8f8f;
+    border-radius: 7px;
+    padding: 4px;
+    position: absolute;
+    transition: border 0.7s;
+}
+
 .shortcutkey p,
 .shortcutkey2 p {
     float: left;
