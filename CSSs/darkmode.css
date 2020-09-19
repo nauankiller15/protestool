@@ -645,6 +645,13 @@ body {
     margin-top: 5px;
 }
 
+.positiontheme-index p {
+    padding-right: 6px;
+    font-size: 24px;
+    float: left;
+    color: var(--textcolor);
+}
+
 .labeltheme {
     cursor: pointer;
     text-indent: -9999px;
