@@ -180,6 +180,7 @@ input[name=theme]:checked+.theme-toggle:before {
     margin: 12px auto 12px;
     text-align: right;
     max-width: 450px;
+    text-shadow: 1px 2px 4px var(--text-shadow);
 }
 
 @-webkit-keyframes fadeIn {
