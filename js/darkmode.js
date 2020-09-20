@@ -7,13 +7,11 @@ checkbox.addEventListener('change', function() {
         document.getElementById("switch").checked = true;
         localStorage.setItem('data-theme', 'enabled');
         localStorage.setItem('switch', checkbox.checked);
-        console.log('Cookies are now: ' + document.cookie);
     } else {
         trans();
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('data-theme', null);
         localStorage.setItem('switch', null);
-        console.log('Cookies are now: ' + document.cookie);
     }
 })
 
