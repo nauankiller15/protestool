@@ -33,6 +33,7 @@ session_start ();
             fecharpopup();
             bindApiRequestSubmit();
             apagarletras();
+            document.title = "Protestool - Início";
         </script>
 </body>
 

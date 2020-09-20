@@ -60,8 +60,11 @@ if (isset($_SESSION['usuario'])) {
     </div>
     </form>
     </div>
+    
 </body>
-
+<script>
+ document.title = "Protestool - Entrar";
+</script>
 <?php include("includes/footerlogin.php"); ?>
 
 </html>

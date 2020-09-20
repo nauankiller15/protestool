@@ -105,5 +105,6 @@
             shortcutkey();
             inputvalue();
             apagarletras();
+            document.title = "Protestool - Reenviar Daje";
         </script>
 </div>

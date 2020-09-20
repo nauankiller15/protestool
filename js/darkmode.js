@@ -7,11 +7,13 @@ checkbox.addEventListener('change', function() {
         document.getElementById("switch").checked = true;
         localStorage.setItem('data-theme', 'enabled');
         localStorage.setItem('switch', checkbox.checked);
+        toastr.success("Tema alterado para Modo Escuro.");
     } else {
         trans();
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('data-theme', null);
         localStorage.setItem('switch', null);
+        toastr.success("Tema alterado para Modo Claro.");
     }
 })
 

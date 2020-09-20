@@ -43,4 +43,5 @@
     bindApiRequestSubmit();
     inputvalue();
     darkmode();
+    document.title = "Protestool - Códigos Retorno";
 </script>

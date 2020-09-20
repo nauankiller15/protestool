@@ -22,5 +22,6 @@
         shortcutkey();
         inputvalue();
         apagarletras();
+        document.title = "Protestool - Desvincular Daje";
     </script>
 </div>
