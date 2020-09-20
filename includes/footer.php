@@ -5,24 +5,20 @@
                 <span></span>
             </div>
         </div>
-        <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit"
-                    class="btnsair">✖️</button></a></span>
-        <span data-tooltip="Testar Conexão"><span id="testar-conexao-btn" class="btn4"><i
-                    class="fas fa-broadcast-tower"></i></span></span>
+        <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit" class="btnsair">✖️</button></a></span>
+        <span data-tooltip="Testar Conexão"><span id="testar-conexao-btn" class="btn4"><i class="fas fa-broadcast-tower"></i></span></span>
         <form id="configip" class="api-request" data-endpoint="Config">
             <div class="wrap-input100 validate-input m-b-23">
                 <div class="textvalue">
                     <span class="label-input100">IP do servidor:</span>
-                    <input class="input100" id="ip" title="Deve conter o padrão de IP do servidor" type="text"
-                        placeholder="Ex.:192.168.XXX.XXX" name="ip" autocomplete="off" required>
+                    <input class="input100" id="ip" title="Deve conter o padrão de IP do servidor" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" autocomplete="off" required>
                     <span class="focus-input100" data-symbol="&#xf233;"></span>
                 </div>
             </div>
             <p class="avisoindex">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
             <div class="centralizar3">
                 <button type="button" class="btn3" id="salvar-configuracao-btn"><i class="fas fa-save"></i>
-                    Salvar</button> <button id="limparConfigBTN" type="reset" class="btnlimpar reset"><i
-                        class="far fa-times-circle"></i>
+                    Salvar</button> <button id="limparConfigBTN" type="reset" class="btnlimpar reset"><i class="far fa-times-circle"></i>
                     Limpar</button>
             </div>
         </form>
@@ -39,8 +35,7 @@
                 <span></span>
             </div>
         </div>
-        <span data-tooltip3="Fechar tela"><a href="javascript: fechar3();"><button type="submit"
-                    class="btnsair">✖️</button></a></span>
+        <span data-tooltip3="Fechar tela"><a href="javascript: fechar3();"><button type="submit" class="btnsair">✖️</button></a></span>
         <div class="centralizar4">
             <h2>Atalhos do Sistema</h2>
             <li>Caixa de Consulta - <div class="shortcutkey3">Alt + A</div>
@@ -48,7 +43,7 @@
             <li>Desvincular Daje - <div class="shortcutkey3">Alt + S</div>
             </li>
             <li>Consultar Daje - <div class="shortcutkey3">Alt + C</div>
-            </li>   
+            </li>
             <li>Reenviar Daje - <div class="shortcutkey3">Alt + R</div>
             </li>
             <li>Abrir Configurações - <div class="shortcutkey3">Alt + G</div>
@@ -76,9 +71,7 @@
                 <h2>Tem certeza que deseja sair?</h2>
             </div>
             <div class="centralizar3">
-                <a href="javascript: fechar2();"><button type="noexit" id="noexit" class="btn3"><i
-                            class="fas fa-undo-alt"></i> Voltar</button></a> <a href="logout.php" id="exit" type="exit"
-                    class="btnfechar"><i class="fas fa-power-off"></i> Sair</a>
+                <a href="javascript: fechar2();"><button type="noexit" id="noexit" class="btn3"><i class="fas fa-undo-alt"></i> Voltar</button></a> <a href="logout.php" id="exit" type="exit" class="btnfechar"><i class="fas fa-power-off"></i> Sair</a>
             </div>
             </form>
         </div>
@@ -86,7 +79,8 @@
 </div>
 
 <div class="footer">
-    <p>© COPYRIGHT 2020. Siscart - Protestool.</p><ul>- Versão do sistema: 1.0.</ul>
+    <p>© COPYRIGHT 2020. Siscart - Protestool.</p>
+    <ul><i class="rotate fas fa-cog"></i> Versão do sistema: 1.0.</ul>
 </div>
 <div id="lds-spinner">
     <div class="lds-spinner">
@@ -118,10 +112,10 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
 <script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
 <script>
-bindApiRequestSubmit();
-maskinput();
-inputvalue();
-fecharpopup();
-shortcutkey();
-codretorno();
+    bindApiRequestSubmit();
+    maskinput();
+    inputvalue();
+    fecharpopup();
+    shortcutkey();
+    codretorno();
 </script>
