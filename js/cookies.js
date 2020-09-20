@@ -12,11 +12,6 @@ function storeValues(form) {
     return true;
 }
 
-function storeTheme() {
-    setCookie("switch", document.getElementById('switch').checked ? 1 : 0, 100);
-    setCookie("data-theme");
-    return true;
-}
 
 // Deletar Cookies
 var expired = new Date(today.getTime() - 24 * 3600 * 1000); // less 24 hours

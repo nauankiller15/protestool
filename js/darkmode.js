@@ -4,17 +4,21 @@ checkbox.addEventListener('change', function() {
     if (this.checked) {
         trans();
         document.documentElement.setAttribute('data-theme', 'dark');
-        storeTheme();
-        document.cookie = 'data-theme=' == 'dark' ? 'light' : 'dark';
+        document.getElementById("switch").checked = true;
+        localStorage.setItem('data-theme', 'enabled');
+        localStorage.setItem('switch', checkbox.checked);
         console.log('Cookies are now: ' + document.cookie);
     } else {
         trans();
         document.documentElement.setAttribute('data-theme', 'light');
-        storeTheme();
-        document.cookie = 'data-theme=' == 'light' ? 'dark' : 'light';
+        localStorage.setItem('data-theme', null);
+        localStorage.setItem('switch', null);
         console.log('Cookies are now: ' + document.cookie);
     }
 })
+
+var checked = JSON.parse(localStorage.getItem('switch'));
+document.getElementById("switch").checked = checked;
 
 let trans = () => {
     document.documentElement.classList.add('transition');
@@ -22,3 +26,29 @@ let trans = () => {
         document.documentElement.classList.remove('transition')
     }, 1000)
 }
+
+let darkMode = localStorage.getItem('data-theme', 'switch', 'inputheme', 'labeltheme');
+
+const darkModeToggle = document.querySelector('input[name=theme]');
+
+darkMode = localStorage.getItem('data-theme', 'switch', 'inputheme', 'labeltheme');
+
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+}
+
+// When someone clicks the button
+darkModeToggle.addEventListener('click', () => {
+    // get their darkMode setting
+    darkMode = localStorage.getItem('data-theme', 'dark')
+
+    // if it not current enabled, enable it
+    if (darkMode !== 'enabled') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        // if it has been enabled, turn it off  
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+});
