@@ -1,3 +1,4 @@
+// Tema Escuro e Tema Claro preferências:
 var checkbox = document.querySelector('input[name=theme]');
 
 checkbox.addEventListener('change', function() {
@@ -17,9 +18,7 @@ checkbox.addEventListener('change', function() {
     }
 })
 
-var checked = JSON.parse(localStorage.getItem('switch'));
-document.getElementById("switch").checked = checked;
-
+// Transições de preferências:
 let trans = () => {
     document.documentElement.classList.add('transition');
     window.setTimeout(() => {
@@ -27,27 +26,32 @@ let trans = () => {
     }, 1000)
 }
 
+// Identificar, guardar: Tema Escuro e Tema Claro
+var checked = JSON.parse(localStorage.getItem('switch'));
+document.getElementById("switch").checked = checked;
+
 let darkMode = localStorage.getItem('data-theme', 'switch', 'inputheme', 'labeltheme');
 
 const darkModeToggle = document.querySelector('input[name=theme]');
 
 darkMode = localStorage.getItem('data-theme', 'switch', 'inputheme', 'labeltheme');
 
-// If the user already visited and enabled darkMode
-// start things off with it on
+// Se o usuário já visitou e habilitou o tema escuro
+// - Startar o serviço se já:
 if (darkMode === 'enabled') {
     document.documentElement.setAttribute('data-theme', 'dark');
 }
 
-// When someone clicks the button
+// Quando clica no botão
 darkModeToggle.addEventListener('click', () => {
-    // get their darkMode setting
+    // - Vai herdar as preferências de Tema Escuro:
     darkMode = localStorage.getItem('data-theme', 'dark')
 
-    // if it not current enabled, enable it
+    // - Se ainda não habilitado, forçar funcionamento:
     if (darkMode !== 'enabled') {
         document.documentElement.setAttribute('data-theme', 'dark');
-        // if it has been enabled, turn it off  
+
+        // - Se não habilitado voltar para Tema Claro:
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
     }

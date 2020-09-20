@@ -1,10 +1,10 @@
-<?php 
-session_start ();
- //Se o usuário não estiver logado, não poderá sair desta página
+<?php
+// session_start ();
+//  //Se o usuário não estiver logado, não poderá sair desta página
 
- if (!isset($_SESSION['usuario'])){ 
-    header('location: login.php');
-}
+//  if (!isset($_SESSION['usuario'])){ 
+//     header('location: login.php');
+// }
 
 ?>
 <!DOCTYPE html>
@@ -24,6 +24,8 @@ session_start ();
         </div>
         <div id="conteudo" class="entrada">
             <div class="fadeIn">
+                <div class="seta-pra-cima">
+                </div>
                 <h2>Escolha uma das opções acima para poder realizar as manutenções.</h2>
             </div>
         </div>

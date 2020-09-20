@@ -273,17 +273,9 @@ form p {
 /* Footer login/index */
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    padding: 14px;
     background-color: var(--footerbg);
-    text-align: center;
     border: 1px solid var(--borderfooter);
     color: var(--textcolor);
-    text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
-    width: 100%;
     text-shadow: 1px 1px 2px var(--text-shadow);
 }
 

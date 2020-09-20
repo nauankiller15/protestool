@@ -49,7 +49,7 @@
 </div>
 
 <div class="footer">
-    © COPYRIGHT 2020. Siscart - Protestool.
+    <p>© COPYRIGHT 2020. Siscart - Protestool.</p><ul>- Versão do sistema: 1.0.</ul>
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

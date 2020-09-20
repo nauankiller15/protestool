@@ -87,12 +87,14 @@ $(document).ready(function() {
 function codretorno() {
     $("#codretorno").click(function() {
         toastr.info("Esta página contém: Lista detalhada para especificar os códigos, o que cada um representa!");
+        $(this).find("a").addClass("menu-active");
     });
 }
 
 function codretorno2() {
     $("#codretorno2").click(function() {
         toastr.info("Esta página contém: Lista detalhada para especificar os códigos, o que cada um representa!");
+        $(this).find("a").addClass("menu-active");
     });
 }
 

@@ -74,15 +74,17 @@
     position: fixed;
     bottom: 0;
     padding: 14px;
-    background-color: #eeeeee;
     text-align: center;
-    border: 1px solid #fff;
-    color: #6d6d6d;
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;
     width: 100%;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+.footer ul {
+    bottom: 14px;
+    right: 40px;
+    position: absolute;
 }
 
 @keyframes slideIn {
@@ -177,7 +179,7 @@ input[name=theme]:checked+.theme-toggle:before {
     font-weight: bold;
     text-transform: uppercase;
     color: #1a539c;
-    margin: 12px auto 12px;
+    margin: 25px auto 12px;
     text-align: right;
     max-width: 450px;
     text-shadow: 1px 2px 4px var(--text-shadow);
@@ -291,6 +293,36 @@ form p {
     display: block;
     float: center;
     margin: 5px auto;
+}
+
+.seta-pra-cima {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta-pra-cima::after {
+    font-size: 40px;
+    content: "\f0de";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 164px;
+    z-index: 2;
+    width: 20px;
+    color: #2664b6;
+    text-align: center;
+    animation: fadeIn 1.9s, seta 0.5s infinite alternate;
+    text-shadow: 1px 2px 4px var(--text-shadow);
+}
+
+@keyframes seta {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(12px);
+    }
 }
 
 

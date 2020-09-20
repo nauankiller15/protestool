@@ -53,7 +53,7 @@
             </li>
             <li>Abrir Configurações - <div class="shortcutkey3">Alt + G</div>
             </li>
-            <li>Mudar a cor do tema - <div class="shortcutkey3">Alt + L</div>
+            <li>Mudar a Cor do Tema - <div class="shortcutkey3">Alt + L</div>
             </li>
             <li>Sair do Sistema - <div class="shortcutkey3">Alt + Q</div>
             </li>
@@ -86,7 +86,7 @@
 </div>
 
 <div class="footer">
-    <p>© COPYRIGHT 2020. Siscart - Protestool.</p>
+    <p>© COPYRIGHT 2020. Siscart - Protestool.</p><ul>- Versão do sistema: 1.0.</ul>
 </div>
 <div id="lds-spinner">
     <div class="lds-spinner">
