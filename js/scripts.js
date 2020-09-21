@@ -28,7 +28,7 @@ function fechar3() {
 $(".popup").draggable();
 
 function arrastarlista() {
-    $("#mexer-lista").draggable();
+    $("mexer-lista").draggable();
 }
 
 function fecharpopup() {
@@ -76,7 +76,10 @@ function apagarletras() {
     });
 }
 
-function removerFooter() {
-    $(".footer").fadeOut('300');
-    $(".footer-remover").fadeIn('300');
+
+function moveScroll() {
+    $('table').floatThead({
+        position: 'fixed',
+        scrollContainer: true
+    });
 }

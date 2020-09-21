@@ -4,7 +4,7 @@
             <label>Lista de códigos de retorno:</label>
             <table class="bordered striped centered">
                 <thead>
-                    <tr>
+                <tr class="top-table">
                         <th><i class="fas fa-project-diagram"></i> Cod. Retorno</th>
                         <th><i class="fas fa-list-ul"></i> Tipo Retorno</th>
                     </tr>
@@ -36,6 +36,7 @@
     </div>
 </div>
 <script>
+    document.title = "Protestool - Códigos Retorno";
     MenuAtivo();
     codretorno();
     codretorno2();
@@ -43,5 +44,4 @@
     bindApiRequestSubmit();
     inputvalue();
     darkmode();
-    document.title = "Protestool - Códigos Retorno";
 </script>

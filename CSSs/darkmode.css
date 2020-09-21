@@ -1,5 +1,42 @@
+/* Let's get this party started */
+
+::-webkit-scrollbar {
+    width: 9px;
+    animation: fadeIn 2s;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: var(--trackbar);
+    box-shadow: 25px 25px 125px var(--text-shadow);
+    border-radius: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: 25px 25px 125px var(--text-shadow);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    box-shadow: 25px 25px 125px var(--text-shadow);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #2362b4;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #2362b4;
+}
+
 html {
     font-family: "Montserrat";
+    --trackbar: #a1a1a1;
     --bg: #dcdcdd;
     --bgform: #ffffff;
     --color-headings: #3694ff;
@@ -28,6 +65,7 @@ html {
 }
 
 html[data-theme="dark"] {
+    --trackbar: #181818;
     --bg: #1d1d1d;
     --bgform: #313131;
     --color-headings: #535353;
@@ -187,11 +225,6 @@ table.tablesorter thead tr .header {
 }
 
 #table-scroll {
-    height: 100%;
-    max-height: 480px;
-    overflow: auto;
-    margin-top: 2px;
-    border-radius: 10px;
     background: var(--cor-entrada);
     color: var(--textcolor-table);
 }
@@ -200,6 +233,12 @@ table.tablesorter thead tr .header {
     overflow: hidden;
     max-width: 100%;
     max-height: 50%;
+}
+
+.top-table {
+    text-shadow: 2px 2px 2px var(--text-shadow);
+    background: var(--cor-entrada);
+    border: none;
 }
 
 table {
@@ -236,10 +275,6 @@ table.highlight>tbody>tr:hover {
 table.centered thead tr th,
 table.centered tbody tr td {
     text-align: center;
-}
-
-thead {
-    border-bottom: 1px solid #d0d0d0;
 }
 
 thead p {
@@ -296,36 +331,6 @@ form p {
     border-top: 1px solid var(--border-menu);
     color: var(--textcolor);
     text-shadow: 1px 1px 2px var(--text-shadow);
-}
-
-.footer-remover {
-    background-color: var(--footerbg);
-    border-top: 1px solid var(--border-menu);
-    color: var(--textcolor);
-    text-shadow: 1px 1px 2px var(--text-shadow);
-    position: fixed;
-    bottom: 0;
-    padding: 25px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
-    width: 100%;
-    z-index: -2;
-    display: none;
-}
-
-.footer-remover ul {
-    bottom: 14px;
-    right: 70px;
-    position: absolute;
-}
-
-.footer-remover p {
-    font-size: 15px;
-    bottom: 14px;
-    left: 12px;
-    position: absolute;
 }
 
 

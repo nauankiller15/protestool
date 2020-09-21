@@ -20,45 +20,100 @@
 
     <div class="lista-group">
         <label>Dajes Encontrados:</label>
-        <div id="table-scroll">
-            <table class="bordered striped centered">
-                <thead>
-                    <tr>
-                        <th><i class="fas fa-file-alt"></i> Número Daje</th>
-                        <th>
-                            <p><span data-tooltip="ID de Requisição do banco de dados para consulta e reenvio do daje."><i class="fas fa-file-upload"></i> ID
-                                    Requisição <i class="fas fa-question"></i></span>
-                            </p>
-                        </th>
-                        <th><i class="fas fa-file-powerpoint"></i> Protocolo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2020 002 13545</td>
-                        <td>510521</td>
-                        <td><b>15500</b></td>
-                    </tr>
-                    <tr>
-                        <td>2020 002 13546</td>
-                        <td>510522</td>
-                        <td><b>15501</b></td>
-                    </tr>
-                    <tr>
-                        <td>2020 002 13547</td>
-                        <td>510523</td>
-                        <td><b>15502</b></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="finaldapagina">
+            <div id="table-scroll">
+                <table class="bordered striped centered">
+                    <thead>
+                        <tr class="top-table">
+                            <th><i class="fas fa-file-alt"></i> Número Daje</th>
+                            <th>
+                                <p><span data-tooltip="ID de Requisição do banco de dados para consulta e reenvio do daje."><i class="fas fa-file-upload"></i> ID
+                                        Requisição <i class="fas fa-question"></i></span>
+                                </p>
+                            </th>
+                            <th><i class="fas fa-file-powerpoint"></i> Protocolo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020 002 13545</td>
+                            <td>510521</td>
+                            <td><b>15500</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13546</td>
+                            <td>510522</td>
+                            <td><b>15501</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                        <tr>
+                            <td>2020 002 13547</td>
+                            <td>510523</td>
+                            <td><b>15502</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
 </div>
+</div>
 <script>
     bindApiRequestSubmit();
+    moveScroll();
     shortcutkey();
     inputvalue();
     apagarletras();
+
     document.title = "Protestool - Consulta Daje";
 </script>
