@@ -5,7 +5,6 @@
 //  if (!isset($_SESSION['usuario'])){ 
 //     header('location: login.php');
 // }
-
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -13,16 +12,14 @@
     <?php include("includes/headindex.php"); ?>
 
     <body>
-        <div class="titulo">
+        <div class="tituloerror">
             <h2>ProtesTool</h2>
         </div>
         <nav>
             <div class="fadeIn">
+            <div class="headererror">
             </div>
-            <div class="header">
-            </div>
-            <div id="conteudo" class="entrada">
-                <div class="fadeIn">
+            <div id="conteudo" class="entradaerror">
                     <div class="seta-pra-baixo">
                     </div>
                     <h2>ERRO 404 / Página Não Encontrada!

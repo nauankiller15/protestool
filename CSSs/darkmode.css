@@ -65,6 +65,12 @@ html[data-theme="dark"] {
     animation: slideIn 0.8s, glowtitulo 2s ease-in-out infinite alternate;
 }
 
+.tituloerror {
+    text-shadow: 1px 2px 4px var(--shadow);
+    color: #2664b6;
+    animation: slideIn 0.8s, glowtitulo 2s ease-in-out infinite alternate;
+}
+
 @keyframes glowtitulo {
     from {
         text-shadow: 0 0 10px var(--tituloglowblue), 0 0 20px var(--tituloglowhite), 0 0 30px var(--tituloglowhite), 0 0 40px var(--tituloglowblue), 0 0 50px var(--tituloglowhite);
@@ -138,6 +144,15 @@ html[data-theme="dark"] {
 /* Corpo do Texto */
 
 .entrada {
+    background: var(--cor-entrada);
+    border-radius: 0px 0px 10px 10px;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px var(--shadow);
+    border: 1px solid var(--borderentrada);
+}
+
+.entradaerror {
     background: var(--cor-entrada);
     border-radius: 0px 0px 10px 10px;
     -moz-box-shadow: 3px 2px 1px #000000;
@@ -662,6 +677,7 @@ body {
     margin-right: 50px;
     margin-top: -22px;
     animation: fadeIn 1.2s;
+    display: none;
 }
 
 .positiontheme-error404 p {
@@ -669,6 +685,7 @@ body {
     font-size: 24px;
     float: left;
     color: var(--textcolor);
+    display: none;
 }
 
 .labeltheme {
