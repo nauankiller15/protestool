@@ -10,6 +10,7 @@ if (isset($_SESSION['usuario'])) {
 ?>
 
 <body>
+
     <div class="theme-color-div">
         <p><i class="fas fa-palette"></i> Ajuste a Cor do Tema:</p>
         <div class="positiontheme-login">
@@ -61,10 +62,10 @@ if (isset($_SESSION['usuario'])) {
     </div>
     </form>
     </div>
-    
+
 </body>
 <script>
- document.title = "Protestool - Entrar";
+    document.title = "Protestool - Entrar";
 </script>
 <?php include("includes/footerlogin.php"); ?>
 

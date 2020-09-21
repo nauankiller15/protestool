@@ -48,8 +48,8 @@ $("#ip").on("blur", "", function() {
 
     if (!$("#ip").val().length != 1) {
         $(".circleon").show();
-
     }
+
     if (!$("#ip").val().length != 0) {
         $(".circleon").hide();
         $(".circleoff").show();

@@ -20,6 +20,11 @@ function deleteCookie(name) {
     document.cookie = name + "=null; path=/; expires=" + expired.toGMTString();
 }
 
+$("#salvar-configuracao-btn").click(function() {
+    storeValues(getFormData($("#configip")));
+    return false;
+});
+
 function clearCookies() {
     deleteCookie("ip");
     toastr.warning("Configuração deletada!")
@@ -32,10 +37,6 @@ function getCookie(name) {
     return value != null ? unescape(value[1]) : null;
 }
 
-$("#salvar-configuracao-btn").click(function() {
-    storeValues(getFormData($("#configip")));
-    return false;
-});
 
 // Mostrar Cookies
 

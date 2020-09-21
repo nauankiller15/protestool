@@ -259,6 +259,9 @@ th {
 /*  */
 
 
+/* Alterar Tema */
+
+
 /* FormLogin */
 
 .formlogin {
@@ -598,20 +601,36 @@ body {
     background-color: var(--bg);
 }
 
+.header-theme-position {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.2s;
+}
+
 .theme-color-div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 2.2s;
 }
 
 .theme-color-div p {
+    width: 17%;
     color: var(--textcolor);
     font-size: 25px;
-    padding: 15px;
-    bottom: 126px;
+    padding: 30px;
+    bottom: 101px;
     position: absolute;
+    border: 1px solid var(--borderentrada);
+    background-color: var(--bgform);
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px var(--shadow);
+    height: 60px;
+    text-align: center;
+    z-index: -3;
+    animation: fadeIn 2.2s;
 }
 
 
@@ -700,7 +719,8 @@ body {
 }
 
 .labelposition {
-    bottom: 101px;
+    bottom: 120px;
+    position: absolute;
 }
 
 .positiontheme-login {
