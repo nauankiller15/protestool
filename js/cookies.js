@@ -20,6 +20,8 @@ function deleteCookie(name) {
     document.cookie = name + "=null; path=/; expires=" + expired.toGMTString();
 }
 
+
+
 $("#salvar-configuracao-btn").click(function() {
     storeValues(getFormData($("#configip")));
     return false;
