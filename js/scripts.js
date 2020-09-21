@@ -28,7 +28,7 @@ function fechar3() {
 $(".popup").draggable();
 
 function arrastarlista() {
-    $(".lista-group").draggable();
+    $("#mexer-lista").draggable();
 }
 
 function fecharpopup() {
