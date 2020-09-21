@@ -194,7 +194,7 @@
     }
     
     .headererror {
-        width: 36%;
+        width: 29%;
         margin: 10px auto 0px;
         color: rgb(44, 44, 44);
         background: #2664b6;
@@ -219,7 +219,7 @@
     
     .entrada h2 {
         font-family: Agency FB;
-        font-size: 275%;
+        font-size: 285%;
         font-weight: bold;
         text-transform: uppercase;
         color: #1a539c;
@@ -230,7 +230,7 @@
     }
     
     .entradaerror {
-        max-width: 36%;
+        max-width: 29%;
         margin: 0px auto;
         padding: 20px;
         border-radius: 0px 0px 10px 10px;
@@ -239,13 +239,13 @@
     
     .entradaerror h2 {
         font-family: Agency FB;
-        font-size: 309%;
+        font-size: 335%;
         font-weight: bold;
         text-transform: uppercase;
         color: #1a539c;
         margin: 25px auto 12px;
         text-align: center;
-        max-width: 350px;
+        max-width: 390px;
         text-shadow: 1px 2px 4px var(--text-shadow);
     }
     
