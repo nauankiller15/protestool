@@ -298,6 +298,36 @@ form p {
     text-shadow: 1px 1px 2px var(--text-shadow);
 }
 
+.footer-remover {
+    background-color: var(--footerbg);
+    border-top: 1px solid var(--border-menu);
+    color: var(--textcolor);
+    text-shadow: 1px 1px 2px var(--text-shadow);
+    position: fixed;
+    bottom: 0;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 100%;
+    z-index: -2;
+    display: none;
+}
+
+.footer-remover ul {
+    bottom: 14px;
+    right: 70px;
+    position: absolute;
+}
+
+.footer-remover p {
+    font-size: 15px;
+    bottom: 14px;
+    left: 12px;
+    position: absolute;
+}
+
 
 /* InputLogin */
 
@@ -599,6 +629,7 @@ a:hover {
 
 body {
     background-color: var(--bg);
+    z-index: -3;
 }
 
 .header-theme-position {

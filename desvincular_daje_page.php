@@ -11,7 +11,7 @@
             <span class="focus-input100" data-symbol="&#xf15c;"></span>
             <span id="apagarletras" class="focus2-input100" data-symbol="&#xf55a;"></span>
         </div>
-        <p class="avisoindex"><b>Emissor, série e número</b> do <b>DAJE</b> necessários.
+        <p class="avisoindex"><b>Emissor, série</b> e <b>número</b> do <b>DAJE</b> necessários.
             <div class="centralizar2">
                 <button id="enviar" type="submit" class="btn2"><i class="fas fa-undo"></i> Desvincular</button>
             </div>

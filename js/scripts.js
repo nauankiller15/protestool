@@ -70,7 +70,13 @@ $("#save").on("click", function() {
 })
 
 function apagarletras() {
-$('#apagarletras').on('click', function (){
-    var input = $(".input100");
-    input.val(input.val().slice(0, -1));
-  });}
+    $('#apagarletras').on('click', function() {
+        var input = $(".input100");
+        input.val(input.val().slice(0, -1));
+    });
+}
+
+function removerFooter() {
+    $(".footer").fadeOut('300');
+    $(".footer-remover").fadeIn('300');
+}

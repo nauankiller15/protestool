@@ -13,6 +13,8 @@ function MenuAtivo() {
 
         $(".menu-link a").removeClass("menu-active");
         $(this).find("a").addClass("menu-active");
+        $(".footer-remover").fadeOut('300');
+        $(".footer").fadeIn('300');
 
     });
 }

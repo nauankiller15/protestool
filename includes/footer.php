@@ -77,7 +77,10 @@
         </div>
     </div>
 </div>
-
+<div class="footer-remover">
+<p>© COPYRIGHT 2020. Siscart - Protestool.</p>
+    <ul><i class="rotate fas fa-cog"></i> Versão do sistema: 1.0.</ul>
+</div>
 <div class="footer">
     <p>© COPYRIGHT 2020. Siscart - Protestool.</p>
     <ul><i class="rotate fas fa-cog"></i> Versão do sistema: 1.0.</ul>

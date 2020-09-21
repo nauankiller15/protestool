@@ -12,8 +12,8 @@
     <ul>
         <li accesskey="S" class="menu menu-link" data-load-page="desvincular_daje_page.php"><a><b><i class="fas fa-file-export"></i></b> De<u>s</u>vincular Daje</a></li>
         <li accesskey="C" class="menu menu-link" data-load-page="consulta_daje_page.php"><a><b><i class="fas fa-file-import"></i></b> <u>C</u>onsultar Daje</a></li>
-        <li accesskey="R" class="menu menu-link" data-load-page="reenviar_daje_page.php"><a><b><i class="fas fa-file-upload"></i></b> <u>R</u>eenviar Daje</a></li>
-        <li class="menu menu-link" id="codretorno" data-load-page="cods_retorno_page.php"><a><b><i class="fas fa-project-diagram"></i></b></a></li>
+        <li accesskey="R" id="removerFooter" class="menu menu-link" data-load-page="reenviar_daje_page.php"><a><b><i class="fas fa-file-upload"></i></b> <u>R</u>eenviar Daje</a></li>
+        <span data-tooltip2="Códigos de retorno"><li class="menu menu-link" id="codretorno" data-load-page="cods_retorno_page.php"><a><b><i class="fas fa-project-diagram"></i></b></a></li></span>
         <div class="tools">
             <div class="positiontheme-index">
                 <p><i class="fas fa-palette"></i></p><input accesskey="l" class="inputheme" type="checkbox" id="switch" name="theme" /><label class="labeltheme" for="switch">Toggle</label>
