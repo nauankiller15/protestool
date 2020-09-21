@@ -657,6 +657,20 @@ body {
     color: var(--textcolor);
 }
 
+.positiontheme-error404 {
+    float: right;
+    margin-right: 50px;
+    margin-top: -22px;
+    animation: fadeIn 1.2s;
+}
+
+.positiontheme-error404 p {
+    padding-right: 6px;
+    font-size: 24px;
+    float: left;
+    color: var(--textcolor);
+}
+
 .labeltheme {
     cursor: pointer;
     text-indent: -9999px;

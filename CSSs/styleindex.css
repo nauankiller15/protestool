@@ -107,7 +107,7 @@
 }
 
 .rotate {
-    animation: spin 2s linear infinite;
+    animation: spin 4s linear infinite;
 }
 
 @keyframes slideIn {
@@ -318,6 +318,27 @@ form p {
     margin: 5px auto;
 }
 
+.seta-pra-baixo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta-pra-baixo::after {
+    font-size: 40px;
+    content: "\f0dd";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 78px;
+    z-index: 2;
+    width: 20px;
+    color: #2664b6;
+    text-align: center;
+    animation: fadeIn 1.9s, seta 0.5s infinite alternate;
+    text-shadow: 1px 2px 4px var(--text-shadow);
+}
+
 .seta-pra-cima {
     display: flex;
     flex-wrap: wrap;
@@ -368,7 +389,7 @@ form p {
     padding: 6px;
     border-radius: 10px;
     width: 100%;
-    font-size: 15p;
+    font-size: 15px;
     font-family: sans-serif;
     font-weight: bold;
     position: absolute;
@@ -590,6 +611,29 @@ form p {
 
 .btn4:hover {
     color: #123869;
+}
+
+.voltar {
+    padding: 14px;
+    font-size: 15px;
+    color: white;
+    background: #2664b6;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 20%;
+    display: block;
+    text-align: center;
+    margin: 3px auto;
+    transition: background 0.2s;
+    animation: go-back 1.3s infinite alternate;
+    border: 2px solid #2664b6;
+    cursor: pointer;
+}
+
+.voltar:hover {
+    color: #fafbfc;
+    animation-play-state: paused;
 }
 
 @keyframes glow3 {
