@@ -648,6 +648,10 @@
         color: #123869;
     }
     
+    .gotit {
+        display: none;
+    }
+    
     .voltar {
         padding: 14px;
         font-size: 15px;

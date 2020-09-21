@@ -313,6 +313,7 @@ form {
     margin: 25px auto;
     transition: background 0.2s;
     animation: go-back 0.7s infinite alternate;
+    border: 2px solid #2664b6;
     cursor: pointer;
 }
 
@@ -670,7 +671,7 @@ div.well {
 }
 
 .tooltip {
-    position: relative;
+    position: absolute;
     display: inline-block;
     border-bottom: 1px dotted black;
     z-index: 996;
@@ -688,7 +689,7 @@ div.well {
     z-index: 1;
     top: -39px;
     padding: 7px;
-    left: calc(100% + -115px);
+    left: calc(100% + -130px);
     animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
     -moz-box-shadow: 3px 2px 1px #000000;
     -webkit-box-shadow: 3px 2px 1px #000000;

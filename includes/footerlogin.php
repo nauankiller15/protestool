@@ -17,7 +17,7 @@
             </div>
             <p class="avisoindex">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
             <div class="centralizar3">
-                <button type="button" class="btn3" id="salvar-configuracao-btn"><i class="fas fa-save"></i>
+                <button type="submit" class="btn3" id="salvar-configuracao-btn"><i class="fas fa-save"></i>
                     Salvar</button> <button id="limparConfigBTN" type="reset" class="btnlimpar reset"><i class="far fa-times-circle"></i>
                     Limpar</button>
             </div>

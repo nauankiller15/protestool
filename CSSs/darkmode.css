@@ -113,7 +113,8 @@ html[data-theme="dark"] {
 
 .menu {
     background: var(--cor-entrada);
-    border: 1px solid var(--border-menu);
+    border-top: 1px solid var(--border-menu);
+    border-bottom: 1px solid var(--border-menu);
 }
 
 .menu li ul li {
@@ -289,7 +290,7 @@ form p {
 
 .footer {
     background-color: var(--footerbg);
-    border: 1px solid var(--borderfooter);
+    border-top: 1px solid var(--border-menu);
     color: var(--textcolor);
     text-shadow: 1px 1px 2px var(--text-shadow);
 }

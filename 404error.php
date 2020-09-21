@@ -24,7 +24,7 @@
                     </div>
                     <h2>ERRO 404 / Página Não Encontrada!
                     </h2>
-                    <a class="voltar" href="index.php">Voltar</a>
+                    <a class="voltar" href="index.php"><i class="fas fa-undo-alt"></i> Voltar</a>
                     <div class="positiontheme-error404">
                 <p><i class="fas fa-palette"></i></p><input accesskey="l" class="inputheme" type="checkbox" id="switch" name="theme" /><label class="labeltheme" for="switch">Toggle</label>
             </div>

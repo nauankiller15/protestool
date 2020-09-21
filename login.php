@@ -46,6 +46,7 @@ if (isset($_SESSION['usuario'])) {
                 <div class="circleoff" style="animation-delay: 0s"></div>
                 <div class="circleoff" style="animation-delay: 0.8s"></div>
                 <div class="circleoff" style="animation-delay: 1.8s"></div>
+                <div class="circleoff" style="animation-delay: 2.8s"></div>
                 <div class="circleon" style="animation-delay: 0s"></div>
                 <div class="circleon" style="animation-delay: 0.8s"></div>
                 <div class="circleon" style="animation-delay: 1.8s"></div>

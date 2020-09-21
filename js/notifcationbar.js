@@ -77,12 +77,31 @@ $(document).ready(function() {
     });
 
 
-    setTimeout(function() {
-        toastr.info("Seja bem-vindo ao Protestool!");
-    }, 700);
+
 });
 
+var iteminfo = setTimeout(function() {
+    toastr.info("Seja bem-vindo ao Protestool!");
+}, 700);
+window.setTimeout(function() {
+    // First check, if localStorage is supported.
+    if (window.localStorage) {
+        // Get the expiration date of the previous popup.
+        var nextPopup = localStorage.getItem(iteminfo);
 
+        if (nextPopup > new Date()) {
+            return;
+        }
+
+        // Store the expiration date of the current popup in localStorage.
+        var expires = new Date();
+        expires = expires.setHours(expires.getHours() + 24);
+
+        localStorage.setItem(iteminfo, expires);
+    }
+
+    show(iteminfo);
+});
 
 function codretorno() {
     $("#codretorno").click(function() {
