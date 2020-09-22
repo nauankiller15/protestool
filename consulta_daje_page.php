@@ -27,7 +27,7 @@
                         <tr class="top-table">
                             <th><i class="fas fa-file-alt"></i> Número Daje</th>
                             <th>
-                                <p><span data-tooltip="ID de Requisição do banco de dados para consulta e reenvio do daje."><i class="fas fa-file-upload"></i> ID
+                                <p><span data-tooltip="Número de Identificação de Requisição do Banco de dados."><i class="fas fa-file-upload"></i> ID
                                         Requisição <i class="fas fa-question"></i></span>
                                 </p>
                             </th>

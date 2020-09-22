@@ -25,7 +25,7 @@
                         <tr class="top-table">
                                 <div>
                                     <th>
-                                        <p><span data-tooltip="Esse 'ID Requisição' é uma forma de comunicação que é passado para o TJBA e retorna com esse número de identificação. - Eles ficam no banco de dados">
+                                        <p><span data-tooltip="Número de Identificação de Requisição do Banco de dados.">
                                                 <i class="fas fa-file-upload"></i> ID Requisição <i class="fas fa-question"></i></span>
                                         </p>
                                     </th>
