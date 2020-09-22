@@ -134,9 +134,9 @@ button.toast-close-button {
     border-radius: 3px 3px 3px 3px;
     background-position: 15px center;
     background-repeat: no-repeat;
-    -moz-box-shadow: 0 0 12px #494949;
-    -webkit-box-shadow: 0 0 12px #494949;
-    box-shadow: 0 0 12px #494949;
+    -moz-box-shadow: 0 0 12px var(--text-shadow);
+    -webkit-box-shadow: 0 0 12px var(--text-shadow);
+    box-shadow: 0 0 12px var(--text-shadow);
     color: #FFFFFF;
     opacity: 0.9;
     -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);

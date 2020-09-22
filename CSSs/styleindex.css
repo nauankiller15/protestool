@@ -1232,12 +1232,25 @@
     
     #empty1:required,
     #empty2:required {
-        border: 1px solid #629e40;
+        border-bottom: 1px solid #629e40;
+        font-weight: bold;
+        width: 82%;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
     }
     
     #empty1:required:invalid,
     #empty2:required:invalid {
-        border: 2px solid rgb(155, 30, 30);
+        border-bottom: 2px solid rgb(155, 30, 30);
+        font-weight: bold;
+        width: 82%;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+        
     }
     
     #ip:required {

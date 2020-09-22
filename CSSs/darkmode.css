@@ -1,6 +1,6 @@
     /* Let's get this party started */
     
-     ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         width: 9px;
         animation: fadeIn 2s;
     }
@@ -9,17 +9,17 @@
         background: var(--trackbar);
         box-shadow: 25px 25px 125px var(--text-shadow);
         border-radius: 10px;
-    }
+    }*/
     /* Track */
     
-     ::-webkit-scrollbar-track {
+    /* ::-webkit-scrollbar-track {
         box-shadow: 25px 25px 125px var(--text-shadow);
         -webkit-border-radius: 10px;
         border-radius: 10px;
-    }
+    }*/
     /* Handle */
     
-     ::-webkit-scrollbar-thumb {
+     /*::-webkit-scrollbar-thumb {
         box-shadow: 25px 25px 125px var(--text-shadow);
         -webkit-border-radius: 10px;
         border-radius: 10px;
@@ -28,7 +28,7 @@
     
      ::-webkit-scrollbar-thumb:window-inactive {
         background: #2362b4;
-    }
+    }*/
     
     html {
         font-family: "Montserrat";

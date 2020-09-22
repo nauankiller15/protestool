@@ -26,17 +26,18 @@ function bindApiRequestSubmit() {
 }
 
 function getStatusErrorMsg(status) {
+    console.log(status)
     switch (status) {
         case 500:
             msg = "500: Falha na parametrização de valores!";
             break;
         case 400:
-            msg = "400: Daje já desvinculado!";
+            msg = "400: Daje não encontrando ou já desvinculado!";
             break;
         default:
             msg = "Falha na operação, por favor, tente novamente.";
     }
-
+    msg = status;
     return msg;
 }
 
