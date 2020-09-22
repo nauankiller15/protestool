@@ -332,6 +332,7 @@ form p {
     border-top: 1px solid var(--border-menu);
     color: var(--textcolor);
     text-shadow: 1px 1px 2px var(--text-shadow);
+    box-shadow: 6px 6px 9px var(--text-shadow);
 }
 
 

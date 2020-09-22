@@ -1167,8 +1167,9 @@
     .lista-group label {
         display: block;
         text-align: center;
-        margin: 12px auto 15px;
-        max-width: 36%;
+        margin: 12px auto 2px;
+        max-width: 500px;
+        width: 400px;
         font-size: 20px;
         font-family: sans-serif;
         text-transform: uppercase;
