@@ -1,12 +1,12 @@
 <?php
-// session_start ();
-//  //Se o usuário não estiver logado, não poderá sair desta página
+session_start ();
+ //Se o usuário não estiver logado, não poderá sair desta página
 
-//  if (!isset($_SESSION['usuario'])){ 
-//     header('location: login.php');
-// }
-
+ if (!isset($_SESSION['usuario'])){ 
+    header('location: login.php');
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
