@@ -5,7 +5,6 @@ checkbox.addEventListener('change', function() {
     if (this.checked) {
         trans();
         document.documentElement.setAttribute('data-theme', 'dark');
-        document.getElementById("switch").checked = true;
         localStorage.setItem('data-theme', 'enabled');
         localStorage.setItem('switch', checkbox.checked);
         toastr.success("Tema alterado para Modo Escuro.");
