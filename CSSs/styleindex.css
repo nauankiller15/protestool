@@ -89,6 +89,7 @@
         text-decoration: none;
         font-weight: bold;
         font-family: sans-serif;
+        overflow: hidden;
         width: 100%;
     }
     
@@ -98,6 +99,16 @@
         position: absolute;
     }
     
+    .footer p{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
     @-moz-keyframes spin {
         100% {
             -moz-transform: rotate(360deg);
@@ -1075,10 +1086,11 @@
     
     #table-scroll {
         height: 100%;
-        max-height: 473px;
+        max-height: 530px;
         overflow: auto;
         margin-top: 2px;
         border-radius: 10px;
+        margin-bottom: 100px;
     }
     
     .fixedtable {

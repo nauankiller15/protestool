@@ -302,7 +302,6 @@
         border-top: 1px solid var(--border-menu);
         color: var(--textcolor);
         text-shadow: 1px 1px 2px var(--text-shadow);
-        box-shadow: 6px 6px 9px var(--text-shadow);
     }
     /* InputLogin */
     
@@ -605,18 +604,18 @@
     }
     
     .theme-color-div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        bottom: 101px;
+        left: 50px;
+        
     }
     
     .theme-color-div p {
+        bottom: 101px;
+        left: 50px;
         width: 19%;
         color: var(--textcolor);
         font-size: 25px;
         padding: 30px;
-        bottom: 101px;
         position: absolute;
         border: 1px solid var(--borderentrada);
         background-color: var(--bgform);
@@ -711,6 +710,7 @@
     
     .labelposition {
         bottom: 120px;
+        left: 200px;
         position: absolute;
     }
     
