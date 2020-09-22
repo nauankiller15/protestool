@@ -16,7 +16,7 @@
         <span data-tooltip2="Códigos de retorno"><li class="menu menu-link" id="codretorno" data-load-page="cods_retorno_page.php"><a><b><i class="fas fa-project-diagram"></i></b></a></li></span>
         <div class="tools">
             <div class="positiontheme-index">
-                <p><i class="fas fa-palette"></i></p><input accesskey="l" class="inputheme" type="checkbox" id="switch" name="theme" /><label class="labeltheme" for="switch">Toggle</label>
+                <p><i style="margin-right: 2px;" class="fas fa-palette"></i> </p><input accesskey="l" class="inputheme" type="checkbox" id="switch" name="theme" /><label class="labeltheme" for="switch">Toggle</label>
             </div>
             <span data-tooltip4="Sair do sistema"><a accesskey="q" href="javascript: abrir2();"><button type="sair" class="btnsair">✖️</button></a></span>
             <div class="circleoff" style="animation-delay: 0s"></div>
