@@ -8,6 +8,7 @@ function alertaConfiguracao() {
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
         $(".circleon").hide();
         $(".circleoff").show();
+        $(".circle-requisicao").hide();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
@@ -30,6 +31,7 @@ function alertaConfiguracao2() {
         alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
         $(".circleon").hide();
         $(".circleoff").show();
+        $(".circle-requisicao").hide();
     } else {
         clearTimeout(alertaConfiguracao2Timeout);
     }
@@ -39,6 +41,7 @@ function alertaConfiguracao2() {
 $("#ip").on("blur", "", function() {
     if (!$("#ip").val().length != 0) {
         $(".circleoff").show();
+        $(".circle-requisicao").hide();
     }
 
     if (!$("#ip").val().length != 0) {
@@ -63,21 +66,22 @@ $("#ip").on("blur", "", function() {
 
 });
 
-$("#senhacliente,#logincliente").on("blur", "", function() {
+$("#senhacliente, #logincliente").on("blur", "", function() {
     if (!$("#ip").val().length != 0) {
         $(".circle-requisicao").show();
+        $(".circleon").hide();
     }
 
-    if (!$("#senhacliente,#logincliente").val().length != 0) {
+    if (!$("#senhacliente, #logincliente").val().length != 0) {
         $(".userlogado1").show();
         $(".userlogado2").hide();
     }
 
-    if (!$("#senhacliente,#logincliente").val().length != 1) {
+    if (!$("#senhacliente, #logincliente").val().length != 1) {
         $(".circleon").show();
     }
 
-    if (!$("#senhacliente,#logincliente").val().length != 0) {
+    if (!$("#senhacliente, #logincliente").val().length != 0) {
         $(".circleon").hide();
         $(".circle-requisicao").show();
     } else {
@@ -106,7 +110,7 @@ $(document).ready(function() {
 });
 
 // (function() {
-//     var visited = localStorage.getItem('visited', { expires: 1 });
+//     var visited = localStorage.getItem('visited');
 //     if (!visited) {
 //         setTimeout(function() {
 //             toastr.info("Seja bem-vindo ao Protestool!");

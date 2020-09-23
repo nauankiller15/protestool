@@ -127,7 +127,7 @@
 <script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
 <script>
     bindApiRequestSubmit();
-    maskinput();
+    avisoNotificacao();
     inputvalue();
     fecharpopup();
     shortcutkey();
