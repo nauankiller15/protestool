@@ -35,6 +35,7 @@ function alertaConfiguracao2() {
     }
 }
 
+// Ip Requisição
 $("#ip").on("blur", "", function() {
     if (!$("#ip").val().length != 0) {
         $(".circleoff").show();
@@ -59,6 +60,30 @@ $("#ip").on("blur", "", function() {
         $(".userlogado1").hide();
         $(".userlogado2").show();
     }
+
+});
+
+$("#senhacliente,#logincliente").on("blur", "", function() {
+    if (!$("#ip").val().length != 0) {
+        $(".circle-requisicao").show();
+    }
+
+    if (!$("#senhacliente,#logincliente").val().length != 0) {
+        $(".userlogado1").show();
+        $(".userlogado2").hide();
+    }
+
+    if (!$("#senhacliente,#logincliente").val().length != 1) {
+        $(".circleon").show();
+    }
+
+    if (!$("#senhacliente,#logincliente").val().length != 0) {
+        $(".circleon").hide();
+        $(".circle-requisicao").show();
+    } else {
+        $(".circle-requisicao").hide();
+    }
+
 });
 
 // Ao clicar no botão de limpar, ele reseta as informações e mostra novamente a notificação
@@ -80,28 +105,29 @@ $(document).ready(function() {
 
 });
 
-var iteminfo = setTimeout(function() {
-    toastr.info("Seja bem-vindo ao Protestool!");
-}, 700);
-window.setTimeout(function() {
-    // First check, if localStorage is supported.
-    if (window.localStorage) {
-        // Get the expiration date of the previous popup.
-        var nextPopup = localStorage.getItem(iteminfo);
+// (function() {
+//     var visited = localStorage.getItem('visited', { expires: 1 });
+//     if (!visited) {
+//         setTimeout(function() {
+//             toastr.info("Seja bem-vindo ao Protestool!");
+//         }, 700);
+//         localStorage.setItem('visited', true);
+//     }
+// })();
 
-        if (nextPopup > new Date()) {
-            return;
-        }
-
-        // Store the expiration date of the current popup in localStorage.
-        var expires = new Date();
-        expires = expires.setHours(expires.getHours() + 24);
-
-        localStorage.setItem(iteminfo, expires);
+if (localStorage.last) {
+    if ((localStorage.last - Date.now()) / (1000 * 60 * 60 * 24) >= 1) { //Date.now() is in milliseconds, so convert it all to days, and if it's more than 1 day, show the div
+        setTimeout(function() {
+            toastr.info("Seja bem-vindo ao Protestool!");
+        }, 700); //Show the div
+        localStorage.last = Date.now(); //Reset your timer
     }
-
-    show(iteminfo);
-});
+} else {
+    localStorage.last = Date.now();
+    setTimeout(function() {
+        toastr.info("Seja bem-vindo ao Protestool!");
+    }, 700); //Show the div because you haven't ever shown it before.
+}
 
 function codretorno() {
     $("#codretorno").click(function() {

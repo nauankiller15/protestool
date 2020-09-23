@@ -2,25 +2,24 @@
     
      ::-webkit-scrollbar {
         width: 9px;
-        animation: fadeIn 2s;
     }
     
      ::-webkit-scrollbar-track-piece {
         background: var(--trackbar);
-        box-shadow: 25px 25px 125px var(--text-shadow);
+        box-shadow: 15px 15px 15px var(--text-shadow);
         border-radius: 10px;
     }
     /* Track */
     
      ::-webkit-scrollbar-track {
-        box-shadow: 25px 25px 125px var(--text-shadow);
+        box-shadow: 15px 15px 15px var(--text-shadow);
         -webkit-border-radius: 10px;
         border-radius: 10px;
     }
     /* Handle */
     
      ::-webkit-scrollbar-thumb {
-        box-shadow: 25px 25px 125px var(--text-shadow);
+        box-shadow: 15px 15px 15px var(--text-shadow);
         -webkit-border-radius: 10px;
         border-radius: 10px;
         background: #2362b4;
@@ -31,6 +30,11 @@
     }
     
     html {
+        scroll-behavior: smooth;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
         font-family: "Montserrat";
         --trackbar: #a1a1a1;
         --bg: #dcdcdd;
@@ -62,7 +66,12 @@
     
     @media screen and (prefers-color-scheme: dark) {
         html[data-theme="dark"] {
-            --trackbar: #181818;
+            scroll-behavior: smooth;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            --trackbar: #131313;
             --bg: #1d1d1d;
             --bgform: #313131;
             --color-headings: #535353;
@@ -283,6 +292,7 @@
         -moz-box-shadow: 3px 2px 1px #000000;
         -webkit-box-shadow: 3px 2px 1px #000000;
         box-shadow: 5px 5px 25px var(--shadow);
+        z-index: 98;
     }
     
     form p {
@@ -377,7 +387,7 @@
     }
     
     .avisoindex {
-        padding: 15px;
+        padding: 10px;
         font-size: 15px;
         color: var(--textcolor);
     }
@@ -606,7 +616,6 @@
     .theme-color-div {
         bottom: 101px;
         left: 50px;
-        
     }
     
     .theme-color-div p {

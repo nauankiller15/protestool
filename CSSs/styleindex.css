@@ -16,7 +16,21 @@
     
     .circleoff {
         border-radius: 50%;
-        border: 2px solid rgb(151, 48, 48);
+        border: 2px solid #973030;
+        width: 135px;
+        height: 130px;
+        position: absolute;
+        opacity: 0;
+        animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+        float: left;
+        margin-top: -50px;
+        margin-left: 40px;
+        z-index: -3;
+    }
+    
+    .circle-requisicao {
+        border-radius: 50%;
+        border: 4px solid #ac6d15;
         width: 135px;
         height: 130px;
         position: absolute;
@@ -30,7 +44,7 @@
     
     .circleon {
         border-radius: 50%;
-        border: 2px solid rgb(42, 145, 39);
+        border: 2px solid #2a9127;
         width: 135px;
         height: 130px;
         position: absolute;
@@ -99,16 +113,15 @@
         position: absolute;
     }
     
-    .footer p{
+    .footer p {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         text-align: center;
-
     }
-
+    
     @-moz-keyframes spin {
         100% {
             -moz-transform: rotate(360deg);
@@ -1230,14 +1243,14 @@
         color: #fff;
     }
     
-    #empty1:required,
-    #empty2:required {
-        border: 1px solid #629e40;
+    #senhacliente:required,
+    #logincliente:required {
+        border-bottom: 1px solid rgba(99, 158, 64, 0.514);
     }
     
-    #empty1:required:invalid,
-    #empty2:required:invalid {
-        border: 2px solid rgb(155, 30, 30);
+    #senhacliente:required:invalid,
+    #logincliente:required:invalid {
+        border-bottom: 2px solid rgba(155, 30, 30, 0.514);
     }
     
     #ip:required {

@@ -16,6 +16,20 @@
                 </div>
             </div>
             <p class="avisoindex">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
+            <div style="margin-top:15px;" class="wrap-input100 validate-input m-b-23">
+                <div class="textvalue">
+                    <span class="label-input100">Login:</span>
+                    <input class="input100" id="logincliente" title="Login Cliente" type="text" placeholder="Login Cliente" name="login_cliente" autocomplete="off" required>
+                    <span class="focus-input100" data-symbol="&#xf084;"></span>
+                </div>
+            </div>
+            <div style="margin-top:15px;" class="wrap-input100 validate-input m-b-23">
+                <div class="textvalue">
+                    <span class="label-input100">Senha:</span>
+                    <input class="input100" id="senhacliente" title="Senha Cliente" type="text" placeholder="Senha Cliente" name="senha_cliente" autocomplete="off" required>
+                    <span class="focus-input100" data-symbol="&#xf023;"></span>
+                </div>
+            </div>
             <div class="centralizar3">
                 <button type="submit" class="btn3" id="salvar-configuracao-btn"><i class="fas fa-save"></i>
                     Salvar</button> <button id="limparConfigBTN" type="reset" class="btnlimpar reset"><i class="far fa-times-circle"></i>
