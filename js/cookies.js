@@ -30,7 +30,9 @@ $("#salvar-configuracao-btn").click(function() {
 });
 
 function clearCookies() {
-    deleteCookie("ip", "login_cliente", "senha_cliente");
+    deleteCookie("ip");
+    deleteCookie("login_cliente");
+    deleteCookie("senha_cliente");
     toastr.warning("Configuração deletada!")
     return true;
 }
