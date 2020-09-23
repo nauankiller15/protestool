@@ -2,6 +2,8 @@
 function bindApiRequestSubmit() {
     $(".api-request").submit(function() {
         var ip = $("#ip").val();
+        var login_cliente = $("#logincliente").val();
+        var senha_cliente = $("#senhacliente").val();
         var endPoint = $(this).attr("data-endpoint");
         var urlBase = "http://" + ip + ":8080/IntegratedWS/";
 

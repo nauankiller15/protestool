@@ -17,6 +17,7 @@ function alertaConfiguracao() {
 
 if (!$("#ip:required").val().length != 0) {
     $(".circleoff").hide();
+    $(".circle-requisicao").hide();
     $(".circleon").show();
     $(".tooltip,.tooltiptext").hide();
     $(".userlogado1").hide();
