@@ -65,6 +65,9 @@ $("#entrar").click(function() {
             if (usuario && senha) {
                 if (data == "200") {
                     window.location.href = "index.php";
+                    setTimeout(function() {
+                        toastr.info("Seja bem-vindo ao Protestool!");
+                    }, 600);
                 } else {
                     toastr.error("Falha ao realizar login!");
                 }

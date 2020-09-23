@@ -132,5 +132,4 @@
     fecharpopup();
     shortcutkey();
     codretorno();
-    
 </script>
