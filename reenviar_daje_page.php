@@ -25,7 +25,7 @@
                         <tr class="top-table">
                                 <div>
                                     <th>
-                                        <p><span data-tooltip="Número de Identificação de Requisição do Banco de dados.">
+                                        <p><span data-tooltip="Número de identificação de requisição do banco de dados.">
                                                 <i class="fas fa-file-upload"></i> ID Requisição <i class="fas fa-question"></i></span>
                                         </p>
                                     </th>
