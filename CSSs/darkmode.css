@@ -1,8 +1,7 @@
     /* Let's get this party started */
-    
-     ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         width: 9px;
-    }
+    } */
     
      ::-webkit-scrollbar-track-piece {
         background: var(--trackbar);
@@ -214,6 +213,8 @@
     #table-scroll {
         background: var(--cor-entrada);
         color: var(--textcolor-table);
+        padding-bottom: 25px;
+        border-bottom: 1px solid var(--border-menu);
     }
     
     .finaldapagina {
@@ -360,12 +361,11 @@
     
     .popup .title {
         width: 100%;
-        margin: -22px auto;
+        margin: -19px auto;
         cursor: move;
-        padding-top: 12px;
+        padding-top: 8px;
         float: left;
-        background: #2664b6;
-        text-align: center;
+        background: #2362b4;
         border-radius: 5px;
         animation: fadeIn 1s;
     }
@@ -378,7 +378,7 @@
         background: var(--bgform);
         padding: 15px;
         border-radius: 10px;
-        border: 2px solid #2664b6;
+        border: 2px solid var(--border-menu);
         margin: auto;
         width: 40%;
         top: 10%;
