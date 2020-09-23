@@ -14,6 +14,13 @@ function storeValues(form) {
     return true;
 }
 
+function storeValuesLogin(form) {
+    setCookie("ip", form.ip);
+    toastr.success("Configuração salva!");
+    return true;
+}
+
+
 
 // Deletar Cookies
 var expired = new Date(today.getTime() - 24 * 3600 * 1000); // less 24 hours
@@ -22,6 +29,10 @@ function deleteCookie(name) {
     document.cookie = name + "=null; path=/; expires=" + expired.toGMTString();
 }
 
+$("#salvar-configuracao-login").click(function() {
+    storeValuesLogin(getFormData($("#configip")));
+    return false;
+});
 
 
 $("#salvar-configuracao-btn").click(function() {

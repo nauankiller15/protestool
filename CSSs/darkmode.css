@@ -387,8 +387,10 @@
     }
     
     .avisoindex {
-        padding: 10px;
-        font-size: 15px;
+        color: var(--textcolor);
+    }
+    
+    .avisoindex2 {
         color: var(--textcolor);
     }
     /*  */

@@ -8,6 +8,11 @@ body {
     padding: 0px;
 }
 
+.avisoindex {
+    padding: 1px;
+    font-size: 15px;
+}
+
 .titulo {
     font-family: Agency FB;
     font-size: 360%;

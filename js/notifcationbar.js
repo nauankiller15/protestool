@@ -14,14 +14,63 @@ function alertaConfiguracao() {
     }
 }
 
+function ConfigIpFilled() {
+    if (!$("#configip").val().length != 0) {
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 100);
+        $(".circleon").show();
+        $(".circleoff").hide();
+        $(".circle-requisicao").hide();
+        $(".tooltip,.tooltiptext").hide();
+    }
+}
 
-if (!$("#ip:required").val().length != 0) {
-    $(".circleoff").hide();
-    $(".circle-requisicao").hide();
-    $(".circleon").show();
-    $(".tooltip,.tooltiptext").hide();
-    $(".userlogado1").hide();
-    $(".userlogado2").show();
+function reverLogin() {
+    if (!$("#logincliente").val().length != 0) {
+        toastr.warning("Realize os parâmetros de configuração acima!");
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 100);
+        $(".circleon").hide();
+        $(".circleoff").hide();
+        $(".circle-requisicao").show();
+    } else {
+        clearTimeout(alertaConfiguracaoTimeout);
+    }
+}
+
+
+function IPFilled() {
+    if (!$("#ip").val().length != 0) {
+        $(".circleoff").hide();
+        $(".circle-requisicao").hide();
+        $(".circleon").show();
+        $(".tooltip,.tooltiptext").hide();
+        $(".userlogado1").hide();
+        $(".userlogado2").show();
+    }
+}
+
+function LoginRequired() {
+    if (!$("#logincliente").val().length != 0) {
+        $(".circleoff").hide();
+        $(".circleon").hide();
+        $(".circle-requisicao").show();
+        $(".tooltip,.tooltiptext").hide();
+        $(".userlogado1").hide();
+        $(".userlogado2").show();
+    }
+
+}
+
+
+function SenhaRequired() {
+    if (!$("#senhacliente").val().length != 0) {
+        $(".circleoff").hide();
+        $(".circleon").hide();
+        $(".circle-requisicao").show();
+        $(".tooltip,.tooltiptext").hide();
+        $(".userlogado1").hide();
+        $(".userlogado2").show();
+    }
+
 }
 
 var alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 12000);
@@ -38,6 +87,57 @@ function alertaConfiguracao2() {
     }
 }
 
+// Login e Senha Requisição
+
+$("#logincliente").on("blur", "", function() {
+    if (!$("#logincliente").val().length != 0) {
+        $(".circle-requisicao").show();
+        $(".circleon").hide();
+    }
+
+    if (!$("#logincliente").val().length != 0) {
+        $(".userlogado1").show();
+        $(".userlogado2").hide();
+    }
+
+    if (!$("#logincliente").val().length != 1) {
+        $(".circleon").show();
+    }
+
+    if (!$("#logincliente").val().length != 0) {
+        $(".circleon").hide();
+        $(".circle-requisicao").show();
+    } else {
+        $(".circle-requisicao").hide();
+    }
+
+});
+
+$("#senhacliente").on("blur", "", function() {
+    if (!$("#logincliente").val().length != 0) {
+        $(".circle-requisicao").show();
+        $(".circleon").hide();
+    }
+
+    if (!$("##senhacliente").val().length != 0) {
+        $(".userlogado1").show();
+        $(".userlogado2").hide();
+    }
+
+    if (!$("##senhacliente").val().length != 1) {
+        $(".circleon").show();
+    }
+
+    if (!$("##senhacliente").val().length != 0) {
+        $(".circleon").hide();
+        $(".circle-requisicao").show();
+    } else {
+        $(".circle-requisicao").hide();
+    }
+
+});
+
+
 // Ip Requisição
 $("#ip").on("blur", "", function() {
     if (!$("#ip").val().length != 0) {
@@ -51,7 +151,7 @@ $("#ip").on("blur", "", function() {
         $(".userlogado2").hide();
     }
 
-    if (!$("#ip").val().length != 1) {
+    if (!$("#ip").val().length == 1) {
         $(".circleon").show();
     }
 
@@ -64,37 +164,12 @@ $("#ip").on("blur", "", function() {
         $(".userlogado1").hide();
         $(".userlogado2").show();
     }
-
-});
-
-$("#senhacliente, #logincliente").on("blur", "", function() {
-    if (!$("#senhacliente, #logincliente").val().length != 0) {
-        $(".circle-requisicao").show();
-        $(".circleon").hide();
-    }
-
-    if (!$("#senhacliente, #logincliente").val().length != 0) {
-        $(".userlogado1").show();
-        $(".userlogado2").hide();
-    }
-
-    if (!$("#senhacliente, #logincliente").val().length != 1) {
-        $(".circleon").show();
-    }
-
-    if (!$("#senhacliente, #logincliente").val().length != 0) {
-        $(".circleon").hide();
-        $(".circle-requisicao").show();
-    } else {
-        $(".circle-requisicao").hide();
-    }
-
 });
 
 // Ao clicar no botão de limpar, ele reseta as informações e mostra novamente a notificação
 
-$(document).ready(function() {
-    $(".reset").on("click", function() {
+function resetConfig() {
+    $("#limparConfigBTN").on("click", function() {
         $(".circleoff").show();
         $(".circleon").hide();
         $(".tooltip, .tooltiptext").show();
@@ -106,9 +181,7 @@ $(document).ready(function() {
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
     });
 
-
-
-});
+};
 
 // (function() {
 //     var visited = localStorage.getItem('visited');

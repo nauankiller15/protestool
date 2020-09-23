@@ -233,6 +233,16 @@
         text-transform: uppercase;
     }
     
+    .avisoindex {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .avisoindex2 {
+        padding: 1px;
+        font-size: 15px;
+    }
+    
     .entrada {
         max-width: 60%;
         margin: 0px auto;
@@ -1558,12 +1568,6 @@
     
     .has-val.input100+.focus-input100::after {
         color: #2664b6 !important;
-    }
-    
-    .avisoindex {
-        padding: 15px;
-        font-size: 15px;
-        color: #555555;
     }
     /*---------------------------------------------*/
     

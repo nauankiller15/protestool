@@ -15,7 +15,7 @@
                     <span class="focus-input100" data-symbol="&#xf233;"></span>
                 </div>
             </div>
-            <p class="avisoindex">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
+            <p class="avisoindex2">Dica: Por padrão utiliza-se: <b>192.168.15.15/150</b>.</p>
             <div style="margin-top:15px;" class="wrap-input100 validate-input m-b-23">
                 <div class="textvalue">
                     <span class="label-input100">Login:</span>
@@ -113,11 +113,11 @@
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/notifcationbar.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/loginform.js"></script>
 <script src="js/activemenu.js"></script>
-<script src="js/notifcationbar.js"></script>
 <script src="js/toastr.js"></script>
 <script src="js/cookies.js"></script>
 <script src="js/ajax.js"></script>
@@ -126,10 +126,16 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
 <script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
 <script>
-    bindApiRequestSubmit();
     avisoNotificacao();
+    ConfigIpFilled();
+    resetConfig();
+    IPFilled();
+    LoginRequired();
+    SenhaRequired();
+    reverLogin();
     inputvalue();
     fecharpopup();
     shortcutkey();
     codretorno();
+    bindApiRequestSubmit();
 </script>
