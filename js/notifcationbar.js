@@ -67,7 +67,7 @@ $("#ip").on("blur", "", function() {
 });
 
 $("#senhacliente, #logincliente").on("blur", "", function() {
-    if (!$("#ip").val().length != 0) {
+    if (!$("#senhacliente, #logincliente").val().length != 0) {
         $(".circle-requisicao").show();
         $(".circleon").hide();
     }

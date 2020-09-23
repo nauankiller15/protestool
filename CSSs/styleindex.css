@@ -1245,12 +1245,24 @@
     
     #senhacliente:required,
     #logincliente:required {
-        border-bottom: 1px solid rgba(99, 158, 64, 0.514);
+        border-bottom: 2px solid #629e40;
+        font-weight: bold;
+        width: 82%;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
     }
     
     #senhacliente:required:invalid,
     #logincliente:required:invalid {
-        border-bottom: 2px solid rgba(155, 30, 30, 0.514);
+        border-bottom: 2px solid rgba(223, 149, 46, 0.568);
+        font-weight: bold;
+        width: 82%;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
     }
     
     #ip:required {
@@ -1654,7 +1666,7 @@
         border: 1px solid #8f8f8f;
         border-radius: 7px;
         padding: 4px;
-        cursor: pointer;
+        cursor: default;
         transition: border 0.7s;
         margin-top: -10px;
     }

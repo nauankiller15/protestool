@@ -43,7 +43,7 @@
 </div>
 
 <div id="popup3">
-    <div class="popup">
+    <div style=" cursor: default;" class="popup">
         <div class="popup_head">
             <div class="title">
                 <span></span>
