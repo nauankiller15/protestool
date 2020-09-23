@@ -119,19 +119,29 @@ $(document).ready(function() {
 //     }
 // })();
 
-if (localStorage.last) {
-    if ((localStorage.last - Date.now()) / (1000 * 60 * 60 * 24) >= 1) { //Date.now() is in milliseconds, so convert it all to days, and if it's more than 1 day, show the div
+function welcome() {
+    if (localStorage.last) {
+        if ((localStorage.last - Date.now()) / (1000 * 60 * 60 * 24) >= 1) { //Date.now() is in milliseconds, so convert it all to days, and if it's more than 1 day, show the div
+            setTimeout(function() {
+                toastr.info("Seja bem-vindo ao Protestool!");
+            }, 500); //Show the div
+            localStorage.last = Date.now(); //Reset your timer
+        }
+    } else {
+        localStorage.last = Date.now();
         setTimeout(function() {
             toastr.info("Seja bem-vindo ao Protestool!");
-        }, 700); //Show the div
-        localStorage.last = Date.now(); //Reset your timer
+        }, 700); //Show the div because you haven't ever shown it before.
     }
-} else {
-    localStorage.last = Date.now();
-    setTimeout(function() {
-        toastr.info("Seja bem-vindo ao Protestool!");
-    }, 700); //Show the div because you haven't ever shown it before.
 }
+
+function apagarAviso() {
+    localStorage.clear();
+    bemvindo = 0;
+    welcome() = bemvindo;
+}
+
+// Final do código;
 
 function codretorno() {
     $("#codretorno").click(function() {
