@@ -2,9 +2,20 @@
 
 var alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3600);
 
+// Rever todas as inputs e avisar ao usuário
+function NotificationBarIndex() {
+    ConfigIpFilled();
+    reverLogin();
+    reverSenha();
+    IPFilled();
+    LoginRequired();
+    SenhaRequired();
+}
+// 
+
 function alertaConfiguracao() {
     if (!$("#ip").val().length != 0) {
-        toastr.warning("Realize os parâmetros de configuração acima!");
+        toastr.error("IP do Servidor necessário para parametrização!");
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 3500);
         $(".circleon").hide();
         $(".circleoff").show();
@@ -16,7 +27,7 @@ function alertaConfiguracao() {
 
 function ConfigIpFilled() {
     if (!$("#configip").val().length != 0) {
-        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 100);
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
         $(".circleon").show();
         $(".circleoff").hide();
         $(".circle-requisicao").hide();
@@ -26,8 +37,20 @@ function ConfigIpFilled() {
 
 function reverLogin() {
     if (!$("#logincliente").val().length != 0) {
-        toastr.warning("Realize os parâmetros de configuração acima!");
-        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 100);
+        toastr.warning("Login Cliente necessário!");
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
+        $(".circleon").hide();
+        $(".circleoff").hide();
+        $(".circle-requisicao").show();
+    } else {
+        clearTimeout(alertaConfiguracaoTimeout);
+    }
+}
+
+function reverSenha() {
+    if (!$("#senhacliente").val().length != 0) {
+        toastr.warning("Senha Cliente necessário!");
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
         $(".circleon").hide();
         $(".circleoff").hide();
         $(".circle-requisicao").show();
@@ -39,9 +62,9 @@ function reverLogin() {
 
 function IPFilled() {
     if (!$("#ip").val().length != 0) {
-        $(".circleoff").hide();
+        $(".circleoff").show();
         $(".circle-requisicao").hide();
-        $(".circleon").show();
+        $(".circleon").hide();
         $(".tooltip,.tooltiptext").hide();
         $(".userlogado1").hide();
         $(".userlogado2").show();
@@ -59,7 +82,6 @@ function LoginRequired() {
     }
 
 }
-
 
 function SenhaRequired() {
     if (!$("#senhacliente").val().length != 0) {
@@ -101,6 +123,7 @@ $("#logincliente").on("blur", "", function() {
     }
 
     if (!$("#logincliente").val().length != 1) {
+        NotificationBarIndex();
         $(".circleon").show();
     }
 
@@ -114,21 +137,22 @@ $("#logincliente").on("blur", "", function() {
 });
 
 $("#senhacliente").on("blur", "", function() {
-    if (!$("#logincliente").val().length != 0) {
+    if (!$("#senhacliente").val().length != 0) {
         $(".circle-requisicao").show();
         $(".circleon").hide();
     }
 
-    if (!$("##senhacliente").val().length != 0) {
+    if (!$("#senhacliente").val().length != 0) {
         $(".userlogado1").show();
         $(".userlogado2").hide();
     }
 
-    if (!$("##senhacliente").val().length != 1) {
+    if (!$("#senhacliente").val().length != 1) {
+        NotificationBarIndex();
         $(".circleon").show();
     }
 
-    if (!$("##senhacliente").val().length != 0) {
+    if (!$("#senhacliente").val().length != 0) {
         $(".circleon").hide();
         $(".circle-requisicao").show();
     } else {
@@ -146,23 +170,28 @@ $("#ip").on("blur", "", function() {
     }
 
     if (!$("#ip").val().length != 0) {
+        $(".circleoff").show();
         $(".tooltip,.tooltiptext").show();
         $(".userlogado1").show();
         $(".userlogado2").hide();
     }
 
-    if (!$("#ip").val().length == 1) {
+    if (!$("#ip").val().length != 1) {
+        NotificationBarIndex();
         $(".circleon").show();
+    } else {
+        $(".circleoff").show();
+        $(".circleon").hide();
     }
 
     if (!$("#ip").val().length != 0) {
         $(".circleon").hide();
         $(".circleoff").show();
     } else {
-        $(".circleoff").hide();
         $(".tooltip,.tooltiptext").hide();
         $(".userlogado1").hide();
         $(".userlogado2").show();
+        $(".circleoff").hide();
     }
 });
 
@@ -172,6 +201,7 @@ function resetConfig() {
     $("#limparConfigBTN").on("click", function() {
         $(".circleoff").show();
         $(".circleon").hide();
+        $(".circle-requisicao").hide();
         $(".tooltip, .tooltiptext").show();
         $(".userlogado2").hide();
         $(".userlogado1").show();

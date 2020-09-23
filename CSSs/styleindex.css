@@ -3,6 +3,10 @@
         padding: 0px;
     }
     
+    html {
+        scroll-behavior: smooth;
+    }
+    
     @keyframes scaleIn {
         from {
             transform: scale(0.4, 0.4);
@@ -16,7 +20,7 @@
     
     .circleoff {
         border-radius: 50%;
-        border: 2px solid #973030;
+        border: 3px solid #973030;
         width: 135px;
         height: 130px;
         position: absolute;

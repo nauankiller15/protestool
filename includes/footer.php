@@ -10,7 +10,7 @@
         <form id="configip" class="api-request" data-endpoint="Config">
             <div class="wrap-input100 validate-input m-b-23">
                 <div class="textvalue">
-                    <span class="label-input100">IP do servidor:</span>
+                    <span class="label-input100">IP do Servidor:</span>
                     <input class="input100" id="ip" title="Deve conter o padrão de IP do servidor" type="text" placeholder="Ex.:192.168.XXX.XXX" name="ip" autocomplete="off" required>
                     <span class="focus-input100" data-symbol="&#xf233;"></span>
                 </div>
@@ -127,12 +127,8 @@
 <script src="https://kit.fontawesome.com/13e0382c7c.js"></script>
 <script>
     avisoNotificacao();
-    ConfigIpFilled();
+    NotificationBarIndex();
     resetConfig();
-    IPFilled();
-    LoginRequired();
-    SenhaRequired();
-    reverLogin();
     inputvalue();
     fecharpopup();
     shortcutkey();
