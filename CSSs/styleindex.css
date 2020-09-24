@@ -1257,15 +1257,10 @@
         color: #fff;
     }
     
-<<<<<<< HEAD
-    #empty1:required,
-    #empty2:required {
-        border-bottom: 1px solid #629e40;
-=======
+
     #senhacliente:required,
     #logincliente:required {
         border-bottom: 2px solid #629e40;
->>>>>>> ed347e4dcb9b341c88e24852d6579d3a4c1ff58b
         font-weight: bold;
         width: 82%;
         -webkit-transition: all 0.4s;
@@ -1274,28 +1269,19 @@
         transition: all 0.4s;
     }
     
-<<<<<<< HEAD
-    #empty1:required:invalid,
-    #empty2:required:invalid {
-        border-bottom: 2px solid rgb(155, 30, 30);
-=======
+
     #senhacliente:required:invalid,
     #logincliente:required:invalid {
         border-bottom: 2px solid rgba(223, 149, 46, 0.568);
->>>>>>> ed347e4dcb9b341c88e24852d6579d3a4c1ff58b
         font-weight: bold;
         width: 82%;
         -webkit-transition: all 0.4s;
         -o-transition: all 0.4s;
         -moz-transition: all 0.4s;
         transition: all 0.4s;
-<<<<<<< HEAD
-        
-=======
->>>>>>> ed347e4dcb9b341c88e24852d6579d3a4c1ff58b
     }
     
-    #ip:required {
+#ip:required {
         border-bottom: 2px solid #629e40;
         font-weight: bold;
         width: 82%;

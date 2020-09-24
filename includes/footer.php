@@ -134,8 +134,5 @@
     fecharpopup();
     shortcutkey();
     codretorno();
-<<<<<<< HEAD
-=======
     bindApiRequestSubmit();
->>>>>>> ed347e4dcb9b341c88e24852d6579d3a4c1ff58b
 </script>
