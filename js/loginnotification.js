@@ -13,6 +13,13 @@ function alertaConfiguracao() {
     }
 }
 
+function semRetornoIP() {
+    document.getElementById('ip').value = ''; // Limpa o campo
+    $(".circleoff").show();
+    $(".circleon").hide();
+    $(".tooltip,.tooltiptext").show();
+}
+
 
 if (!$("#ip:required").val().length != 0) {
     $(".circleoff").hide();
@@ -60,6 +67,7 @@ $("#ip").on("blur", "", function() {
         $(".userlogado2").show();
     }
 });
+
 
 // Ao clicar no botão de limpar, ele reseta as informações e mostra novamente a notificação
 

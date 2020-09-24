@@ -23,8 +23,8 @@
         <div class="finaldapagina">
             <div id="table-scroll">
                 <table class="bordered striped centered">
-                    <thead>
-                        <tr class="top-table">
+                    <thead >
+                        <tr style="margin: 25px;" class="top-table">
                             <th><i class="fas fa-file-alt"></i> Número Daje</th>
                             <th>
                                 <p><span data-tooltip="Número de Identificação de Requisição do Banco de dados."><i class="fas fa-file-upload"></i> ID

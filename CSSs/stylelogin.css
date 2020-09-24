@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 100%;
     background: #dcdcdd;
@@ -6,6 +10,11 @@ body {
 * {
     margin: 0px;
     padding: 0px;
+}
+
+.avisoindex {
+    margin-top: -17px;
+    font-size: 15px;
 }
 
 .titulo {
@@ -38,7 +47,7 @@ body {
 
 .circleoff {
     border-radius: 50%;
-    border: 2px solid rgb(151, 48, 48);
+    border: 4px solid rgb(151, 48, 48);
     width: 135px;
     height: 130px;
     position: absolute;
@@ -52,7 +61,7 @@ body {
 
 .circleon {
     border-radius: 50%;
-    border: 2px solid rgb(42, 145, 39);
+    border: 4px solid rgb(42, 145, 39);
     width: 135px;
     height: 130px;
     position: absolute;
@@ -645,6 +654,7 @@ div.well {
     -moz-animation: glow3 1s ease-in-out infinite alternate;
     animation: glow3 1s ease-in-out infinite alternate;
     transition: 0.5;
+    z-index: 100;
 }
 
 .gear:hover {
@@ -689,7 +699,7 @@ div.well {
     z-index: 1;
     top: -39px;
     padding: 7px;
-    left: calc(100% + -110px);
+    left: calc(100% + -130px);
     animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
     -moz-box-shadow: 3px 2px 1px #000000;
     -webkit-box-shadow: 3px 2px 1px #000000;

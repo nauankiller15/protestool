@@ -4,7 +4,7 @@ function abrir() {
 
 function fechar() {
     $("#popup").fadeOut('300');
-
+    NotificationBarIndex();
 }
 
 function abrir2() {
@@ -27,14 +27,12 @@ function fechar3() {
 
 $(".popup").draggable();
 
-function arrastarlista() {
-    $("mexer-lista").draggable();
-}
 
 function fecharpopup() {
     $(document).on('keydown', function(e) {
         if (e.keyCode === 27) {
             $('#popup').fadeOut('300');
+            NotificationBarIndex();
             $('#popup2').fadeOut('300');
             $('#popup3').fadeOut('300');
         }

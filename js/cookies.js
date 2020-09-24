@@ -8,9 +8,18 @@ function setCookie(name, value) {
 
 function storeValues(form) {
     setCookie("ip", form.ip);
+    setCookie("login_cliente", form.login_cliente);
+    setCookie("senha_cliente", form.senha_cliente);
     toastr.success("Configuração salva!");
     return true;
 }
+
+function storeValuesLogin(form) {
+    setCookie("ip", form.ip);
+    toastr.success("Configuração salva!");
+    return true;
+}
+
 
 
 // Deletar Cookies
@@ -20,6 +29,10 @@ function deleteCookie(name) {
     document.cookie = name + "=null; path=/; expires=" + expired.toGMTString();
 }
 
+$("#salvar-configuracao-login").click(function() {
+    storeValuesLogin(getFormData($("#configip")));
+    return false;
+});
 
 
 $("#salvar-configuracao-btn").click(function() {
@@ -29,6 +42,8 @@ $("#salvar-configuracao-btn").click(function() {
 
 function clearCookies() {
     deleteCookie("ip");
+    deleteCookie("login_cliente");
+    deleteCookie("senha_cliente");
     toastr.warning("Configuração deletada!")
     return true;
 }
@@ -43,6 +58,8 @@ function getCookie(name) {
 // Mostrar Cookies
 
 $("#ip").val(getCookie("ip"));
+$("#logincliente").val(getCookie("login_cliente"));
+$("#senhacliente").val(getCookie("senha_cliente"));
 
 
 function getFormData($form) {

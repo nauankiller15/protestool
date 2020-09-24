@@ -3,6 +3,10 @@
         padding: 0px;
     }
     
+    html {
+        scroll-behavior: smooth;
+    }
+    
     @keyframes scaleIn {
         from {
             transform: scale(0.4, 0.4);
@@ -16,7 +20,21 @@
     
     .circleoff {
         border-radius: 50%;
-        border: 2px solid rgb(151, 48, 48);
+        border: 3px solid #973030;
+        width: 135px;
+        height: 130px;
+        position: absolute;
+        opacity: 0;
+        animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+        float: left;
+        margin-top: -50px;
+        margin-left: 40px;
+        z-index: -3;
+    }
+    
+    .circle-requisicao {
+        border-radius: 50%;
+        border: 4px solid #ac6d15;
         width: 135px;
         height: 130px;
         position: absolute;
@@ -30,7 +48,7 @@
     
     .circleon {
         border-radius: 50%;
-        border: 2px solid rgb(42, 145, 39);
+        border: 2px solid #2a9127;
         width: 135px;
         height: 130px;
         position: absolute;
@@ -99,16 +117,15 @@
         position: absolute;
     }
     
-    .footer p{
+    .footer p {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         text-align: center;
-
     }
-
+    
     @-moz-keyframes spin {
         100% {
             -moz-transform: rotate(360deg);
@@ -218,6 +235,16 @@
         font-family: Agency FB;
         font-size: 132%;
         text-transform: uppercase;
+    }
+    
+    .avisoindex {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .avisoindex2 {
+        padding: 1px;
+        font-size: 15px;
     }
     
     .entrada {
@@ -422,7 +449,7 @@
     }
     /* Userlogado */
     
-    .userlogado1 {
+    .userlogado2 {
         text-transform: uppercase;
         z-index: -2;
         position: absolute;
@@ -434,7 +461,7 @@
         animation: fadeIn 1.2s;
     }
     
-    .userlogado1 p {
+    .userlogado2 p {
         font-size: 16px;
         padding: 6px;
         border-radius: 10px;
@@ -447,7 +474,7 @@
         z-index: -2;
     }
     
-    .userlogado1::after {
+    .userlogado2::after {
         font-size: 23px;
         content: "\f007";
         font-family: FontAwesome;
@@ -461,7 +488,7 @@
     }
     /* Userlogado segunda posição */
     
-    .userlogado2 {
+    .userlogado1 {
         text-transform: uppercase;
         z-index: -2;
         position: absolute;
@@ -474,7 +501,7 @@
         animation: fadeIn 0.9s;
     }
     
-    .userlogado2 p {
+    .userlogado1 p {
         font-size: 16px;
         padding: 6px;
         border-radius: 10px;
@@ -489,7 +516,7 @@
         animation: fadeIn 0.9s;
     }
     
-    .userlogado2::after {
+    .userlogado1::after {
         font-size: 23px;
         content: "\f007";
         font-family: FontAwesome;
@@ -1230,9 +1257,15 @@
         color: #fff;
     }
     
+<<<<<<< HEAD
     #empty1:required,
     #empty2:required {
         border-bottom: 1px solid #629e40;
+=======
+    #senhacliente:required,
+    #logincliente:required {
+        border-bottom: 2px solid #629e40;
+>>>>>>> ed347e4dcb9b341c88e24852d6579d3a4c1ff58b
         font-weight: bold;
         width: 82%;
         -webkit-transition: all 0.4s;
@@ -1241,16 +1274,25 @@
         transition: all 0.4s;
     }
     
+<<<<<<< HEAD
     #empty1:required:invalid,
     #empty2:required:invalid {
         border-bottom: 2px solid rgb(155, 30, 30);
+=======
+    #senhacliente:required:invalid,
+    #logincliente:required:invalid {
+        border-bottom: 2px solid rgba(223, 149, 46, 0.568);
+>>>>>>> ed347e4dcb9b341c88e24852d6579d3a4c1ff58b
         font-weight: bold;
         width: 82%;
         -webkit-transition: all 0.4s;
         -o-transition: all 0.4s;
         -moz-transition: all 0.4s;
         transition: all 0.4s;
+<<<<<<< HEAD
         
+=======
+>>>>>>> ed347e4dcb9b341c88e24852d6579d3a4c1ff58b
     }
     
     #ip:required {
@@ -1547,12 +1589,6 @@
     .has-val.input100+.focus-input100::after {
         color: #2664b6 !important;
     }
-    
-    .avisoindex {
-        padding: 15px;
-        font-size: 15px;
-        color: #555555;
-    }
     /*---------------------------------------------*/
     
     .focus2-input100 {
@@ -1654,7 +1690,7 @@
         border: 1px solid #8f8f8f;
         border-radius: 7px;
         padding: 4px;
-        cursor: pointer;
+        cursor: default;
         transition: border 0.7s;
         margin-top: -10px;
     }

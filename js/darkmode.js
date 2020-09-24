@@ -55,3 +55,26 @@ darkModeToggle.addEventListener('click', () => {
         document.documentElement.setAttribute('data-theme', 'light');
     }
 });
+
+
+// const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+// // Altera o tema
+// function changeTheme(event) {
+//     if (event.matches) {
+//         document.documentElement.setAttribute('data-theme', 'dark');
+//         document.documentElement.setAttribute('switch', 'checked');
+//         var checked = JSON.parse(localStorage.getItem('switch'));
+//         document.getElementById("switch").checked = checked;
+//     } else {
+//         document.documentElement.setAttribute('data-theme', 'light');
+//         var checked = JSON.parse(localStorage.getItem('switch'));
+//         document.getElementById("switch").checked = checked;
+//     }
+// }
+
+// // Escuta a mudança de tema no sistema
+// prefersColorScheme.addListener(changeTheme);
+
+// // Altera o tema conforme o tema do usuário
+// changeTheme(prefersColorScheme);

@@ -1,9 +1,9 @@
-<div class="userlogado1">
+<div class="userlogado2">
     <p> <?php if (isset($_SESSION["usuario"])) : ?>
             <p><strong><?php echo $_SESSION['usuario']; ?></strong>
             <?php endif ?></p>
 </div>
-<div class="userlogado2">
+<div class="userlogado1">
     <p> <?php if (isset($_SESSION["usuario"])) : ?>
             <p><strong><?php echo $_SESSION['usuario']; ?></strong>
             <?php endif ?></p>
@@ -25,6 +25,9 @@
             <div class="circleon" style="animation-delay: 0s"></div>
             <div class="circleon" style="animation-delay: 0.8s"></div>
             <div class="circleon" style="animation-delay: 1.8s"></div>
+            <div class="circle-requisicao" style="animation-delay: 0s"></div>
+            <div class="circle-requisicao" style="animation-delay: 0.8s"></div>
+            <div class="circle-requisicao" style="animation-delay: 1.8s"></div>
             <span data-tooltip2="Parâmetros do servidor">
                 <div class="tooltip">
                     <span class="tooltiptext">Parametrizar configurações: ⚙️

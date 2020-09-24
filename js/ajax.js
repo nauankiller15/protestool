@@ -2,6 +2,8 @@
 function bindApiRequestSubmit() {
     $(".api-request").submit(function() {
         var ip = $("#ip").val();
+        var login_cliente = $("#logincliente").val();
+        var senha_cliente = $("#senhacliente").val();
         var endPoint = $(this).attr("data-endpoint");
         var urlBase = "http://" + ip + ":8080/IntegratedWS/";
 
@@ -35,6 +37,7 @@ function getStatusErrorMsg(status) {
             msg = "400: Daje não encontrando ou já desvinculado!";
             break;
         default:
+            semRetornoIPIndex();
             msg = "Falha na operação, por favor, tente novamente.";
     }
     msg = status;
@@ -66,7 +69,11 @@ $("#entrar").click(function() {
             if (usuario && senha) {
                 if (data == "200") {
                     window.location.href = "index.php";
+                    setTimeout(function() {
+                        toastr.info("Seja bem-vindo ao Protestool!");
+                    }, 600);
                 } else {
+                    semRetornoIP();
                     toastr.error("Falha ao realizar login!");
                 }
             } else {
