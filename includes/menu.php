@@ -1,9 +1,9 @@
-<div class="userlogado1">
+<div class="userlogado2">
     <p> <?php if (isset($_SESSION["usuario"])) : ?>
             <p><strong>SISCART <?php echo $_SESSION['usuario']; ?></strong>
             <?php endif ?></p>
 </div>
-<div class="userlogado2">
+<div class="userlogado1">
     <p> <?php if (isset($_SESSION["usuario"])) : ?>
             <p><strong>SISCART <?php echo $_SESSION['usuario']; ?></strong>
             <?php endif ?></p>

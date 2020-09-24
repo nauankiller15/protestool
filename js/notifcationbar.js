@@ -13,6 +13,12 @@ function NotificationBarIndex() {
 }
 // 
 
+function userLogadoPOS() {
+    UserIpPOS();
+    UserLoginCliPOS();
+    UserSenhaCliPOS();
+}
+
 function alertaConfiguracao() {
     if (!$("#ip").val().length != 0) {
         toastr.error("IP do Servidor necessário para parametrização!");
@@ -20,6 +26,7 @@ function alertaConfiguracao() {
         $(".circleon").hide();
         $(".circleoff").show();
         $(".circle-requisicao").hide();
+        UserIpPOS();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
@@ -30,8 +37,8 @@ function ConfigIpFilled() {
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
         $(".circleon").show();
         $(".circleoff").hide();
-        $(".circle-requisicao").hide();
-        $(".tooltip,.tooltiptext").hide();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
     }
 }
 
@@ -66,8 +73,8 @@ function IPFilled() {
         $(".circle-requisicao").hide();
         $(".circleon").hide();
         $(".tooltip,.tooltiptext").hide();
-        $(".userlogado1").hide();
-        $(".userlogado2").show();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
     }
 }
 
@@ -77,8 +84,8 @@ function LoginRequired() {
         $(".circleon").hide();
         $(".circle-requisicao").show();
         $(".tooltip,.tooltiptext").hide();
-        $(".userlogado1").hide();
-        $(".userlogado2").show();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
     }
 
 }
@@ -89,8 +96,8 @@ function SenhaRequired() {
         $(".circleon").hide();
         $(".circle-requisicao").show();
         $(".tooltip,.tooltiptext").hide();
-        $(".userlogado1").hide();
-        $(".userlogado2").show();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
     }
 
 }
@@ -118,8 +125,8 @@ $("#logincliente").on("blur", "", function() {
     }
 
     if (!$("#logincliente").val().length != 0) {
-        $(".userlogado1").show();
         $(".userlogado2").hide();
+        $(".userlogado1").show();
     }
 
     if (!$("#logincliente").val().length != 1) {
@@ -143,8 +150,8 @@ $("#senhacliente").on("blur", "", function() {
     }
 
     if (!$("#senhacliente").val().length != 0) {
-        $(".userlogado1").show();
         $(".userlogado2").hide();
+        $(".userlogado1").show();
     }
 
     if (!$("#senhacliente").val().length != 1) {
@@ -172,8 +179,8 @@ $("#ip").on("blur", "", function() {
     if (!$("#ip").val().length != 0) {
         $(".circleoff").show();
         $(".tooltip,.tooltiptext").show();
-        $(".userlogado1").show();
-        $(".userlogado2").hide();
+        $(".userlogado2").show();
+        $(".userlogado1").hide();
     }
 
     if (!$("#ip").val().length != 1) {
@@ -189,11 +196,39 @@ $("#ip").on("blur", "", function() {
         $(".circleoff").show();
     } else {
         $(".tooltip,.tooltiptext").hide();
-        $(".userlogado1").hide();
-        $(".userlogado2").show();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
         $(".circleoff").hide();
     }
 });
+
+function UserIpPOS() {
+    if (!$("#ip").val().length != 1) {
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
+        $(".tooltip,.tooltiptext").hide();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
+    }
+}
+
+function UserLoginCliPOS() {
+    if (!$("#logincliente").val().length != 1) {
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
+        $(".tooltip,.tooltiptext").hide();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
+    }
+}
+
+function UserSenhaCliPOS() {
+    if (!$("#senhacliente").val().length != 1) {
+        alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
+        $(".tooltip,.tooltiptext").hide();
+        $(".userlogado2").hide();
+        $(".userlogado1").show();
+    }
+}
+
 
 // Ao clicar no botão de limpar, ele reseta as informações e mostra novamente a notificação
 
@@ -203,8 +238,8 @@ function resetConfig() {
         $(".circleon").hide();
         $(".circle-requisicao").hide();
         $(".tooltip, .tooltiptext").show();
-        $(".userlogado2").hide();
-        $(".userlogado1").show();
+        $(".userlogado2").show();
+        $(".userlogado1").hide();
         toastr.error("A conexão com o banco de dados foi perdida!");
         alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 9500);
         toastr.warning("Realize os parâmetros de configuração acima!");

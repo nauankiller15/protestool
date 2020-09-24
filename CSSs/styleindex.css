@@ -449,7 +449,7 @@
     }
     /* Userlogado */
     
-    .userlogado1 {
+    .userlogado2 {
         text-transform: uppercase;
         z-index: -2;
         position: absolute;
@@ -461,7 +461,7 @@
         animation: fadeIn 1.2s;
     }
     
-    .userlogado1 p {
+    .userlogado2 p {
         font-size: 16px;
         padding: 6px;
         border-radius: 10px;
@@ -474,7 +474,7 @@
         z-index: -2;
     }
     
-    .userlogado1::after {
+    .userlogado2::after {
         font-size: 23px;
         content: "\f007";
         font-family: FontAwesome;
@@ -488,7 +488,7 @@
     }
     /* Userlogado segunda posição */
     
-    .userlogado2 {
+    .userlogado1 {
         text-transform: uppercase;
         z-index: -2;
         position: absolute;
@@ -501,7 +501,7 @@
         animation: fadeIn 0.9s;
     }
     
-    .userlogado2 p {
+    .userlogado1 p {
         font-size: 16px;
         padding: 6px;
         border-radius: 10px;
@@ -516,7 +516,7 @@
         animation: fadeIn 0.9s;
     }
     
-    .userlogado2::after {
+    .userlogado1::after {
         font-size: 23px;
         content: "\f007";
         font-family: FontAwesome;

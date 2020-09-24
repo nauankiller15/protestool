@@ -128,6 +128,7 @@
 <script>
     avisoNotificacao();
     NotificationBarIndex();
+    userLogadoPOS();
     resetConfig();
     inputvalue();
     fecharpopup();
