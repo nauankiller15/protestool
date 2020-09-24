@@ -162,7 +162,7 @@
                     showEasing: 'swing', //swing and linear are built into jQuery
                     onShown: undefined,
                     hideMethod: 'fadeOut',
-                    hideDuration: 1500,
+                    hideDuration: 1000,
                     hideEasing: 'swing',
                     onHidden: undefined,
                     closeMethod: false,

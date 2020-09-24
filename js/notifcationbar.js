@@ -19,6 +19,7 @@ function userLogadoPOS() {
     UserSenhaCliPOS();
 }
 
+
 function alertaConfiguracao() {
     if (!$("#ip").val().length != 0) {
         toastr.error("IP do Servidor necessário para parametrização!");
@@ -36,6 +37,7 @@ function ConfigIpFilled() {
     if (!$("#configip").val().length != 0) {
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
         $(".circleon").show();
+        $(".circle-requisicao").hide();
         $(".circleoff").hide();
         $(".userlogado2").hide();
         $(".userlogado1").show();
@@ -46,9 +48,9 @@ function reverLogin() {
     if (!$("#logincliente").val().length != 0) {
         toastr.warning("Login Cliente necessário!");
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
+        $(".circle-requisicao").show();
         $(".circleon").hide();
         $(".circleoff").hide();
-        $(".circle-requisicao").show();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
@@ -58,9 +60,9 @@ function reverSenha() {
     if (!$("#senhacliente").val().length != 0) {
         toastr.warning("Senha Cliente necessário!");
         alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
+        $(".circle-requisicao").show();
         $(".circleon").hide();
         $(".circleoff").hide();
-        $(".circle-requisicao").show();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
@@ -100,6 +102,13 @@ function SenhaRequired() {
         $(".userlogado1").show();
     }
 
+}
+
+function semRetornoIPIndex() {
+    document.getElementById('ip').value = ''; // Limpa o campo
+    $(".circleoff").show();
+    $(".circleon").hide();
+    $(".tooltip,.tooltiptext").show();
 }
 
 var alertaConfiguracao2Timeout = window.setTimeout(alertaConfiguracao2, 12000);
