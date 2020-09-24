@@ -27,6 +27,7 @@ function alertaConfiguracao() {
         $(".circleon").hide();
         $(".circleoff").show();
         $(".circle-requisicao").hide();
+        abrir();
         UserIpPOS();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
@@ -51,6 +52,7 @@ function reverLogin() {
         $(".circle-requisicao").show();
         $(".circleon").hide();
         $(".circleoff").hide();
+        abrir();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
@@ -63,6 +65,7 @@ function reverSenha() {
         $(".circle-requisicao").show();
         $(".circleon").hide();
         $(".circleoff").hide();
+        abrir();
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
@@ -88,6 +91,7 @@ function LoginRequired() {
         $(".tooltip,.tooltiptext").hide();
         $(".userlogado2").hide();
         $(".userlogado1").show();
+        abrir();
     }
 
 }
@@ -100,6 +104,7 @@ function SenhaRequired() {
         $(".tooltip,.tooltiptext").hide();
         $(".userlogado2").hide();
         $(".userlogado1").show();
+        abrir();
     }
 
 }
@@ -272,24 +277,75 @@ function avisoNotificacao() {
         if ((localStorage.last - Date.now()) / (1000 * 60 * 60 * 24) >= 1) { //Date.now() is in milliseconds, so convert it all to days, and if it's more than 1 day, show the div
             setTimeout(function() {
                 toastr.info("Não esqueça de checar sempre as configurações!");
-            }, 800); //Show the div
+            }, 900); //Show the div
             localStorage.last = Date.now(); //Reset your timer
         }
     } else {
         localStorage.last = Date.now();
         setTimeout(function() {
             toastr.info("Não esqueça de checar sempre as configurações!");
-        }, 800); //Show the div because you haven't ever shown it before.
+        }, 900); //Show the div because you haven't ever shown it before.
     }
 }
+const gravarBemVindo = {
+    bemVindoProt: function bemVindoLogado() {
+        if (localStorage.last) {
+            if ((localStorage.last - Date.now()) / (1000 * 60 * 60 * 24) >= 1) { //Date.now() is in milliseconds, so convert it all to days, and if it's more than 1 day, show the div
+                setTimeout(function() {
+                    toastr.info("Bem vindo ao Protestool!");
+                }, 2500); //Show the div
+                localStorage.last = Date.now(); //Reset your timer
+            }
+        } else {
+            localStorage.last = Date.now();
+            setTimeout(function() {
+                toastr.info("Bem vindo ao Protestool!");
+            }, 1000); //Show the div because you haven't ever shown it before.
+        }
+    }}
 
-function apagarAviso() {
-    localStorage.clear();
-    bemvindo = 0;
-    avisoNotificacao() = bemvindo;
+function deletarBemVindo() {
+window.localStorage.removeItem('bemVindoProt');
 }
+window.localStorage.setItem('bemVindoProt', JSON.stringify(gravarBemVindo));
 
-// Final do código;
+// // COOKIES GRAVAR
+// (function bemVindoLogado(){
+// 	setTimeout(function(){
+//         toastr.info("Bem vindo ao Protestool!");
+// 	},1000);
+// 	var jaFoiVistoNasUltimas24Horas=window.localStorage.getItem("dataDeExpiracao");
+// 	var validade=0;
+// 	if(jaFoiVistoNasUltimas24Horas!=null){
+// 		var dataAtual=new Date().getTime();
+// 		validade=jaFoiVistoNasUltimas24Horas-dataAtual;
+// 	}
+// 	var tempoParaMostrarNovamente=20*1000;
+// 	if(jaFoiVistoNasUltimas24Horas==null||validade<=-tempoParaMostrarNovamente){
+// 		//Código para MOSTRAR o pop up*/
+// 		mostrarOuNaoPopUp('mostrarSim');
+// 	}else{
+// 		/*/Código para NÃO MOSTRAR pop up*/
+// 		mostrarOuNaoPopUp('mostrarNao');
+// 	}
+// 	function mostrarOuNaoPopUp(condicao){
+// 		if(condicao=='mostrarSim'){
+//             setTimeout(function(){
+//                 toastr.info("Bem vindo ao Protestool!");
+//             },1000);
+// 			definirNovaDataExpiracao();
+// 		}else if(condicao=='mostrarNao'){
+//             setTimeout(function(){
+//                 toastr.info("Bem vindo ao Protestool!");
+//             },1000);
+// 		}
+// 	}
+// 	function definirNovaDataExpiracao(){
+// 		var dataDeExpiracao=new Date().getTime();
+// 		window.localStorage.setItem("dataDeExpiracao",dataDeExpiracao);
+// 	}
+// });
+// // // Final do código;
 
 function codretorno() {
     $("#codretorno").click(function() {

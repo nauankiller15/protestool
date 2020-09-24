@@ -541,10 +541,13 @@ a:hover {
     top: -34px;
     padding: 7px;
     border-radius: 5px;
-    right: calc(100% + -710px);
+    right: calc(100% + -700px);
     content: attr(data-tooltip3);
     background-color: #2664b6;
     color: White;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px var(--shadow);
     width: 95px;
     animation: fadeIn 0.5s, go-back 0.6s infinite alternate;
 }
@@ -637,6 +640,35 @@ a:hover {
     display: block;
     transition: 0.5s;
 }
+
+[data-tooltip7] {
+    position: relative;
+    font-family: sans-serif;
+}
+
+[data-tooltip7]:after {
+    display: none;
+    position: absolute;
+    top: -30px;
+    padding: 7px;
+    border-radius: 5px;
+    right: calc(100% + -135px);
+    content: attr(data-tooltip7);
+    background-color: #2664b6;
+    color: White;
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px var(--shadow);
+    width: 130px;
+    animation: fadeIn 0.5s, go-back 0.4s infinite alternate;
+    z-index: 995;
+}
+
+[data-tooltip7]:hover:after {
+    display: block;
+    transition: 0.5s;
+}
+
 
 .tooltip .tooltiptext {
     background-color: #2664b6;

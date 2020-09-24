@@ -159,6 +159,5 @@
     shortcutkey();
     inputvalue();
     apagarletras();
-
     document.title = "Protestool - Consulta Daje";
 </script>

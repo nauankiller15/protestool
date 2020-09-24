@@ -86,6 +86,15 @@ $(document).ready(function() {
 });
 
 
+// (function() {
+//     var visited = localStorage.getItem('visited');
+//     if (!visited) {
+//         setTimeout(function() {
+//             toastr.info("Seja bem-vindo ao Protestool!");
+//         }, 700);
+//         localStorage.setItem('visited', true);
+//     }
+// })();
 
 function codretorno() {
     $("#codretorno").click(function() {

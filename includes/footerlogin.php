@@ -6,7 +6,7 @@
             </div>
         </div>
         <span data-tooltip3="Fechar tela"><a href="javascript: fechar();"><button type="submit" class="btnsair">✖️</button></a></span>
-        <span data-tooltip="Testar Conexão"><span id="testar-conexao-btn" class="btn4"><i class="fas fa-broadcast-tower"></i></span></span>
+        <span data-tooltip7="Testar Conexão"><span id="testar-conexao-btn" class="btn4"><i class="fas fa-broadcast-tower"></i></span></span>
         <form id="configip" class="api-request" data-endpoint="Config">
             <div class="wrap-input100 validate-input m-b-23">
                 <div class="textvalue">

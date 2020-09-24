@@ -8,7 +8,8 @@
         <form method="post" action="consulta_daje.php">
             <div class="wrap-input100 validate-input m-b-23">
                 <span class="label-input100">Número da requisição:</span>
-                <input accesskey="a" class="input100" type="requisicao" name="requisicao" placeholder="Digite aqui o número da requisição" required>
+                <input accesskey="a" class="input100" type="requisicao" name="requisicao"
+                    placeholder="Digite aqui o número da requisição" required>
                 <span class="focus-input100" data-symbol="&#xf574;"></span>
                 <span id="apagarletras" class="focus2-input100" data-symbol="&#xf55a;"></span>
             </div>
@@ -22,18 +23,22 @@
                 <div id="table-scroll">
                     <table class="bordered striped centered">
                         <thead>
-                        <tr class="top-table">
+                            <tr class="top-table">
                                 <div>
                                     <th>
-                                        <p><span data-tooltip="Número de identificação de requisição do banco de dados.">
-                                                <i class="fas fa-file-upload"></i> ID Requisição <i class="fas fa-question"></i></span>
+                                        <p><span
+                                                data-tooltip="Número de identificação de requisição do banco de dados.">
+                                                <i class="fas fa-file-upload"></i> ID Requisição <i
+                                                    class="fas fa-question"></i></span>
                                         </p>
                                     </th>
                                 </div>
                                 <th><i class="fas fa-file-alt"></i> Número Daje</th>
                                 <th><i class="fas fa-file-powerpoint"></i> Protocolo</th>
                                 <th><span data-tooltip5="Clique aqui para consultar os códigos.">
-                                        <button class="codretorno" id="codretorno2" data-load-page="cods_retorno_page.php"><i class="fas fa-project-diagram"></i> Cod
+                                        <button class="codretorno" id="codretorno2"
+                                            data-load-page="cods_retorno_page.php"><i
+                                                class="fas fa-project-diagram"></i> Cod
                                             Retorno <i class="fas fa-question"></i></button>
                                     </span></th>
                             </tr>
@@ -111,7 +116,7 @@
                                 <td>15505</td>
                                 <td>300</td>
                             </tr>
-                        
+
                         </tbody>
                     </table>
                 </div>
@@ -119,15 +124,14 @@
         </div>
 
         <script>
-            MenuAtivo();
-            codretorno();
-            codretorno2();
-            arrastarlista();
-            bindApiRequestSubmit();
-            shortcutkey();
-            inputvalue();
-            apagarletras();
-            moveScroll();
-            document.title = "Protestool - Reenviar Daje";
+        MenuAtivo();
+        codretorno();
+        codretorno2();
+        bindApiRequestSubmit();
+        shortcutkey();
+        inputvalue();
+        apagarletras();
+        moveScroll();
+        document.title = "Protestool - Reenviar Daje";
         </script>
 </div>
