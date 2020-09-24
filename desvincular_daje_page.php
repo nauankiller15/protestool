@@ -7,7 +7,7 @@
         </div>
         <div class="wrap-input100 validate-input m-b-23">
             <span class="label-input100">Número do daje:</span>
-            <input title="Número de DAJE Ex.: 0000 AB 00000" accesskey="a" autocomplete="off" class="input100" pattern="[0-9]{4}[A-Z]{2}[0-9]{6}" type="text" placeholder="Digite aqui o número do DAJE sem espaços" name="numero_daje" required>
+            <input title="Número de DAJE Ex.: 0000 000 000000" accesskey="a" autocomplete="off" class="input100" pattern="[0-9]{13}" type="text" placeholder="Digite aqui o número do DAJE sem espaços" name="numero_daje" required>
             <span class="focus-input100" data-symbol="&#xf15c;"></span>
             <span id="apagarletras" class="focus2-input100" data-symbol="&#xf55a;"></span>
         </div>

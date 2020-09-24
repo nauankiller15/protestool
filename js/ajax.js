@@ -36,6 +36,10 @@ function getStatusErrorMsg(status) {
             msg = "400: Daje já desvinculado!";
             break;
         default:
+            document.getElementById('ip').value = ''; // Limpa o campo
+            $(".circleoff").show();
+            $(".circleon").hide();
+            $(".tooltip,.tooltiptext").show();
             msg = "Falha na operação, por favor, tente novamente.";
     }
 
@@ -71,6 +75,10 @@ $("#entrar").click(function() {
                         toastr.info("Seja bem-vindo ao Protestool!");
                     }, 600);
                 } else {
+                    document.getElementById('ip').value = ''; // Limpa o campo
+                    $(".circleoff").show();
+                    $(".circleon").hide();
+                    $(".tooltip,.tooltiptext").show();
                     toastr.error("Falha ao realizar login!");
                 }
             } else {
