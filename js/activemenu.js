@@ -28,7 +28,7 @@ function verificaInatividade() {
     let diferenca = (dataAtual - dataAtividade);
 
     if (diferenca > 1800000 ) {
-        window.location.href = "logout.php";
+        window.location.href = "./login-aut/logout.php";
     } else {
         verificarInatividade = window.setTimeout(verificaInatividade, 60000);
     }

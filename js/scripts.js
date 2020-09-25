@@ -110,8 +110,15 @@ function VersaoAtual() {
         $("#Atual").animate({
             marginLeft: "-100%"
         }, 1000)
-        $("#Antiga").show("patchnotes");
         $("#Antiga").animate({
+            marginLeft: "0px"
+        }, 1000)
+    })
+    $("#ir_mais_antigo").click(function() {
+        $("#Antiga").animate({
+            marginLeft: "-100%"
+        }, 1000)
+        $("#Mais_Antigo").animate({
             marginLeft: "0px"
         }, 1000)
     })

@@ -57,7 +57,7 @@ $("#entrar").click(function () {
   let ip = $('[name="ip"]').val();
 
   $.post(
-    "logar.php",
+    "./login-aut/logar.php",
     {
       usuario: usuario,
       senha: senha,

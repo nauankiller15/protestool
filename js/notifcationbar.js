@@ -46,8 +46,9 @@ function ConfigIpFilled() {
 
 function reverLogin() {
   if (!$("#logincliente").val().length != 0) {
-    toastr.warning("Login Cliente necessário!");
-    alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
+    setTimeout(function () {
+        toastr.warning("Login Cliente necessário!");
+      }, 2900);
     $(".circle-requisicao").show();
     $(".circleon").hide();
     $(".circleoff").hide();
@@ -59,8 +60,9 @@ function reverLogin() {
 
 function reverSenha() {
   if (!$("#senhacliente").val().length != 0) {
-    toastr.warning("Senha Cliente necessário!");
-    alertaConfiguracaoTimeout = window.setTimeout(alertaConfiguracao, 200);
+    setTimeout(function () {
+        toastr.warning("Senha Cliente necessário!");
+      }, 2500);
     $(".circle-requisicao").show();
     $(".circleon").hide();
     $(".circleoff").hide();
@@ -101,7 +103,9 @@ function SenhaRequired() {
     $(".tooltip,.tooltiptext").hide();
     $(".userlogado2").hide();
     $(".userlogado1").show();
-    abrir();
+    setTimeout(function () {
+        abrir();
+      }, 2500);
   }
 }
 
@@ -286,7 +290,7 @@ function bemVindoLogado() {
     setTimeout(function () {
       toastr.info("Bem vindo ao Protestool!");
       setCookie("bvExibida", true);
-    }, 2000); //Show the div
+    }, 900); //Show the div
   }
 }
 
