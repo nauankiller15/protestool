@@ -133,5 +133,6 @@
     fecharpopup();
     shortcutkey();
     codretorno();
-    bindApiRequestSubmit();
+    bindApiRequestSubmit(); 
+    bemVindoLogado();  
 </script>

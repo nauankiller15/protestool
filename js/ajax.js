@@ -36,7 +36,7 @@ function getStatusErrorMsg(status) {
       semRetornoIPIndex();
       abrir();
   }
-//   msg = status;
+  //   msg = status;
   return msg;
 }
 
@@ -67,9 +67,8 @@ $("#entrar").click(function () {
       if (usuario && senha) {
         if (data == "200") {
           window.location.href = "index.php";
-          clearLoginConfig();
           deletarBemVindo();
-          bemVindoLogado();
+          clearLoginConfig();
         } else {
           semRetornoIP();
           abrir();

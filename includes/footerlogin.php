@@ -68,4 +68,5 @@
     shortcutkey();
     codretorno();
     VersaoAtual();
+    setCookie("bvExibida", false);
 </script>

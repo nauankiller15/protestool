@@ -39,7 +39,7 @@ $('#naoaparecer_patchnotes').on('click', function() {
 
 $(document).ready(function() {
     if (window.localStorage.getItem('clicado')) {
-        $('.patchnotes').slideToggle('slow');
+        $('.patchnotes').hide();
     }
 });
 

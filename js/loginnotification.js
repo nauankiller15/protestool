@@ -121,3 +121,14 @@ function codretorno2() {
 }
 
 // Fim do código
+
+function bemVindoLogado() {
+    setTimeout(function () {
+        toastr.info("Bem vindo ao Protestool!");
+      }, 2500); //Show the div
+  window.localStorage.setItem("bem_vindo_prot");
+}
+
+function deletarBemVindo() {
+  localStorage.removeItem("bem_vindo_prot", "bem_vindo_prot");
+}
