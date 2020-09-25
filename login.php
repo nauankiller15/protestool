@@ -35,9 +35,11 @@ if (isset($_SESSION['usuario'])) {
             </div>
             <h2><i class="fas fa-clipboard"></i> Novidades:</h2>
             <div id="novidades-scroll">
+
+            <ul class="version">Versão: 1.0</ul>
             <li>Novo alerta adicionado na tela de login.</li>
             <li>Desvinculamento dos dajes funcionando.</li>
-            <li>Tela de Consulta já funcionando.</li>
+            <li>Consultas de dajes funcionando.</li>
             </div>
         </div>
     </div>
