@@ -46,7 +46,7 @@
 
 <div class="footer">
     <p>© COPYRIGHT 2020. Siscart - Protestool.</p>
-    <ul><i class="rotate fas fa-cog"></i> Versão do sistema: 1.0.</ul>
+    <?php include("versoes/versao-sistema.php"); ?>
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

@@ -1,0 +1,1 @@
+<ul><i class="rotate fas fa-cog"></i> Versão do sistema: 1.0.</ul>

@@ -80,7 +80,7 @@
 
 <div class="footer">
     <p>© COPYRIGHT 2020. Siscart - Protestool.</p>
-    <ul><i class="rotate fas fa-cog"></i> Versão do sistema: 1.0.</ul>
+    <?php include("versoes/versao-sistema.php"); ?>
 </div>
 <div id="lds-spinner">
     <div class="lds-spinner">

@@ -31,15 +31,11 @@ if (isset($_SESSION['usuario'])) {
     <div id="patchnotes">
         <div class="patchnotes">
             <div class="naoaparecerPatch">
-            <a id="naoaparecer_patchnotes"> Não aparecer mais isso</a>
+                <a id="naoaparecer_patchnotes"><i style="margin-right:2px;" class="far fa-times-circle"></i> Não aparecer mais isso</a>
             </div>
             <h2><i class="fas fa-clipboard"></i> Novidades:</h2>
             <div id="novidades-scroll">
-
-            <ul class="version">Versão: 1.0</ul>
-            <li>Novo alerta adicionado na tela de login.</li>
-            <li>Desvinculamento dos dajes funcionando.</li>
-            <li>Consultas de dajes funcionando.</li>
+                <?php include("versoes/patch-notes.php"); ?>
             </div>
         </div>
     </div>
