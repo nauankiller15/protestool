@@ -287,27 +287,27 @@ function avisoNotificacao() {
         }, 900); //Show the div because you haven't ever shown it before.
     }
 }
-const gravarBemVindo = {
-    bemVindoProt: function bemVindoLogado() {
-        if (localStorage.last) {
-            if ((localStorage.last - Date.now()) / (1000 * 60 * 60 * 24) >= 1) { //Date.now() is in milliseconds, so convert it all to days, and if it's more than 1 day, show the div
-                setTimeout(function() {
-                    toastr.info("Bem vindo ao Protestool!");
-                }, 2500); //Show the div
-                localStorage.last = Date.now(); //Reset your timer
-            }
-        } else {
-            localStorage.last = Date.now();
+
+function bemVindoLogado() {
+    window.localStorage.setItem('bem_vindo_prot');
+    if (localStorage.last) {
+        if ((localStorage.last - Date.now()) / (1000 * 60 * 60 * 24) >= 1) { //Date.now() is in milliseconds, so convert it all to days, and if it's more than 1 day, show the div
             setTimeout(function() {
                 toastr.info("Bem vindo ao Protestool!");
-            }, 1000); //Show the div because you haven't ever shown it before.
+            }, 2500); //Show the div
+            localStorage.last = Date.now(); //Reset your timer
         }
-    }}
+    } else {
+        localStorage.last = Date.now();
+        setTimeout(function() {
+            toastr.info("Bem vindo ao Protestool!");
+        }, 1000); //Show the div because you haven't ever shown it before.
+    }
+}
 
 function deletarBemVindo() {
-window.localStorage.removeItem('bemVindoProt');
+    localStorage.removeItem('bem_vindo_prot');
 }
-window.localStorage.setItem('bemVindoProt', JSON.stringify(gravarBemVindo));
 
 // // COOKIES GRAVAR
 // (function bemVindoLogado(){

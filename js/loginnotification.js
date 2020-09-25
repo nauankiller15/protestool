@@ -13,6 +13,18 @@ function alertaConfiguracao() {
     }
 }
 
+// Rever todas as inputs e avisar ao usuário
+function NotificationBarIndex() {
+    ConfigIpFilled();
+    reverLogin();
+    reverSenha();
+    IPFilled();
+    LoginRequired();
+    SenhaRequired();
+}
+// 
+
+
 function semRetornoIP() {
     document.getElementById('ip').value = ''; // Limpa o campo
     $(".circleoff").show();

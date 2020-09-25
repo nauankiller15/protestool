@@ -25,6 +25,30 @@ function fechar3() {
 
 }
 
+$('#abrir_patchnotes').on('click', function() {
+    $('.patchnotes').slideToggle('slow');
+    window.localStorage.setItem('clicado', 'clicado');
+    localStorage.removeItem('clicado');
+});
+
+$('#naoaparecer_patchnotes').on('click', function() {
+    $('.patchnotes').slideToggle('slow');
+    window.localStorage.setItem('clicado', 'clicado');
+});
+
+
+$(document).ready(function() {
+    if (window.localStorage.getItem('clicado')) {
+        $('.patchnotes').slideToggle('slow');
+    }
+});
+
+// $('.menu-link').each(function() {
+//     $(this).on('click', function() {
+//         $('#menu').slideToggle('slow');
+//     });
+// });
+
 $(".popup").draggable();
 
 

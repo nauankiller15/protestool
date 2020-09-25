@@ -64,6 +64,8 @@ html {
     --hoversecondtext: #000000;
     --sorter-color-table: #f2f2f2;
     --textcolor-table: #000000;
+    --cor-patchnotes: #313131;
+    --cor-textnotes: #505050;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -96,10 +98,12 @@ html {
         --border-menu: #505050;
         --border-link: #313131;
         --hovermenu: #222222;
-        --secondtext: #fff;
+        --secondtext: #ffffff;
         --hoversecondtext: #2362b4;
         --sorter-color-table: #222222;
         --textcolor-table: #ffffff;
+        --cor-patchnotes: #dcdcdd;
+        --cor-textnotes: #ffffff;
     }
 }
 
@@ -129,6 +133,18 @@ html {
 
 
 /*  */
+
+
+/* Patch notes */
+
+.patchnotes {
+    background: var(--cor-entrada);
+    color: var(--cor-textnotes);
+    -moz-box-shadow: 3px 2px 1px #000000;
+    -webkit-box-shadow: 3px 2px 1px #000000;
+    box-shadow: 3px 3px 10px var(--shadow);
+    border: 1px solid var(--border-menu);
+}
 
 
 /* User Logado */
@@ -668,7 +684,6 @@ a:hover {
     display: block;
     transition: 0.5s;
 }
-
 
 .tooltip .tooltiptext {
     background-color: #2664b6;

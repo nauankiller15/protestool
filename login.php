@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <?php
 session_start();
 include("includes/headlogin.php");
@@ -23,9 +22,24 @@ if (isset($_SESSION['usuario'])) {
     </div>
     <div class="input-group2">
     </div>
-    <div class="input-group">
-    </div>
-    <div class="input-group3">
+    <a style="cursor: pointer;" type="abrir_patch" id="abrir_patchnotes">
+        <div class="input-group">
+        </div>
+        <div class="input-group3">
+        </div>
+    </a>
+    <div id="patchnotes">
+        <div class="patchnotes">
+            <div class="naoaparecerPatch">
+            <a id="naoaparecer_patchnotes"> Não aparecer mais isso</a>
+            </div>
+            <h2><i class="fas fa-clipboard"></i> Novidades:</h2>
+            <div id="novidades-scroll">
+            <li>Novo alerta adicionado na tela de login.</li>
+            <li>Desvinculamento dos dajes funcionando.</li>
+            <li>Tela de Consulta já funcionando.</li>
+            </div>
+        </div>
     </div>
     <div class="fadeIn">
         <div class="header">
