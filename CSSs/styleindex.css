@@ -650,7 +650,6 @@
         font-size: 14px;
         color: white;
         background: #2664b6;
-        border: none;
         border-radius: 5px;
         text-transform: uppercase;
         width: 38%;
@@ -1257,7 +1256,6 @@
         color: #fff;
     }
     
-
     #senhacliente:required,
     #logincliente:required {
         border-bottom: 2px solid #629e40;
@@ -1269,7 +1267,6 @@
         transition: all 0.4s;
     }
     
-
     #senhacliente:required:invalid,
     #logincliente:required:invalid {
         border-bottom: 2px solid rgba(223, 149, 46, 0.568);
@@ -1281,7 +1278,7 @@
         transition: all 0.4s;
     }
     
-#ip:required {
+    #ip:required {
         border-bottom: 2px solid #629e40;
         font-weight: bold;
         width: 82%;

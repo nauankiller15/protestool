@@ -34,9 +34,7 @@ if (isset($_SESSION['usuario'])) {
                 <a id="naoaparecer_patchnotes"><i style="margin-right:2px;" class="far fa-times-circle"></i> Não aparecer mais isso</a>
             </div>
             <h2><i class="fas fa-clipboard"></i> Novidades:</h2>
-            <div id="novidades-scroll">
                 <?php include("versoes/patch-notes.php"); ?>
-            </div>
         </div>
     </div>
     <div class="fadeIn">

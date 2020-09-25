@@ -104,3 +104,24 @@ function moveScroll() {
         scrollContainer: true
     });
 }
+
+function VersaoAtual() {
+    $("#ir_antigo").click(function() {
+        $("#Atual").animate({
+            marginLeft: "-100%"
+        }, 1000)
+        $("#Antiga").show("patchnotes");
+        $("#Antiga").animate({
+            marginLeft: "0px"
+        }, 1000)
+    })
+
+    $("#ir_atual").click(function() {
+        $("#Antiga").animate({
+            marginLeft: "-200%"
+        }, 1000)
+        $("#Atual").animate({
+            marginLeft: "0px"
+        }, 1000)
+    })
+}

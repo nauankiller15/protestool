@@ -67,4 +67,5 @@
     fecharpopup();
     shortcutkey();
     codretorno();
+    VersaoAtual();
 </script>
