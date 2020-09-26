@@ -4,6 +4,7 @@ function abrir() {
 
 function fechar() {
     $("#popup").fadeOut('300');
+    NotificationBarIndex();
 
 }
 

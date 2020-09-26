@@ -52,7 +52,9 @@ function reverLogin() {
         $(".circle-requisicao").show();
         $(".circleon").hide();
         $(".circleoff").hide();
-        abrir();
+        setTimeout(function() {
+            abrir();
+        }, 120000);
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }
@@ -66,7 +68,9 @@ function reverSenha() {
         $(".circle-requisicao").show();
         $(".circleon").hide();
         $(".circleoff").hide();
-        abrir();
+        setTimeout(function() {
+            abrir();
+        }, 120000);
     } else {
         clearTimeout(alertaConfiguracaoTimeout);
     }

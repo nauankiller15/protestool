@@ -36,7 +36,7 @@
                                 <th><i class="fas fa-file-powerpoint"></i> Protocolo</th>
                                 <th><span data-tooltip5="Clique aqui para consultar os códigos.">
                                         <button class="codretorno" id="codretorno2"
-                                            data-load-page="cods_retorno_page.php"><i
+                                            data-load-page="paginas_data/cods_retorno_page.php"><i
                                                 class="fas fa-project-diagram"></i> Cod
                                             Retorno <i class="fas fa-question"></i></button>
                                     </span></th>
@@ -131,7 +131,6 @@
         inputvalue();
         apagarletras();
         moveScroll();
-
         document.title = "Protestool - Reenviar Daje";
         </script>
 </div>
