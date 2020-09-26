@@ -8,8 +8,7 @@
         <form method="post" action="consulta_daje.php">
             <div class="wrap-input100 validate-input m-b-23">
                 <span class="label-input100">Número da requisição:</span>
-                <input accesskey="a" class="input100" type="requisicao" name="requisicao"
-                    placeholder="Digite aqui o número da requisição" required>
+                <input accesskey="a" class="input100" name="protocolo" id="protocolo" title="Permitido apenas número de requisição do banco de dados" pattern="[0-9]+$" placeholder="Digite aqui o número da requisição" required>
                 <span class="focus-input100" data-symbol="&#xf574;"></span>
                 <span id="apagarletras" class="focus2-input100" data-symbol="&#xf55a;"></span>
             </div>
@@ -132,6 +131,7 @@
         inputvalue();
         apagarletras();
         moveScroll();
+
         document.title = "Protestool - Reenviar Daje";
         </script>
 </div>

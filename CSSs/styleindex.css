@@ -640,7 +640,6 @@
         float: center;
         margin: 3px auto;
         transition: background 0.2s;
-        animation: go-back 1.3s infinite alternate;
         border: 2px solid #2664b6;
         cursor: pointer;
     }
