@@ -95,7 +95,6 @@ function LoginRequired() {
         $(".tooltip,.tooltiptext").hide();
         $(".userlogado2").hide();
         $(".userlogado1").show();
-        abrir();
     }
 }
 
