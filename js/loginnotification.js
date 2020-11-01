@@ -111,14 +111,12 @@ $(document).ready(function() {
 function codretorno() {
     $("#codretorno").click(function() {
         toastr.info("Esta página contém: Lista detalhada para especificar os códigos, o que cada um representa!");
-        console.log('menuclicado')
     });
 }
 
 function codretorno2() {
     $("#codretorno2").click(function() {
         $('#codretorno').trigger('click');
-        console.log('menuclicado')
         toastr.info("Esta página contém: Lista detalhada para especificar os códigos, o que cada um representa!");
     });
 }
