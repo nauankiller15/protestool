@@ -1,0 +1,41 @@
+@media (min-width: 600px) and (max-width: 1500px) {
+    /* ------------- PÁGINA INDEX ------------- */
+    .menu ul {
+        width: 85%;
+        margin: 1px auto;
+        padding: 1px;
+        text-align: center;
+    }
+    .userlogado1 {
+        right: 177px;
+        top: 50px;
+        width: 160px;
+        max-width: 180px;
+    }
+    .userlogado2 {
+        right: 177px;
+        top: 22px;
+        width: 160px;
+        max-width: 180px;
+    }
+    .entrada {
+        max-width: 85%;
+        margin: 0px auto;
+        padding: 20px;
+    }
+    .header {
+        width: 85%;
+        margin: 10px auto 0px;
+        padding: 2px 22px 1px 20px;
+    }
+    .btn2 {
+        width: 73%;
+    }
+    /* ------------- PÁGINA DE ERROR 404 ------------- */
+    .entradaerror {
+        max-width: 45%;
+    }
+    .headererror {
+        width: 45%;
+    }
+}
