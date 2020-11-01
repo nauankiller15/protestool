@@ -111,11 +111,14 @@ $(document).ready(function() {
 function codretorno() {
     $("#codretorno").click(function() {
         toastr.info("Esta página contém: Lista detalhada para especificar os códigos, o que cada um representa!");
+        console.log('menuclicado')
     });
 }
 
 function codretorno2() {
     $("#codretorno2").click(function() {
+        $('#codretorno').trigger('click');
+        console.log('menuclicado')
         toastr.info("Esta página contém: Lista detalhada para especificar os códigos, o que cada um representa!");
     });
 }
@@ -123,12 +126,12 @@ function codretorno2() {
 // Fim do código
 
 function bemVindoLogado() {
-    setTimeout(function () {
+    setTimeout(function() {
         toastr.info("Bem vindo ao Protestool!");
-      }, 2500); //Show the div
-  window.localStorage.setItem("bem_vindo_prot");
+    }, 2500); //Show the div
+    window.localStorage.setItem("bem_vindo_prot");
 }
 
 function deletarBemVindo() {
-  localStorage.removeItem("bem_vindo_prot", "bem_vindo_prot");
+    localStorage.removeItem("bem_vindo_prot", "bem_vindo_prot");
 }

@@ -25,20 +25,16 @@
                             <tr class="top-table">
                                 <div>
                                     <th>
-                                        <p><span
-                                                data-tooltip="Número de identificação de requisição do banco de dados.">
-                                                <i class="fas fa-file-upload"></i> ID Requisição <i
-                                                    class="fas fa-question"></i></span>
+                                        <p><span data-tooltip="Número de identificação de requisição do banco de dados.">
+                                                <i class="fas fa-file-upload"></i> ID Requisição <i class="fas fa-question"></i></span>
                                         </p>
                                     </th>
                                 </div>
                                 <th><i class="fas fa-file-alt"></i> Número Daje</th>
                                 <th><i class="fas fa-file-powerpoint"></i> Protocolo</th>
                                 <th><span data-tooltip5="Clique aqui para consultar os códigos.">
-                                        <button class="codretorno" id="codretorno2"
-                                            data-load-page="paginas_data/cods_retorno_page.php"><i
-                                                class="fas fa-project-diagram"></i> Cod
-                                            Retorno <i class="fas fa-question"></i></button>
+                                        <button class="codretorno codretorno2" data-load-page="paginas_data/cods_retorno_page.php">
+                                            <i class="fas fa-exclamation-circle"></i> Cod Retorno <i class="fas fa-question"></i></button>
                                     </span></th>
                             </tr>
                         </thead>
@@ -123,14 +119,14 @@
         </div>
 
         <script>
-        MenuAtivo();
-        codretorno();
-        codretorno2();
-        bindApiRequestSubmit();
-        shortcutkey();
-        inputvalue();
-        apagarletras();
-        moveScroll();
-        document.title = "Protestool - Reenviar Daje";
+            MenuAtivo();
+            codretorno();
+            codretorno2();
+            bindApiRequestSubmit();
+            shortcutkey();
+            inputvalue();
+            apagarletras();
+            moveScroll();
+            document.title = "Protestool - Reenviar Daje";
         </script>
 </div>

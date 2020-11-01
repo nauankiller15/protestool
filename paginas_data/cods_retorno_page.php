@@ -5,7 +5,7 @@
             <table class="bordered striped centered">
                 <thead>
                 <tr class="top-table">
-                        <th><i class="fas fa-project-diagram"></i> Cod. Retorno</th>
+                        <th><i class="fas fa-exclamation-circle"></i> Cod. Retorno</th>
                         <th><i class="fas fa-list-ul"></i> Tipo Retorno</th>
                     </tr>
                 </thead>
@@ -40,8 +40,6 @@
     MenuAtivo();
     codretorno();
     codretorno2();
-    arrastarlista();
     bindApiRequestSubmit();
     inputvalue();
-    darkmode();
 </script>
