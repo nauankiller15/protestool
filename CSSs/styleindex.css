@@ -1086,11 +1086,8 @@
         background-color: #d6d6d6 !important;
         color: #2664b6 !important;
         border-bottom: 2px solid #2664b6 !important;
-        transition: 0.4s;
-        margin-left: 3px;
-        margin-right: 3px;
+        transition: 0.5s;
         border-radius: 6px !important;
-        transition: 0.7s;
     }
     
     table,
