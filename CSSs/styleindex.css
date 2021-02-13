@@ -85,7 +85,6 @@
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
-        transition: 0.5s;
     }
     
     .tituloerror {
@@ -1078,7 +1077,7 @@
         /* visual do link */
         text-decoration: none;
         cursor: pointer;
-        transition: 0.7s;
+        transition: 0.4s;
     }
     
     .menu-active,
